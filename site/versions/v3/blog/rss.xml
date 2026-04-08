@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Gijs6 - blog</title>
+    <link>https://gijs6.nl/blog</link>
+    <description>A big mess of fun pages, interesting projects, my own thoughts and opinions and more.</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Apr 2026 21:05:32 +0000</lastBuildDate>
+    <item>
+      <title>Introduction</title>
+      <link>https://gijs6.nl/blog/introduction</link>
+      <description>&lt;p&gt;Hello there! Welcome to this "blog" :D&lt;/p&gt;
+&lt;p&gt;But that word "blog" doesn't tell you much about what you can expect to find on this "frequently updated website"[1]; "blog" is a word without that much actual meaning to it.
+Is a blog a place to talk about your latest projects? Is a blog a place to reflect on what you have achieved (&lt;em&gt;like an NLT-logboek&lt;/em&gt;)? Is a blog a collection of stories from a road trip through Western Senegal? Is a blog a place to rant about politics? Is a blog just an old place where people wrote things before Twitter existed? Is a blog a place to showcase your work and impress others? Should a blog be made out of lengthy essays with fancy references, or should it be made out of short messages about anything that is on someone's mind?&lt;/p&gt;
+&lt;p&gt;I think a blog can be all of those, and it definitely shouldn't be a precisely defined thing, &lt;strong&gt;and that is amazing&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;And I do not know the purpose of this blog, I just wanted to write some things, and I wanted a little place on the internet to store and show them, so here I am.&lt;/p&gt;
+&lt;p&gt;This is probably the worst welcome post in existence.&lt;/p&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://doi.org/10.1093/OED/3789439763"&gt;&lt;em&gt;Blog&lt;/em&gt; in the Oxford English Dictionary&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+      <guid isPermaLink="false">https://gijs6.nl/blog/introduction</guid>
+      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Dutch Government is ruining its election system</title>
+      <link>https://gijs6.nl/blog/ruining-an-election-system</link>
+      <description>&lt;p&gt;The Dutch Minister of the Interior and Kingdom Relations Judith Uitermark (NSC) recently announced her plan to transform the Dutch election system by introducing a new system where 125 of the 150 members of the Second Chamber (the most important parliament in the Netherlands) would be elected via regional elections.[1] Her justification? It's to "strengthen the regional bond between voters and elected officials." What a load of nonsense. Let's be clear: this is a step in the wrong direction, and it's a move that will ultimately weaken the very democracy in the Netherlands.&lt;/p&gt;
+&lt;p&gt;Let's break this down. The election for the Second Chamber is supposed to be a &lt;strong&gt;national&lt;/strong&gt; election, not a regional one. We already have regional elections: the Provincial Council elections (&lt;em&gt;Provinciale Statenverkiezingen&lt;/em&gt;). So, if there's an issue with regional representation, why on earth would you mess with the national system? If regional representation is flawed, FIX THE REGIONAL SYSTEM, don't mess with the national one. Once again, &lt;strong&gt;the Elections for the Second Chamber are national elections&lt;/strong&gt;, so everyone in the entire country should be able to vote for the same candidates on their ballot, otherwise, it's just a bunch of completely separate regional elections which happen to be added up for one parliament. How can you justify a &lt;strong&gt;NATIONAL&lt;/strong&gt; election where your ballot differs depending on where you live?&lt;/p&gt;
+&lt;p&gt;But that's just the start of the problems. Smaller parties will have their votes scattered across multiple districts, making it much harder for them to secure any seats at all. These parties, which rely on proportional representation, will see their votes effectively wasted.[2] What's the point of voting if your vote doesn't even count? This is the kind of thing we see in places like the United States, where if you don't vote for one of the two main parties, you might as well not vote at all. That is not democracy.&lt;/p&gt;
+&lt;p&gt;Think about it: systems where votes are effectively lost, like in the U.S., or where a party can get the minority of the votes, but the majority of seats in Parliament, like in the UK, are systems that can generate simply &lt;strong&gt;undemocratic&lt;/strong&gt; outcomes. And now, the Dutch government is trying to take us down that very same path.&lt;/p&gt;
+&lt;p&gt;It's time to stop this before it's too late. I truly hope the Second Chamber, or the First Chamber, or hell, even the &lt;em&gt;Raad van State&lt;/em&gt; steps in to block this plan. At this point, I don't care where it comes from, just stop it. We cannot allow the Dutch election system to be ruined like this. We cannot allow the Dutch government to just abolish this core democratic principle.&lt;/p&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.rtl.nl/nieuws/politiek/artikel/5501188/minister-wil-verkiezingen-drastisch-veranderen-kamerleden-provincie"&gt;&lt;em&gt;Minister wil verkiezingen drastisch veranderen: Tweede Kamerleden per provincie gekozen&lt;/em&gt; - RTL Nieuws&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rug.nl/fse/news/digital-society/20250401-electoralplansnsc"&gt;&lt;em&gt;NSC's electoral reform plan may have unwanted consequences&lt;/em&gt; - University of Groningen&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+      <guid isPermaLink="false">https://gijs6.nl/blog/ruining-an-election-system</guid>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Goodbye Google Docs; hello Markdown</title>
+      <link>https://gijs6.nl/blog/goodbye-google-docs</link>
+      <description>&lt;p&gt;This year, I switched my summaries from Google Docs to &lt;a href="https://school.gijs6.nl"&gt;a simple static site&lt;/a&gt; with Markdown files hosted with Jekyll on GitHub Pages. I was really fed up with the limited features of Google Docs and just the hassle with sharing the docs, so when I saw that my friend Robin had &lt;a href="https://school.geheimesite.nl"&gt;his own site with his own summaries&lt;/a&gt;, I made the switch. And it works amazingly, even though the Jekyll documentation is so bad, and I needed to make some extra Python scripts to get all the functionality that I wanted. Maybe I'll make &lt;a href="https://github.com/Gijs6/Barium"&gt;my own static site generator&lt;/a&gt; sometime ;).&lt;/p&gt;
+&lt;p&gt;I think my little switch to Markdown fits the bigger picture of the decisions that I and many others have made in the last few years surrounding the internet and just technology in general. People are kind of done with big tech just being so incredibly powerful, and I am too. We depend on the technology of these companies every single day; never in the history of mankind have so few companies been so powerful.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://gijs6.nl/blog/goodbye-google-docs</guid>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Education was bad; AI made it worse</title>
+      <link>https://gijs6.nl/blog/ai-made-education-worse</link>
+      <description>&lt;p&gt;AI can be an awesome tool for writing. I use it myself more often than I like to admit, and it is used a lot in my school.&lt;/p&gt;
+&lt;p&gt;And that's a problem. School &lt;em&gt;should&lt;/em&gt; be about teaching people important knowledge and skills, and maybe even more important, it should get people excited about learning. But if students just use AI to do their assignments, school clearly fails at that. And I completely understand that schools need to do something "against" using AI. But schools can't seem to do this right.&lt;/p&gt;
+&lt;p&gt;My school just takes away our ability to use AI. For writing assignments, we work on a restricted Chromebook or just on paper. And this approach is wrong. Because it doesn't just block access to AI; it also limits our ability to do research and fully engage with the learning process. Until this year, we could just research on the Chromebooks, but this is now not possible during writing assignments. This kind of restriction turns education into something even more bureaucratic, tedious, and frustrating, which only pushes students further away from learning and makes them &lt;strong&gt;more&lt;/strong&gt; likely to rely on AI.&lt;/p&gt;
+&lt;p&gt;What schools ideally want is that their students don't &lt;em&gt;want&lt;/em&gt; to use AI. The experience of learning new things should be engaging and exciting. But that is not the case, and it wasn't the case before AI.&lt;/p&gt;
+&lt;p&gt;And the students aren't the problem; the endless obsession with assignments, tests, and just accomplishing results is. These assignments, like the project from civics and the writing assignment from NLT, don't let students think about the subject. They just let the students answer some pre-defined questions, only to get some grade or result.&lt;/p&gt;
+&lt;p&gt;And AI has removed all room to be curious (there wasn't much room before anyway). My school thinks that if you allow people to be curious, you allow them to use AI.&lt;/p&gt;
+&lt;p&gt;The endless amount of boring, tedious, and repetitive assignments make people forget that school can be fun. So for almost everyone, learning is not an interesting experience; it's a chore, so it's no wonder they would rather let AI do it.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://gijs6.nl/blog/ai-made-education-worse</guid>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>What is art?</title>
+      <link>https://gijs6.nl/blog/what-is-art</link>
+      <description>&lt;p&gt;Defining what art is isn't easy. According to the dictionary on my desk, art is "the result of the ability to creatively express emotions and thoughts".&lt;/p&gt;
+&lt;p&gt;But that definition raises some questions. If you remove all traces of an artist from an artwork, is it still art? If you paint a canvas completely white, is that art? Is 4 minutes and 33 seconds of silence art? Is this blog art? Is simply everything humans create art, since you can't really make something without thinking about it?&lt;/p&gt;
+&lt;p&gt;If you say that "being art" isn't binary but more like a spectrum, you'd probably say that minimalistic and simple works are less art-ish, and big, detailed works are more art-ish. But does that mean 20 hours of white noise is more art-ish than 4 minutes and 33 seconds of silence? Does that mean a 10-hour and 7-minute movie of paint drying is less art-ish than a simple cartoon? If you judge how art-ish something is based only on how much "information" it contains, you completely dismiss the story behind the artwork.&lt;/p&gt;
+&lt;p&gt;So I think you can't call something art just by observing it. You need to know the background, who made it, how it was made and why it was made, so you can interpret the emotions it is trying to convey.&lt;/p&gt;
+&lt;p&gt;If you know that the 607-minute-long film about paint drying is a protest against censorship and the unfair costs facing independent filmmakers, then I think it's far more art-ish than a simple cartoon made for children. If you understand that an artwork represents emotions and thoughts, then it becomes meaningful. Context is everything.&lt;/p&gt;
+&lt;p&gt;And this is where it gets interesting. Take that banana duct-taped to a wall that everyone loves to mock. People dismiss it as "not real art" because it's just a banana. But maybe they're missing the point entirely.&lt;/p&gt;
+&lt;p&gt;What if that banana actually &lt;em&gt;does&lt;/em&gt; make you think? What if it forces you to question why we assign value to objects, why we create hierarchies of "high" and "low" culture, why we need things to be permanent and precious to matter? What if the absurdity is exactly the point: that in our desperation to categorize and commodify everything, we've lost sight of what actually makes us reflect on the world around us?&lt;/p&gt;
+&lt;p&gt;The problem isn't that "anything can be art." The problem is that people think there should be gatekeepers deciding what counts. They want someone else to tell them what's meaningful so they don't have to do the &lt;em&gt;extremely&lt;/em&gt; hard work of thinking for themselves.&lt;/p&gt;
+&lt;p&gt;And this brings us to an even bigger problem: how schools completely miss the point of art education.&lt;/p&gt;
+&lt;h2&gt;School ruins art&lt;/h2&gt;
+&lt;p&gt;From my experience, art class in school is where they teach what counts as "real art." Instead of encouraging students to find meaning in their own experiences and explore what art can be, schools restrict that exploration. Classical music is "sophisticated," but the song that made you cry at 3 AM isn't worth discussing. Oil paintings are "serious art," but that meme you and your friends laugh at is just "internet culture."&lt;/p&gt;
+&lt;p&gt;The worst part? Schools teach students that there are "correct" interpretations of artworks. It feels like they have the "right" interpretation of every artwork ever made, and theirs is the only correct one. No room for personal interpretation, no space for students to find their own meaning in the chaos. No consideration that maybe this painting speaks to &lt;em&gt;your&lt;/em&gt; feelings or thoughts. School treats art as if every artwork can be categorized by a few principles, and that's how it should be memorized.&lt;/p&gt;
+&lt;h2&gt;Actual meaning&lt;/h2&gt;
+&lt;p&gt;So what is art, really? I personally think art is anything that creates genuine meaning in the realm of intention and interpretation. It doesn't matter if it's a Renaissance building or a niche shoegaze track; if it makes you &lt;em&gt;think&lt;/em&gt; or &lt;em&gt;feel&lt;/em&gt; something real, then it's functioning as art.&lt;/p&gt;
+&lt;p&gt;Art forces us to confront the fundamentals of being human. Why do we feel the need to create? Why do some patterns of sound or color move us to tears, while others don't affect us at all? Why do we desperately want to share our inner experiences with others, even though we can never truly know if they understand?&lt;/p&gt;
+&lt;p&gt;These questions don't have answers, and that's exactly what makes them worth asking.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://gijs6.nl/blog/what-is-art</guid>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
