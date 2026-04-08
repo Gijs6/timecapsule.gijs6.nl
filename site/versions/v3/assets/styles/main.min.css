@@ -182,7 +182,7 @@ body > header > a {
     -moz-box-align: center;
     -webkit-align-items: center;
     align-items: center;
-    font-size: 6em;
+    font-size: 5em;
     font-weight: 900;
     text-decoration: none;
     -webkit-transition: all 0.5s;
@@ -238,7 +238,7 @@ body > header > nav {
     -moz-box-flex: 8;
     -webkit-flex-grow: 8;
     flex-grow: 8;
-    min-height: 30em;
+    min-height: 25em;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
@@ -264,7 +264,7 @@ body > header > nav > a {
     -moz-box-align: center;
     -webkit-align-items: center;
     align-items: center;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 900;
     text-decoration: none;
     -webkit-transition: all 0.5s;
