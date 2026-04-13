@@ -136,8 +136,6 @@ textarea:not([rows]) {
     --spacing-3xl: 4rem;
 }
 :root {
-    --color-primary: var(--oc-green-8);
-    --color-accent: var(--oc-orange-8);
     --lightningcss-light: initial;
     --lightningcss-dark: ;
     color-scheme: light;
@@ -151,7 +149,6 @@ body {
         Helvetica,
         Noto,
         sans-serif;
-    font-size: max(0.9rem, min(0.7rem + 0.5vw, 1.05rem));
     line-height: 1.4;
 }
 body > header {
@@ -167,6 +164,16 @@ body > header {
     display: -moz-box;
     display: -webkit-flex;
     display: flex;
+}
+@media (max-width: 750px) {
+    body > header {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
 }
 body > header > a {
     color: #000;
@@ -192,6 +199,25 @@ body > header > a {
     display: -moz-box;
     display: -webkit-flex;
     display: flex;
+}
+@media (max-width: 750px) {
+    body > header > a {
+        padding: var(--spacing-md) var(--spacing-lg);
+        -webkit-box-pack: start;
+        -moz-box-pack: start;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+        font-size: 3em;
+    }
+}
+@media (min-width: 751px) and (max-width: 1300px) {
+    body > header > a {
+        -webkit-box-flex: 0.5;
+        -moz-box-flex: 0.5;
+        -webkit-flex-grow: 0.5;
+        flex-grow: 0.5;
+        font-size: 4em;
+    }
 }
 body > header > a:hover {
     -webkit-box-flex: 2;
@@ -247,10 +273,37 @@ body > header > nav {
     display: -webkit-flex;
     display: flex;
 }
+@media (max-width: 750px) {
+    body > header > nav {
+        min-height: unset;
+        gap: var(--spacing-sm) var(--spacing-md);
+        padding: var(--spacing-lg);
+        border-top: 2px solid #000;
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-flex-flow: wrap;
+        flex-flow: wrap;
+    }
+}
+body > header > nav:has(> a:hover:not(.active)) > a.active {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+body > header > nav:has(> a:hover:not(.active)) > a.active > div > span {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
 body > header > nav > a {
     width: 0.75em;
     padding: var(--spacing-3xs);
     color: #000;
+    text-underline-offset: 3px;
     border-left: 2px solid #000;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -274,6 +327,18 @@ body > header > nav > a {
     display: -moz-box;
     display: -webkit-flex;
     display: flex;
+}
+@media (max-width: 750px) {
+    body > header > nav > a {
+        border: none;
+        -webkit-box-flex: 0;
+        -moz-box-flex: 0;
+        -webkit-flex-grow: 0;
+        flex-grow: 0;
+        width: auto;
+        padding: 0;
+        font-size: 1.1em;
+    }
 }
 body > header > nav > a > div {
     -webkit-clip-path: inset(0);
@@ -320,11 +385,37 @@ body > header > nav > a > div > span {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+@media (max-width: 750px) {
+    body > header > nav > a > div > span {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
 body > header > nav > a:hover {
     -webkit-box-flex: 8;
     -moz-box-flex: 8;
     -webkit-flex-grow: 8;
     flex-grow: 8;
+}
+@media (min-width: 751px) and (max-width: 1300px) {
+    body > header > nav > a:hover {
+        -webkit-box-flex: 10;
+        -moz-box-flex: 10;
+        -webkit-flex-grow: 10;
+        flex-grow: 10;
+    }
+}
+@media (max-width: 750px) {
+    body > header > nav > a:hover {
+        -webkit-box-flex: 0;
+        -moz-box-flex: 0;
+        -webkit-flex-grow: 0;
+        flex-grow: 0;
+        text-decoration: underline #000;
+        text-decoration-thickness: 3px;
+    }
 }
 body > header > nav > a:hover > div > span {
     -webkit-transform: rotate(0);
@@ -332,84 +423,7 @@ body > header > nav > a:hover > div > span {
     -ms-transform: rotate(0);
     transform: rotate(0);
 }
-body > header > nav > a.active {
-    text-decoration: underline #000;
-    text-decoration-thickness: 5px;
-}
-@media (min-width: 751px) and (max-width: 1300px) {
-    body > header > a {
-        -webkit-box-flex: 0.5;
-        -moz-box-flex: 0.5;
-        -webkit-flex-grow: 0.5;
-        flex-grow: 0.5;
-        font-size: 4em;
-    }
-    body > header > nav > a:hover {
-        -webkit-box-flex: 20;
-        -moz-box-flex: 20;
-        -webkit-flex-grow: 20;
-        flex-grow: 20;
-    }
-}
 @media (max-width: 750px) {
-    body > header {
-        -webkit-box-orient: vertical;
-        -moz-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-    }
-    body > header > a {
-        padding: var(--spacing-sm) var(--spacing-md);
-        -webkit-box-pack: start;
-        -moz-box-pack: start;
-        -webkit-justify-content: flex-start;
-        justify-content: flex-start;
-        font-size: 3em;
-    }
-    body > header > nav {
-        min-height: unset;
-        border-top: 2px solid #000;
-        -webkit-box-orient: horizontal;
-        -moz-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        -webkit-flex-flow: wrap;
-        flex-flow: wrap;
-    }
-    body > header > nav > a {
-        width: auto;
-        padding: var(--spacing-sm) var(--spacing-md);
-        border: none;
-        -webkit-box-flex: 1;
-        -moz-box-flex: 1;
-        -webkit-flex-grow: 1;
-        flex-grow: 1;
-        font-size: 1.1em;
-    }
-    body > header > nav > a:hover {
-        -webkit-box-flex: 1;
-        -moz-box-flex: 1;
-        -webkit-flex-grow: 1;
-        flex-grow: 1;
-        text-decoration: underline #000;
-        text-decoration-thickness: 3px;
-    }
-    body > header > nav > a:active {
-        -webkit-box-flex: 1;
-        -moz-box-flex: 1;
-        -webkit-flex-grow: 1;
-        flex-grow: 1;
-        text-decoration: underline #000;
-        text-decoration-thickness: 3px;
-    }
-    body > header > nav > a > div > span {
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        -ms-transform: rotate(0);
-        transform: rotate(0);
-    }
     body > header > nav > a:hover > div > span {
         -webkit-transform: rotate(0);
         -moz-transform: rotate(0);
@@ -417,14 +431,59 @@ body > header > nav > a.active {
         transform: rotate(0);
     }
 }
+body > header > nav > a.active {
+    -webkit-box-flex: 8;
+    -moz-box-flex: 8;
+    -webkit-flex-grow: 8;
+    flex-grow: 8;
+    text-decoration: underline #000;
+    text-decoration-thickness: 5px;
+}
+body > header > nav > a.active > div > span {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+@media (min-width: 751px) and (max-width: 1300px) {
+    body > header > nav > a.active {
+        -webkit-box-flex: 10;
+        -moz-box-flex: 10;
+        -webkit-flex-grow: 10;
+        flex-grow: 10;
+    }
+}
+@media (max-width: 750px) {
+    body > header > nav > a.active {
+        -webkit-box-flex: 0;
+        -moz-box-flex: 0;
+        -webkit-flex-grow: 0;
+        flex-grow: 0;
+        text-decoration: underline #000;
+        text-decoration-thickness: 3px;
+    }
+}
 body > main {
-    padding: var(--spacing-xl) var(--spacing-2xl);
     max-width: 800px;
+    padding: var(--spacing-xl) var(--spacing-2xl);
+}
+@media (max-width: 750px) {
+    body > main {
+        padding: var(--spacing-lg);
+    }
 }
 body > main h1:first-child {
     margin-block: 0 var(--spacing-lg);
     text-transform: uppercase;
     font-size: 3em;
+}
+body > main > article > hgroup:has(> :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)) > h1:first-child {
+    margin-bottom: var(--spacing-2xs);
+}
+body > main > article > hgroup:has(> :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)) > p {
+    margin-block: 0 var(--spacing-lg);
+    font-size: 1.25em;
+    font-weight: 700;
 }
 body > main > hgroup:has(> :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)) > h1:first-child {
     margin-bottom: var(--spacing-2xs);
@@ -437,6 +496,11 @@ body > main > hgroup:has(> :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)) > p
 body > footer {
     padding: var(--spacing-xl) var(--spacing-2xl);
     border-top: 2px solid #000;
+}
+@media (max-width: 750px) {
+    body > footer {
+        padding: var(--spacing-lg);
+    }
 }
 body > footer > p {
     margin-block: var(--spacing-sm);
@@ -469,9 +533,6 @@ samp {
         Lucida Console,
         monospace;
 }
-body > main > article > hgroup > p > time {
-    color: var(--lightningcss-light, var(--oc-gray-6)) var(--lightningcss-dark, var(--oc-gray-5));
-}
 body > main > div {
     column-count: 2;
     column-gap: var(--spacing-lg);
@@ -490,95 +551,13 @@ body > main > div > section > h2 {
 }
 body > main > div {
     min-width: 0;
+    overflow-x: auto;
 }
 body > main > div > pre {
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;
-    font-size: 0.75em;
+    font-size: max(0.4rem, min(3.125vw - 0.078125rem, 0.75rem));
     line-height: 1;
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzI5SSPQuCQF3t8uOwiUL-taUTtap9DcSQBg_nT9FQY6oLoDMhq.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: italic;
-    font-weight: 500;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzI5SSPQuCQF3t8uOwiUL-taUTtap9DcSQBg_nT9FQY6oLaDMhq.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: italic;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzI5SSPQuCQF3t8uOwiUL-taUTtap9DcSQBg_nT9FQY6oI2C8hq.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: italic;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzI5SSPQuCQF3t8uOwiUL-taUTtap9DcSQBg_nT9FQY6oIPC8hq.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: italic;
-    font-weight: 800;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzI5SSPQuCQF3t8uOwiUL-taUTtap9DcSQBg_nT9FQY6oJoC8hq.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: italic;
-    font-weight: 900;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzI5SSPQuCQF3t8uOwiUL-taUTtap9DcSQBg_nT9FQY6oJBC8hq.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzK5SSPQuCQF3t8uOwiUL-taUTtarVKQ9vZ6pJJWlMNIsEATw.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzK5SSPQuCQF3t8uOwiUL-taUTtarVKQ9vZ6pJJWlMNEMEATw.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzK5SSPQuCQF3t8uOwiUL-taUTtarVKQ9vZ6pJJWlMN_MYATw.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzK5SSPQuCQF3t8uOwiUL-taUTtarVKQ9vZ6pJJWlMNxcYATw.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: normal;
-    font-weight: 800;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzK5SSPQuCQF3t8uOwiUL-taUTtarVKQ9vZ6pJJWlMNosYATw.ttf) format("truetype");
-}
-@font-face {
-    font-family: Schibsted Grotesk;
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/JqzK5SSPQuCQF3t8uOwiUL-taUTtarVKQ9vZ6pJJWlMNi8YATw.ttf) format("truetype");
+    text-decoration: none !important;
 }
