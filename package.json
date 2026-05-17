@@ -1,0 +1,16 @@
+{
+  "name": "archive-gijs6-screenshot",
+  "version": "1.0.0",
+  "description": "Screenshot utility for archive.gijs6.nl",
+  "type": "module",
+  "scripts": {
+    "screenshot": "node scripts/screenshot.js"
+  },
+  "dependencies": {
+    "@prettier/plugin-xml": "^3.4.2",
+    "puppeteer": "^23.0.0"
+  },
+  "devDependencies": {
+    "lightningcss-cli": "^1.29.3"
+  }
+}

@@ -12,3 +12,44 @@ deploy() {
   format
   lift deploy
 }
+
+scrape() {
+  python scripts/scrape.py "$@"
+}
+
+fix_paths() {
+  python scripts/fix_paths.py "$@"
+}
+
+screenshot() {
+  node scripts/screenshot.js "$@"
+}
+
+# Example: bake archive https://gijs6.nl v4
+archive() {
+  local url=$1
+  local version=$2
+
+  if [[ -z "$url" || -z "$version" ]]; then
+    echo "Usage: bake archive <url> <version>"
+    return 1
+  fi
+
+  local domain
+  domain=$(python3 -c "from urllib.parse import urlparse; print(urlparse('$url').netloc)")
+
+  echo "==> Scraping $url..."
+  python scripts/scrape.py "$url" --delay 0.1
+
+  echo "==> Copying to site/versions/$version/..."
+  mkdir -p "site/versions/$version"
+  cp -r "downloaded-site/$domain/." "site/versions/$version/"
+
+  echo "==> Fixing paths for $version..."
+  python scripts/fix_paths.py "$version"
+
+  echo "==> Taking screenshot..."
+  node scripts/screenshot.js "$url" "site/$version.png"
+
+  echo "==> Done! Don't forget to add the new version to site/index.html"
+}
