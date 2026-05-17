@@ -138,9 +138,23 @@ textarea:not([rows]) {
 :root {
     --lightningcss-light: initial;
     --lightningcss-dark: ;
-    color-scheme: light;
+    color-scheme: light dark;
+    --color-fg: black;
+    --color-bg: white;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --lightningcss-light: ;
+        --lightningcss-dark: initial;
+    }
+    :root {
+        --color-fg: white;
+        --color-bg: black;
+    }
 }
 body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
     font-family:
         Schibsted Grotesk,
         Inter,
@@ -152,8 +166,8 @@ body {
     line-height: 1.4;
 }
 body > header {
+    border-bottom: 2px solid var(--color-fg);
     text-transform: uppercase;
-    border-bottom: 2px solid #000;
     -webkit-box-orient: horizontal;
     -moz-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -176,7 +190,7 @@ body > header {
     }
 }
 body > header > a {
-    color: #000;
+    color: var(--color-fg);
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -226,6 +240,13 @@ body > header > a:hover {
     flex-grow: 2;
 }
 body > header > a > span {
+    display: inline-block;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+body > header > a:hover > span {
     -webkit-transition:
         -webkit-transform 0.5s,
         -moz-transform 0.5s,
@@ -241,13 +262,6 @@ body > header > a > span {
         -moz-transform 0.5s,
         -ms-transform 0.5s,
         transform 0.5s;
-    display: inline-block;
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
-}
-body > header > a:hover > span {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -277,8 +291,8 @@ body > header > nav {
     body > header > nav {
         min-height: unset;
         gap: var(--spacing-sm) var(--spacing-md);
+        border-top: 2px solid var(--color-fg);
         padding: var(--spacing-lg);
-        border-top: 2px solid #000;
         -webkit-box-orient: horizontal;
         -moz-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -302,9 +316,9 @@ body > header > nav:has(> a:hover:not(.active)) > a.active > div > span {
 body > header > nav > a {
     width: 0.75em;
     padding: var(--spacing-3xs);
-    color: #000;
+    border-left: 2px solid var(--color-fg);
+    color: var(--color-fg);
     text-underline-offset: 3px;
-    border-left: 2px solid #000;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -409,12 +423,11 @@ body > header > nav > a:hover {
 }
 @media (max-width: 750px) {
     body > header > nav > a:hover {
+        text-decoration: underline 3px solid var(--color-fg);
         -webkit-box-flex: 0;
         -moz-box-flex: 0;
         -webkit-flex-grow: 0;
         flex-grow: 0;
-        text-decoration: underline #000;
-        text-decoration-thickness: 3px;
     }
 }
 body > header > nav > a:hover > div > span {
@@ -432,12 +445,11 @@ body > header > nav > a:hover > div > span {
     }
 }
 body > header > nav > a.active {
+    text-decoration: underline 5px solid var(--color-fg);
     -webkit-box-flex: 8;
     -moz-box-flex: 8;
     -webkit-flex-grow: 8;
     flex-grow: 8;
-    text-decoration: underline #000;
-    text-decoration-thickness: 5px;
 }
 body > header > nav > a.active > div > span {
     -webkit-transform: rotate(0);
@@ -455,12 +467,11 @@ body > header > nav > a.active > div > span {
 }
 @media (max-width: 750px) {
     body > header > nav > a.active {
+        text-decoration: underline 3px solid var(--color-fg);
         -webkit-box-flex: 0;
         -moz-box-flex: 0;
         -webkit-flex-grow: 0;
         flex-grow: 0;
-        text-decoration: underline #000;
-        text-decoration-thickness: 3px;
     }
 }
 body > main {
@@ -495,7 +506,7 @@ body > main > hgroup:has(> :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)) > p
 }
 body > footer {
     padding: var(--spacing-xl) var(--spacing-2xl);
-    border-top: 2px solid #000;
+    border-top: 2px solid var(--color-fg);
 }
 @media (max-width: 750px) {
     body > footer {
