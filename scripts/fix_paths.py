@@ -91,50 +91,19 @@ def find_html_files(directory):
                 html_files.append(os.path.join(root, filename))
     return html_files
 
-def list_available_versions(versions_dir):
-    versions = []
-    if os.path.exists(versions_dir):
-        for item in os.listdir(versions_dir):
-            item_path = os.path.join(versions_dir, item)
-            if os.path.isdir(item_path):
-                versions.append(item)
-    return sorted(versions)
-
 def main():
-    parser = argparse.ArgumentParser(
-        description='Fix relative paths in versioned HTML files',
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  %(prog)s v4
-  %(prog)s v4 --versions-dir site/versions
-        """
-    )
-    parser.add_argument('version', nargs='?', help='Version name to process (e.g. v4)')
+    parser = argparse.ArgumentParser(description='Fix relative paths in versioned HTML files')
+    parser.add_argument('version', help='Version name to process (e.g. v4)')
     parser.add_argument('--versions-dir', default='site/versions',
                         help='Directory containing version subdirectories (default: site/versions)')
 
     args = parser.parse_args()
     versions_dir = args.versions_dir
+    version_name = args.version
 
     if not os.path.exists(versions_dir):
         print("Error: {} does not exist".format(versions_dir))
         sys.exit(1)
-
-    if args.version:
-        version_name = args.version
-    else:
-        available_versions = list_available_versions(versions_dir)
-
-        if not available_versions:
-            print("Error: No version directories found in {}".format(versions_dir))
-            sys.exit(1)
-
-        print("Available versions:")
-        for version in available_versions:
-            print("  - {}".format(version))
-
-        version_name = input("\nEnter version name to process: ").strip()
 
     version_dir = os.path.join(versions_dir, version_name)
 

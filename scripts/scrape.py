@@ -7,13 +7,8 @@ from urllib.parse import urljoin, urlparse, urlunparse
 from typing import Set
 import time
 
-try:
-    import requests
-    from bs4 import BeautifulSoup
-except ImportError:
-    print("Error: Required packages not installed")
-    print("Install with: pip install requests beautifulsoup4")
-    sys.exit(1)
+import requests
+from bs4 import BeautifulSoup
 
 
 class SimpleScraper:
@@ -261,16 +256,7 @@ class SimpleScraper:
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description='Recursively scrape a static website',
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  %(prog)s https://example.com
-  %(prog)s https://example.com --output ./my-site
-  %(prog)s https://example.com --depth 5 --delay 1.0
-        """
-    )
+    parser = argparse.ArgumentParser(description='Recursively scrape a static website')
 
     parser.add_argument('url', help='URL to scrape')
     parser.add_argument('-o', '--output', default='./downloaded-site',

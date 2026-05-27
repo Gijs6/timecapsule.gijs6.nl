@@ -5,24 +5,9 @@ import path from 'path';
 
 const args = process.argv.slice(2);
 
-if (args.length === 0 || args.includes('--help') || args.includes('-h')) {
-  console.log('Usage: node screenshot.js <url> [output-file] [options]');
-  console.log('');
-  console.log('Arguments:');
-  console.log('  url           The URL to screenshot (required)');
-  console.log('  output-file   Output filename (default: screenshot.png)');
-  console.log('');
-  console.log('Options:');
-  console.log('  --fullPage    Capture full page screenshot');
-  console.log('  --width=N     Viewport width (default: 1920)');
-  console.log('  --height=N    Viewport height (default: 1080)');
-  console.log('  --delay=N     Wait N milliseconds before screenshot (default: 0)');
-  console.log('');
-  console.log('Examples:');
-  console.log('  node screenshot.js https://example.com');
-  console.log('  node screenshot.js https://example.com output.png --fullPage');
-  console.log('  node screenshot.js https://example.com screenshot.png --width=1280 --height=720');
-  process.exit(args.length === 0 ? 1 : 0);
+if (args.length === 0) {
+  console.error('Usage: node screenshot.js <url> [output-file] [--fullPage] [--width=N] [--height=N] [--delay=N]');
+  process.exit(1);
 }
 
 const url = args[0];
