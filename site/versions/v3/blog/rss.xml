@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 May 2026 08:47:12 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 07:40:50 +0000</lastBuildDate>
     <item>
       <title>Introduction</title>
       <link>https://gijs6.nl/blog/introduction</link>
@@ -22,7 +22,7 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
 &lt;li&gt;&lt;a href="https://doi.org/10.1093/OED/3789439763"&gt;&lt;em&gt;Blog&lt;/em&gt; in the Oxford English Dictionary&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
       <guid isPermaLink="false">https://gijs6.nl/blog/introduction</guid>
-      <pubDate>Sun, 06 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 06 Apr 2025 22:26:01 +0200</pubDate>
     </item>
     <item>
       <title>The Dutch Government is ruining its election system</title>
@@ -38,15 +38,7 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
 &lt;li&gt;&lt;a href="https://www.rug.nl/fse/news/digital-society/20250401-electoralplansnsc"&gt;&lt;em&gt;NSC's electoral reform plan may have unwanted consequences&lt;/em&gt; - University of Groningen&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</description>
       <guid isPermaLink="false">https://gijs6.nl/blog/ruining-an-election-system</guid>
-      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Goodbye Google Docs; hello Markdown</title>
-      <link>https://gijs6.nl/blog/goodbye-google-docs</link>
-      <description>&lt;p&gt;This year, I switched my summaries from Google Docs to &lt;a href="https://school.gijs6.nl"&gt;a simple static site&lt;/a&gt; with Markdown files hosted with Jekyll on GitHub Pages. I was really fed up with the limited features of Google Docs and just the hassle with sharing the docs, so when I saw that my friend Robin had &lt;a href="https://school.geheimesite.nl"&gt;his own site with his own summaries&lt;/a&gt;, I made the switch. And it works amazingly, even though the Jekyll documentation is so bad, and I needed to make some extra Python scripts to get all the functionality that I wanted. Maybe I'll make &lt;a href="https://github.com/Gijs6/Barium"&gt;my own static site generator&lt;/a&gt; sometime ;).&lt;/p&gt;
-&lt;p&gt;I think my little switch to Markdown fits the bigger picture of the decisions that I and many others have made in the last few years surrounding the internet and just technology in general. People are kind of done with big tech just being so incredibly powerful, and I am too. We depend on the technology of these companies every single day; never in the history of mankind have so few companies been so powerful.&lt;/p&gt;</description>
-      <guid isPermaLink="false">https://gijs6.nl/blog/goodbye-google-docs</guid>
-      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 08 Apr 2025 22:03:31 +0200</pubDate>
     </item>
     <item>
       <title>Education was bad; AI made it worse</title>
@@ -59,7 +51,7 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
 &lt;p&gt;And AI has removed all room to be curious (there wasn't much room before anyway). My school thinks that if you allow people to be curious, you allow them to use AI.&lt;/p&gt;
 &lt;p&gt;The endless amount of boring, tedious, and repetitive assignments make people forget that school can be fun. So for almost everyone, learning is not an interesting experience; it's a chore, so it's no wonder they would rather let AI do it.&lt;/p&gt;</description>
       <guid isPermaLink="false">https://gijs6.nl/blog/ai-made-education-worse</guid>
-      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 13 May 2025 14:18:36 +0200</pubDate>
     </item>
     <item>
       <title>What is art?</title>
@@ -81,7 +73,134 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
 &lt;p&gt;Art forces us to confront the fundamentals of being human. Why do we feel the need to create? Why do some patterns of sound or color move us to tears, while others don't affect us at all? Why do we desperately want to share our inner experiences with others, even though we can never truly know if they understand?&lt;/p&gt;
 &lt;p&gt;These questions don't have answers, and that's exactly what makes them worth asking.&lt;/p&gt;</description>
       <guid isPermaLink="false">https://gijs6.nl/blog/what-is-art</guid>
-      <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 25 Aug 2025 22:17:10 +0200</pubDate>
+    </item>
+    <item>
+      <title>Internalized compliance</title>
+      <link>https://gijs6.nl/blog/internalized-compliance</link>
+      <description>&lt;p&gt;As a student, you get so used to the idea that things just happen to you. Decisions get made somewhere above your head, and your role is basically just to read the email (and sigh a little) and move on. And I pretty much stopped considering that there could be another option.&lt;/p&gt;
+&lt;p&gt;So being on a committee with teachers has been really weird in a good way. I keep having these moments where someone proposes something and my first instinct is still just "okay, guess that's decided then", but then someone else actually questions it. Or I question it. And instead of getting shut down immediately, there's an actual discussion. The big boss people listen. And things change.&lt;/p&gt;
+&lt;p&gt;It's strange realizing that I don't have to just passively absorb every decision that comes down from above. We can push back a little. We can say, no, we'd rather handle it this way instead.&lt;/p&gt;
+&lt;p&gt;I didn't realize how deeply I internalized the idea that students are mostly there to comply until I was suddenly in a position where my opinion was expected rather than merely tolerated.&lt;/p&gt;
+&lt;p&gt;We should definitely listen to students more.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://gijs6.nl/blog/internalized-compliance</guid>
+      <pubDate>Fri, 22 May 2026 15:03:57 +0200</pubDate>
+    </item>
+    <item>
+      <title>The new Dutch exam design is worse</title>
+      <link>https://gijs6.nl/blog/exam-design</link>
+      <description>&lt;style&gt;
+    figure {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+        margin: 0;
+        justify-content: space-between
+    }
+
+    figure img {
+        max-width: 340px;
+        width: 100%;
+        flex: 1 1 260px
+    }
+
+    figure:has(img:only-child) img {
+        max-width: 100%
+    }
+
+    figcaption {
+        flex-basis: 100%;
+        font-style: italic
+    }
+&lt;/style&gt;
+
+&lt;p&gt;The Dutch national exams are getting redesigned. The Board for Tests and Examinations (&lt;abbr title="College voor Toetsen en Examens" lang="nl"&gt;CvTE&lt;/abbr&gt;) has been running pilots since &lt;time datetime="2025"&gt;2025&lt;/time&gt;, starting with the Spanish exam for &lt;abbr title="hoger algemeen voortgezet onderwijs" lang="nl"&gt;havo&lt;/abbr&gt;. This year even more exams use the new layout, including the English exam for &lt;abbr title="voorbereidend wetenschappelijk onderwijs" lang="nl"&gt;vwo&lt;/abbr&gt;, which I took this year.&lt;/p&gt;
+&lt;p&gt;The current design has been around since &lt;time datetime="2007"&gt;2007&lt;/time&gt;, so a refresh makes sense. The &lt;span lang="nl"&gt;CvTE&lt;/span&gt; says the main driver is new accessibility regulations. But having taken the new exam myself, I don't think it's an improvement at all.&lt;/p&gt;
+&lt;p&gt;For those unfamiliar with Dutch national exams: the design is pretty plain. No fancy shapes, just black 11pt Arial with sometimes some gray borders. You can see the &lt;a href="https://www.examenblad.nl/2025/vwo/vakken/talen/engels-vwo" hreflang="nl"&gt;&lt;time datetime="2025"&gt;2025&lt;/time&gt; English &lt;span lang="nl"&gt;vwo&lt;/span&gt; exam&lt;/a&gt; for reference.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src="https://cdn.gijs6.nl/blog/exam-design/25-01.png" alt="Cover of the 2025 vwo English exam."&gt;
+    &lt;img src="https://cdn.gijs6.nl/blog/exam-design/25-02.png" alt="First questions page of the 2025 exam."&gt;
+    &lt;figcaption&gt;The &lt;time datetime="2025"&gt;2025&lt;/time&gt; design: cover and first questions page&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Honestly, this design is fine. There's room for improvement (the line-height is a bit tight, and the cover is not always clear), but it does its job. Everything that needs to be communicated is communicated, clearly and without any distractions.&lt;/p&gt;
+&lt;p&gt;That's what exam design should do. The goal isn't to look good or feel modern; it's to get information across as clearly as possible to as many candidates as possible. &lt;strong&gt;A good exam design goes completely unnoticed.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So when you compare the old design to the &lt;a href="https://www.examenblad.nl/2026/vwo/vakken/talen/engels-vwo" hreflang="nl"&gt;new one&lt;/a&gt;, the problems become obvious pretty quickly.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src="https://cdn.gijs6.nl/blog/exam-design/26-01.png" alt="Cover of the 2026 vwo English exam."&gt;
+    &lt;img src="https://cdn.gijs6.nl/blog/exam-design/26-02.png" alt="First questions page of the 2026 exam."&gt;
+    &lt;figcaption&gt;The &lt;time datetime="2026"&gt;2026&lt;/time&gt; design: cover and first questions page&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The new design is full of visual clutter. There are decorative diagonal shapes on the cover, text with weird borders snaking around it, icons, text blocks with gray backgrounds, gray text all over the place, and the word &lt;span lang="nl"&gt;"Vraag"&lt;/span&gt; printed in front of every single question number. None of this adds information. It just adds noise, which is exactly what you don't want when someone is trying to concentrate.&lt;/p&gt;
+&lt;p&gt;The accessibility argument is also hard to take seriously when you look at the gray background blocks they've introduced. Those blocks actually have worse contrast than anything in the old design. For some of the blocks, contrast ratio is around 6.89:1, which actually &lt;strong&gt;fails&lt;/strong&gt; &lt;abbr title="Web Content Accessibility Guidelines"&gt;WCAG&lt;/abbr&gt; AAA. The old design, boring as it was, had black text on white paper.&lt;/p&gt;
+&lt;p&gt;Then there's the bold text problem. In the new design, all questions are printed in bold. The idea is probably to make the questions stand out from the text surrounding them. But questions sometimes need emphasis within them too, and the way the &lt;span lang="nl"&gt;CvTE&lt;/span&gt; solved that was to make that text &lt;em&gt;even bolder&lt;/em&gt;. In practice, the difference is almost invisible. My English teacher pointed this out to me after the exam; I hadn't noticed it while actually sitting the test (which is exactly the problem).&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src="https://cdn.gijs6.nl/blog/exam-design/26-03.png" alt="Close-up of question 8 from the 2026 exam."&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;And then there's the points. In the old design, the number of points for each question was shown before the question number, so you could easily look at a page and immediately get a sense of how the points were across questions. In the new design, the points are in parentheses after the question. Scanning a page to plan your time is now noticeably harder.&lt;/p&gt;
+&lt;p&gt;What frustrates me most is the irony of it all. The &lt;span lang="nl"&gt;CvTE&lt;/span&gt; redesigned these exams specifically for accessibility reasons, and in doing so introduced contrast failures, bad visible emphasis, and a more cluttered layout. The old design wasn't exciting, but it was legible. That used to be enough.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://gijs6.nl/blog/exam-design</guid>
+      <pubDate>Sun, 24 May 2026 00:39:42 +0200</pubDate>
+    </item>
+    <item>
+      <title>My proposal for the Dutch national exam design</title>
+      <link>https://gijs6.nl/blog/new-exam-design</link>
+      <description>&lt;style&gt;
+    figure {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+        margin: 0;
+        justify-content: space-between
+    }
+
+    figure img {
+        max-width: 340px;
+        width: 100%;
+        flex: 1 1 260px
+    }
+
+    figure:has(img:only-child) img {
+        max-width: 100%
+    }
+
+    figcaption {
+        flex-basis: 100%;
+        font-style: italic
+    }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;em&gt;This is a follow-up to &lt;a href="exam-design"&gt;my post about the new Dutch exam design&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Instead of just complaining, I decided to design something better. My proposal borrows heavily from the old design, because I still think the 2025 layout gets most things right. But it also fixes a few things that were already slightly off before the &lt;span lang="nl"&gt;CvTE&lt;/span&gt; made them worse.&lt;/p&gt;
+&lt;h2&gt;The cover&lt;/h2&gt;
+&lt;p&gt;The cover has a lot to communicate: the subject, the school level, the year, the &lt;span lang="nl"&gt;tijdvak&lt;/span&gt; (which sitting of the exam it is, because there are multiple each year), the date and time, and which document you're holding. For the exercise booklet specifically, it also shows the number of questions and the maximum score.&lt;/p&gt;
+&lt;p&gt;Not all of that is equally important. When you pick up the booklet, the first thing you need to know is &lt;em&gt;what you are holding&lt;/em&gt;. Subject, year, and document type need to be immediately obvious. Date and time matter much less. So in my design, those three key pieces are the largest and boldest, and everything secondary is smaller and quieter.&lt;/p&gt;
+&lt;p&gt;I also removed the code in the bottom-left corner that appears current exams. That code is for administrative use and no student has ever needed it. I replaced it with something actually useful: a clear description of the document and exam.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src="https://cdn.gijs6.nl/blog/new-exam-design/o1.png" alt="Cover of the proposed exercise booklet design."&gt;
+    &lt;img src="https://cdn.gijs6.nl/blog/new-exam-design/t1.png" alt="Cover of the proposed texts booklet design."&gt;
+    &lt;figcaption&gt;The proposed covers: exercise booklet (left) and texts booklet (right)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2&gt;The rest of the exam&lt;/h2&gt;
+&lt;p&gt;The body of the exam stays close to the old design. Black text on a white background, no decorative shapes, no gray boxes, no icons. This isn't a stylistic preference, it's just the simplest and least distracting, which is what you want when you're asking people to read for up to 3 hours.&lt;/p&gt;
+&lt;p&gt;I dropped the word &lt;span lang="nl"&gt;"Vraag"&lt;/span&gt; before every question number, because it adds no information. Everyone already knows what a question number is (and if you don't, you probably should not be making your exams).&lt;/p&gt;
+&lt;p&gt;Point values are back in front of the question number, where they were in the old design. That makes it easy to scan down a page and understand how points are distributed at a glance. Small thing, but it matters when you're planning your time.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src="https://cdn.gijs6.nl/blog/new-exam-design/o2.png" alt="A questions page from the proposed exercise booklet design."&gt;
+    &lt;img src="https://cdn.gijs6.nl/blog/new-exam-design/t2.png" alt="A text page from the proposed texts booklet design."&gt;
+    &lt;img src="https://cdn.gijs6.nl/blog/new-exam-design/t3.png" alt="Another text page from the proposed texts booklet design."&gt;
+    &lt;figcaption&gt;Questions page and text pages&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The old design wasn't exciting, but it was clear. Most of the problems with the new &lt;span lang="nl"&gt;CvTE&lt;/span&gt; design come from optimizing for the wrong thing: making the exam look more modern rather than making it easier to use. If you walked out of the exam hall thinking about question 3 and not the awful booklet, the design has done its job.&lt;/p&gt;
+&lt;p&gt;You can view the full design as a PDF: &lt;a href="https://cdn.gijs6.nl/blog/new-exam-design/o.pdf"&gt;exercise booklet&lt;/a&gt; and &lt;a href="https://cdn.gijs6.nl/blog/new-exam-design/t.pdf"&gt;texts booklet&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid isPermaLink="false">https://gijs6.nl/blog/new-exam-design</guid>
+      <pubDate>Sun, 24 May 2026 19:04:27 +0200</pubDate>
     </item>
   </channel>
 </rss>

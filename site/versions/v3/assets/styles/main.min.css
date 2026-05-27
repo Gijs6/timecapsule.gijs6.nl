@@ -233,11 +233,13 @@ body > header > a {
         font-size: 4em;
     }
 }
-body > header > a:hover {
-    -webkit-box-flex: 2;
-    -moz-box-flex: 2;
-    -webkit-flex-grow: 2;
-    flex-grow: 2;
+@media (min-width: 751px) {
+    body > header > a:hover {
+        -webkit-box-flex: 2;
+        -moz-box-flex: 2;
+        -webkit-flex-grow: 2;
+        flex-grow: 2;
+    }
 }
 body > header > a > span {
     display: inline-block;
@@ -301,17 +303,19 @@ body > header > nav {
         flex-flow: wrap;
     }
 }
-body > header > nav:has(> a:hover:not(.active)) > a.active {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
-}
-body > header > nav:has(> a:hover:not(.active)) > a.active > div > span {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+@media (min-width: 751px) {
+    body > header > nav:has(> a:hover:not(.active)) > a.active {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+    }
+    body > header > nav:has(> a:hover:not(.active)) > a.active > div > span {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
 }
 body > header > nav > a {
     width: 0.75em;
@@ -379,39 +383,43 @@ body > header > nav > a > div {
 }
 body > header > nav > a > div > span {
     white-space: nowrap;
-    -webkit-transition:
-        -webkit-transform 0.5s,
-        -moz-transform 0.5s,
-        -ms-transform 0.5s,
-        transform 0.5s;
-    -moz-transition:
-        -webkit-transform 0.5s,
-        -moz-transform 0.5s,
-        -ms-transform 0.5s,
-        transform 0.5s;
-    transition:
-        -webkit-transform 0.5s,
-        -moz-transform 0.5s,
-        -ms-transform 0.5s,
-        transform 0.5s;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
 }
-@media (max-width: 750px) {
+@media (min-width: 751px) {
     body > header > nav > a > div > span {
+        -webkit-transition:
+            -webkit-transform 0.5s,
+            -moz-transform 0.5s,
+            -ms-transform 0.5s,
+            transform 0.5s;
+        -moz-transition:
+            -webkit-transform 0.5s,
+            -moz-transform 0.5s,
+            -ms-transform 0.5s,
+            transform 0.5s;
+        transition:
+            -webkit-transform 0.5s,
+            -moz-transform 0.5s,
+            -ms-transform 0.5s,
+            transform 0.5s;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@media (min-width: 751px) {
+    body > header > nav > a:hover {
+        -webkit-box-flex: 8;
+        -moz-box-flex: 8;
+        -webkit-flex-grow: 8;
+        flex-grow: 8;
+    }
+    body > header > nav > a:hover > div > span {
         -webkit-transform: rotate(0);
         -moz-transform: rotate(0);
         -ms-transform: rotate(0);
         transform: rotate(0);
     }
-}
-body > header > nav > a:hover {
-    -webkit-box-flex: 8;
-    -moz-box-flex: 8;
-    -webkit-flex-grow: 8;
-    flex-grow: 8;
 }
 @media (min-width: 751px) and (max-width: 1300px) {
     body > header > nav > a:hover {
@@ -424,24 +432,6 @@ body > header > nav > a:hover {
 @media (max-width: 750px) {
     body > header > nav > a:hover {
         text-decoration: underline 3px solid var(--color-fg);
-        -webkit-box-flex: 0;
-        -moz-box-flex: 0;
-        -webkit-flex-grow: 0;
-        flex-grow: 0;
-    }
-}
-body > header > nav > a:hover > div > span {
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
-}
-@media (max-width: 750px) {
-    body > header > nav > a:hover > div > span {
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        -ms-transform: rotate(0);
-        transform: rotate(0);
     }
 }
 body > header > nav > a.active {
@@ -451,11 +441,13 @@ body > header > nav > a.active {
     -webkit-flex-grow: 8;
     flex-grow: 8;
 }
-body > header > nav > a.active > div > span {
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    -ms-transform: rotate(0);
-    transform: rotate(0);
+@media (min-width: 751px) {
+    body > header > nav > a.active > div > span {
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
 }
 @media (min-width: 751px) and (max-width: 1300px) {
     body > header > nav > a.active {
@@ -482,6 +474,9 @@ body > main {
     body > main {
         padding: var(--spacing-lg);
     }
+}
+body > main > ol {
+    list-style-type: disc;
 }
 body > main h1:first-child {
     margin-block: 0 var(--spacing-lg);
@@ -525,7 +520,28 @@ body > footer > p:last-child {
 body > footer > p > a {
     text-decoration-thickness: 1px;
 }
+body > footer > p > small > a {
+    text-decoration-thickness: 1px;
+}
 body > footer > p > time {
+    font-weight: 700;
+}
+body > footer > address {
+    margin-block: var(--spacing-sm);
+}
+body > footer > address:first-child {
+    margin-top: 0;
+}
+body > footer > address:last-child {
+    margin-bottom: 0;
+}
+body > footer > address > a {
+    text-decoration-thickness: 1px;
+}
+body > footer > address > small > a {
+    text-decoration-thickness: 1px;
+}
+body > footer > address > time {
     font-weight: 700;
 }
 a {
@@ -560,11 +576,11 @@ body > main > div > section {
 body > main > div > section > h2 {
     margin-block: 0 var(--spacing-sm);
 }
-body > main > div {
+body > main > figure {
     min-width: 0;
     overflow-x: auto;
 }
-body > main > div > pre {
+body > main > figure > pre {
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content;
