@@ -1,142 +1,90 @@
 #!/usr/bin/env python3
 
 import argparse
+import glob
 import os
 import re
 import sys
 
-def convert_query_to_filename(path, query):
-    if path.startswith('/'):
-        path = path[1:]
 
-    if not path:
-        path = 'index'
+def convert_query_to_filename(path, query):
+    path = path.lstrip("/") or "index"
+    base, ext = os.path.splitext(path)
 
     if query:
-        query_part = query.replace('=', '_').replace('&', '_')
-        base, ext = os.path.splitext(path)
-        if ext:
-            return "{}_{}.html".format(base, query_part)
-        else:
-            return "{}_{}.html".format(path, query_part)
-    else:
-        if not os.path.splitext(path)[1]:
-            return "{}.html".format(path)
-        return path
+        query_part = query.replace("=", "_").replace("&", "_")
+        return f"{base}_{query_part}.html"
+    elif not ext:
+        return f"{path}.html"
+    return path
+
 
 def fix_html_paths(file_path, version_name):
-    with open(file_path, 'r', encoding='utf-8') as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    original_content = content
-    base_path = "/versions/{}".format(version_name)
+    original = content
+    base_path = f"/versions/{version_name}"
 
-    content = re.sub(
-        r'(href|src)="/static/',
-        r'\1="' + base_path + r'/static/',
-        content
-    )
+    content = re.sub(r'(href|src)="/static/', rf'\1="{base_path}/static/', content)
 
     def replace_query_link(match):
-        prefix = match.group(1)
-        path = match.group(2)
-        query = match.group(3)
+        filename = convert_query_to_filename(match.group(2), match.group(3))
+        return f'{match.group(1)}="{base_path}/{filename}"'
 
-        filename = convert_query_to_filename(path, query)
-        return '{}="{}/{}"'.format(prefix, base_path, filename)
+    content = re.sub(r'(href|src)="(/[^"?]*)\?([^"]+)"', replace_query_link, content)
 
-    content = re.sub(
-        r'(href|src)="(/[^"?]*)\?([^"]+)"',
-        replace_query_link,
-        content
-    )
-
-    current_file = os.path.basename(file_path)
-    current_base = current_file.split('_lang_')[0] if '_lang_' in current_file else current_file.replace('.html', '')
-
-    def replace_relative_query(match):
-        query = match.group(1)
-        filename = convert_query_to_filename(current_base, query)
-        return 'href="{}"'.format(filename)
+    current_base = os.path.basename(file_path).split("_lang_")[0].replace(".html", "")
 
     content = re.sub(
         r'href="\?([^"]+)"',
-        replace_relative_query,
-        content
+        lambda m: f'href="{convert_query_to_filename(current_base, m.group(1))}"',
+        content,
     )
 
+    content = re.sub(r'href="/"(\s|>)', rf'href="{base_path}/index.html"\1', content)
     content = re.sub(
-        r'href="/"(\s|>)',
-        r'href="' + base_path + r'/index.html"\1',
-        content
+        r'href="/(?!versions/)([^"?]+)"', rf'href="{base_path}/\1"', content
     )
 
-    content = re.sub(
-        r'href="/(?!versions/)([^"?]+)"',
-        r'href="' + base_path + r'/\1"',
-        content
-    )
-
-    if content != original_content:
-        with open(file_path, 'w', encoding='utf-8') as f:
+    if content != original:
+        with open(file_path, "w", encoding="utf-8") as f:
             f.write(content)
         return True
     return False
 
-def find_html_files(directory):
-    html_files = []
-    for root, dirs, files in os.walk(directory):
-        for filename in files:
-            if filename.endswith('.html'):
-                html_files.append(os.path.join(root, filename))
-    return html_files
 
 def main():
-    parser = argparse.ArgumentParser(description='Fix relative paths in versioned HTML files')
-    parser.add_argument('version', help='Version name to process (e.g. v4)')
-    parser.add_argument('--versions-dir', default='site/versions',
-                        help='Directory containing version subdirectories (default: site/versions)')
-
+    parser = argparse.ArgumentParser(
+        description="Fix relative paths in versioned HTML files"
+    )
+    parser.add_argument("version", help="Version name to process (e.g. v4)")
+    parser.add_argument("--versions-dir", default="site/versions")
     args = parser.parse_args()
-    versions_dir = args.versions_dir
-    version_name = args.version
 
-    if not os.path.exists(versions_dir):
-        print("Error: {} does not exist".format(versions_dir))
-        sys.exit(1)
-
-    version_dir = os.path.join(versions_dir, version_name)
-
-    if not os.path.exists(version_dir):
-        print("Error: Version directory {} does not exist".format(version_dir))
-        sys.exit(1)
-
+    version_dir = os.path.join(args.versions_dir, args.version)
     if not os.path.isdir(version_dir):
-        print("Error: {} is not a directory".format(version_dir))
+        print(f"Error: {version_dir} does not exist")
         sys.exit(1)
 
-    print("Fixing paths: {}".format(version_name))
-    print("  Versions dir: {}".format(versions_dir))
-    print()
+    print(f"Fixing paths: {args.version}\n")
 
-    html_files = find_html_files(version_dir)
-
+    html_files = glob.glob(os.path.join(version_dir, "**", "*.html"), recursive=True)
     if not html_files:
-        print("No HTML files found in {}".format(version_dir))
+        print(f"No HTML files found in {version_dir}")
         return
 
-    modified_count = 0
+    modified = 0
     for html_file in html_files:
-        rel_path = os.path.relpath(html_file, versions_dir)
-
-        if fix_html_paths(html_file, version_name):
-            print("  [ok] Fixed: {}".format(rel_path))
-            modified_count += 1
+        rel = os.path.relpath(html_file, args.versions_dir)
+        if fix_html_paths(html_file, args.version):
+            print(f"  [ok] Fixed: {rel}")
+            modified += 1
         else:
-            print("  - No changes: {}".format(rel_path))
+            print(f"  - No changes: {rel}")
 
-    print()
-    print("[ok] Done! Modified {}/{} files in {}".format(modified_count, len(html_files), version_name))
+    print(f"\n[ok] Done! Modified {modified}/{len(html_files)} files in {args.version}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
