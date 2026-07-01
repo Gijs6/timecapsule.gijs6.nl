@@ -25,15 +25,15 @@
         <link rel="sitemap" type="application/xml" href="/versions/v3/sitemap.xml" />
         <link rel="security" href="/versions/v3/.well-known/security.txt" />
 
-        <link rel="alternate" type="application/rss+xml" title="Blog - RSS" href="/versions/v3/blog/rss.xml" />
-        <link rel="alternate" type="application/atom+xml" title="Blog - Atom" href="/versions/v3/blog/atom.xml" />
-        <link rel="alternate" type="application/feed+json" title="Blog - JSON" href="/versions/v3/blog/feed.json" />
+        <link rel="alternate" type="application/rss+xml" href="/versions/v3/blog/rss.xml" title="Blog - RSS" />
+        <link rel="alternate" type="application/atom+xml" href="/versions/v3/blog/atom.xml" title="Blog - Atom" />
+        <link rel="alternate" type="application/feed+json" href="/versions/v3/blog/feed.json" title="Blog - JSON" />
     </head>
 
     <body>
         <header>
             <a href="/versions/v3/index.html">Gijs<span>6</span></a>
-            <nav>
+            <nav aria-label="Site">
                 <a href="/versions/v3/index.html">
                     <div>
                         <span>Home</span>
@@ -44,7 +44,7 @@
                         <span>Blog</span>
                     </div>
                 </a>
-                <a href="/versions/v3/projects" class="active" aria-current="page">
+                <a class="active" href="/versions/v3/projects" aria-current="page">
                     <div>
                         <span>Projects</span>
                     </div>
@@ -69,22 +69,44 @@
         <main>
             <hgroup>
                 <h1>Projects</h1>
-                <p>Some of the things I've worked on (the ones I'm not too embarrassed to list)</p>
+                <p>Some of the things I've worked on</p>
             </hgroup>
-            <ul>
-                <li><a href="https://github.com/Gijs6/meliag">Meliag</a> (<a href="https://gitlab.com/ggijs/meliag">GitLab</a>, <a href="https://codeberg.org/Gijs6/meliag">Codeberg</a>): A train info webapp for Dutch train stations (hopefully works better than the actual trains).</li>
-                <li><a href="https://github.com/Gijs6/stapler">Stapler</a> (<a href="https://gitlab.com/ggijs/stapler">GitLab</a>, <a href="https://codeberg.org/Gijs6/stapler">Codeberg</a>): A simple static site generator built with Python and Jinja.</li>
-                <li><a href="https://github.com/Gijs6/gijs6.nl">gijs6.nl</a> (<a href="https://gitlab.com/ggijs/gijs6.nl">GitLab</a>, <a href="https://codeberg.org/Gijs6/gijs6.nl">Codeberg</a>): This very site. I hope you like it. Please like it.</li>
-                <li><a href="https://school.gijs6.nl">school.gijs6.nl</a>: The place where I store all my school summaries.</li>
-                <li><a href="https://github.com/Gijs6/outflow">Outflow</a> (<a href="https://gitlab.com/ggijs/outflow">GitLab</a>, <a href="https://codeberg.org/Gijs6/outflow">Codeberg</a>): A simple and clean weather webapp.</li>
-                <li><a href="https://github.com/Gijs6/huebox">Huebox</a> (<a href="https://gitlab.com/ggijs/huebox">GitLab</a>, <a href="https://codeberg.org/Gijs6/huebox">Codeberg</a>): A simple color palette manager.</li>
-            </ul>
+            <dl>
+                <dt>
+                    <a href="https://github.com/Gijs6/meliag">Meliag</a>
+                </dt>
+                <dd>A train info webapp for Dutch train stations (hopefully works better than the actual trains).</dd>
+                <dt>
+                    <a href="https://github.com/Gijs6/stapler">Stapler</a>
+                </dt>
+                <dd>A simple static site generator built with Python and Jinja.</dd>
+                <dt>
+                    <a href="https://github.com/Gijs6/gijs6.nl">gijs6.nl</a>
+                </dt>
+                <dd>This very site. I hope you like it. Please like it.</dd>
+                <dt>
+                    <a href="https://school.gijs6.nl">school.gijs6.nl</a>
+                </dt>
+                <dd>The place where I store all my school summaries.</dd>
+                <dt>
+                    <a href="https://github.com/Gijs6/outflow">Outflow</a>
+                </dt>
+                <dd>A simple and clean weather webapp.</dd>
+                <dt>
+                    <a href="https://github.com/Gijs6/huebox">Huebox</a>
+                </dt>
+                <dd>A simple color palette manager.</dd>
+                <dt>
+                    <a href="https://gemeentle.gijs6.nl">Gemeentle</a>
+                </dt>
+                <dd>A daily Dutch municipality guessing game. Turns out the Netherlands has a lot of municipalities you've never heard of.</dd>
+            </dl>
             <p>You can find all my projects on my <a href="https://github.com/Gijs6">GitHub profile</a>, <a href="https://gitlab.com/ggijs">GitLab profile</a>, <a href="https://codeberg.org/Gijs6">Codeberg profile</a> or in the <a href="https://git.dupunkto.org">{du}punkto repos</a>.</p>
         </main>
         <footer>
             <address>Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
-            <p>Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/d98a4f68a5bc8d2c92e5bbabbb9fb6066d75a2f0">d98a4f6</a> (<a href="https://gitlab.com/ggijs/gijs6.nl/-/commit/d98a4f68a5bc8d2c92e5bbabbb9fb6066d75a2f0">GitLab</a>, <a href="https://codeberg.org/Gijs6/gijs6.nl">Codeberg</a>), deployed on <time datetime="2026-05-27">May 27, 2026</time> at <time datetime="09:40:49">09:40:49 CEST</time></p>
+            <p>Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/e62e875765fd2da876514d0c2ac2a0ab8617b6c4">e62e875</a>, deployed on <time datetime="2026-06-25T21:09:19.010526+02:00">June 25, 2026 at 21:09:19 CEST</time></p>
         </footer>
     </body>
 </html>

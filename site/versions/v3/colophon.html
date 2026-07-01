@@ -25,15 +25,15 @@
         <link rel="sitemap" type="application/xml" href="/versions/v3/sitemap.xml" />
         <link rel="security" href="/versions/v3/.well-known/security.txt" />
 
-        <link rel="alternate" type="application/rss+xml" title="Blog - RSS" href="/versions/v3/blog/rss.xml" />
-        <link rel="alternate" type="application/atom+xml" title="Blog - Atom" href="/versions/v3/blog/atom.xml" />
-        <link rel="alternate" type="application/feed+json" title="Blog - JSON" href="/versions/v3/blog/feed.json" />
+        <link rel="alternate" type="application/rss+xml" href="/versions/v3/blog/rss.xml" title="Blog - RSS" />
+        <link rel="alternate" type="application/atom+xml" href="/versions/v3/blog/atom.xml" title="Blog - Atom" />
+        <link rel="alternate" type="application/feed+json" href="/versions/v3/blog/feed.json" title="Blog - JSON" />
     </head>
 
     <body>
         <header>
             <a href="/versions/v3/index.html">Gijs<span>6</span></a>
-            <nav>
+            <nav aria-label="Site">
                 <a href="/versions/v3/index.html">
                     <div>
                         <span>Home</span>
@@ -54,7 +54,7 @@
                         <span>Bookmarks</span>
                     </div>
                 </a>
-                <a href="/versions/v3/colophon" class="active" aria-current="page">
+                <a class="active" href="/versions/v3/colophon" aria-current="page">
                     <div>
                         <span>Colophon</span>
                     </div>
@@ -69,7 +69,7 @@
         <main>
             <h1>Colophon</h1>
             <figure>
-                <pre role="img" aria-label="ASCII art logo Gijs6">
+                <pre aria-hidden="true">
                                             6666
                                           666666666
                                          66      666
@@ -88,26 +88,26 @@
                     666                             </pre
                 >
             </figure>
-            <section>
+            <section aria-label="About this site">
                 <h2>About this site</h2>
-                <p>This static site was built with a custom and completely non-messy and well-structured <a href="https://github.com/Gijs6/gijs6.nl/blob/main/engine.py">Python script</a> (<a href="https://gitlab.com/ggijs/gijs6.nl/-/blob/main/engine.py">GitLab</a>, <a href="https://codeberg.org/Gijs6/gijs6.nl/src/branch/main/engine.py">Codeberg</a>) (it's horrendous but it kinda works (sometimes)).</p>
-                <p>And everything I pour into that amazing Python script (commonly known as 'source code') is available on <a href="https://github.com/Gijs6/gijs6.nl">GitHub</a>, <a href="https://gitlab.com/ggijs/gijs6.nl">GitLab</a> and <a href="https://codeberg.org/Gijs6/gijs6.nl">Codeberg</a>.</p>
-                <p>No rights reserved. I really do not give a ___ (fill in your favourite bad word) about what you do with this site (as long as it's within the laws of your jurisdiction. And just be nice, thank you very much). My attempt at being funny here doesn't really hold up in court, of course, so to make this work legally: this work has been <em>dedicated to the public domain</em>, in accordance with the <a href="https://unlicense.org/">Unlicense</a> and the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a> licenses.</p>
+                <p>This site was built with a custom and completely non-messy and well-structured <a href="https://github.com/Gijs6/gijs6.nl/blob/main/engine.py">Python script</a> (it's horrendous but it kinda works (sometimes)).</p>
+                <p>And everything I pour into that amazing Python script (colloquially known as 'source code') is available on <a href="https://github.com/Gijs6/gijs6.nl">GitHub</a>, <a href="https://gitlab.com/ggijs/gijs6.nl">GitLab</a> and <a href="https://codeberg.org/Gijs6/gijs6.nl">Codeberg</a>.</p>
+                <p>No rights reserved. I really do not give a ___ (fill in your favourite bad word) about what you do with this site (as long as it's within the laws that apply in your jurisdiction, and just be nice and not a terrible person, thank you very much). My attempt at being funny here doesn't really hold up in court unfortunately, so for all the fancy people: this work has been <em>dedicated to the public domain</em>, in accordance with the <a href="https://unlicense.org/">Unlicense</a> and the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a> licenses.</p>
             </section>
-            <section>
+            <section aria-label="Timecapsule">
                 <h2>Timecapsule</h2>
-                <p>This [insert your opinion] design is not always how this site has looked. You can find most earlier versions of this site on <a href="https://timecapsule.gijs6.nl">timecapsule.gijs6.nl</a>.</p>
+                <p>This amazing design is not always how this site has looked. You can pretty much all earlier versions of this site on <a href="https://timecapsule.gijs6.nl">timecapsule.gijs6.nl</a>.</p>
             </section>
-            <section>
+            <section aria-label="Privacy">
                 <h2>Privacy</h2>
                 <p>This site does not track you or store your personal information. However, I can't control what your browser, ISP (everyone's favourite companies), or other software on your device might do. That's between you and them, so please feel free to complain to your ISP.</p>
-                <p>Oh, and everything on this site is also self-hosted: no external resources, no fonts from Google, no scripts to add chars at the start of a string from some CDN. Just plain files served from my own server.</p>
+                <p>Oh, and everything on this site is also self-hosted: no external resources, no fonts from Google, no <a href="https://en.wikipedia.org/wiki/Npm_left-pad_incident">scripts to add chars at the start of a string</a> from some CDN. Just plain files served from my own server.</p>
             </section>
         </main>
         <footer>
             <address>Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
-            <p>Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/d98a4f68a5bc8d2c92e5bbabbb9fb6066d75a2f0">d98a4f6</a> (<a href="https://gitlab.com/ggijs/gijs6.nl/-/commit/d98a4f68a5bc8d2c92e5bbabbb9fb6066d75a2f0">GitLab</a>, <a href="https://codeberg.org/Gijs6/gijs6.nl">Codeberg</a>), deployed on <time datetime="2026-05-27">May 27, 2026</time> at <time datetime="09:40:49">09:40:49 CEST</time></p>
+            <p>Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/e62e875765fd2da876514d0c2ac2a0ab8617b6c4">e62e875</a>, deployed on <time datetime="2026-06-25T21:09:19.010526+02:00">June 25, 2026 at 21:09:19 CEST</time></p>
         </footer>
     </body>
 </html>

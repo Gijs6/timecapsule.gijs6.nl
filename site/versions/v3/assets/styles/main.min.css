@@ -108,6 +108,30 @@ ol:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lan
 :is(ul, ol) > li {
     margin-block: var(--spacing-sm);
 }
+dl > dt {
+    font-weight: 700;
+}
+dl > dt:not(:first-child) {
+    margin-top: var(--spacing-sm);
+}
+dl > dd:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    margin-left: var(--spacing-lg);
+}
+dl > dd:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    margin-left: var(--spacing-lg);
+}
+dl > dd:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    margin-left: var(--spacing-lg);
+}
+dl > dd:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    margin-right: var(--spacing-lg);
+}
+dl > dd:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    margin-right: var(--spacing-lg);
+}
+dl > dd:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    margin-right: var(--spacing-lg);
+}
 table {
     border-collapse: collapse;
 }
@@ -475,9 +499,6 @@ body > main {
         padding: var(--spacing-lg);
     }
 }
-body > main > ol {
-    list-style-type: disc;
-}
 body > main h1:first-child {
     margin-block: 0 var(--spacing-lg);
     text-transform: uppercase;
@@ -499,6 +520,9 @@ body > main > hgroup:has(> :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)) > p
     font-size: 1.25em;
     font-weight: 700;
 }
+body > main > ol {
+    list-style-type: disc;
+}
 body > footer {
     padding: var(--spacing-xl) var(--spacing-2xl);
     border-top: 2px solid var(--color-fg);
@@ -508,26 +532,9 @@ body > footer {
         padding: var(--spacing-lg);
     }
 }
-body > footer > p {
-    margin-block: var(--spacing-sm);
-}
-body > footer > p:first-child {
-    margin-top: 0;
-}
-body > footer > p:last-child {
-    margin-bottom: 0;
-}
-body > footer > p > a {
-    text-decoration-thickness: 1px;
-}
-body > footer > p > small > a {
-    text-decoration-thickness: 1px;
-}
-body > footer > p > time {
-    font-weight: 700;
-}
 body > footer > address {
     margin-block: var(--spacing-sm);
+    font-style: normal;
 }
 body > footer > address:first-child {
     margin-top: 0;
@@ -542,6 +549,25 @@ body > footer > address > small > a {
     text-decoration-thickness: 1px;
 }
 body > footer > address > time {
+    font-weight: 700;
+}
+body > footer > p {
+    margin-block: var(--spacing-sm);
+    font-style: normal;
+}
+body > footer > p:first-child {
+    margin-top: 0;
+}
+body > footer > p:last-child {
+    margin-bottom: 0;
+}
+body > footer > p > a {
+    text-decoration-thickness: 1px;
+}
+body > footer > p > small > a {
+    text-decoration-thickness: 1px;
+}
+body > footer > p > time {
     font-weight: 700;
 }
 a {

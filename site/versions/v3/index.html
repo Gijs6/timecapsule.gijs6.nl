@@ -25,16 +25,16 @@
         <link rel="sitemap" type="application/xml" href="/versions/v3/sitemap.xml" />
         <link rel="security" href="/versions/v3/.well-known/security.txt" />
 
-        <link rel="alternate" type="application/rss+xml" title="Blog - RSS" href="/versions/v3/blog/rss.xml" />
-        <link rel="alternate" type="application/atom+xml" title="Blog - Atom" href="/versions/v3/blog/atom.xml" />
-        <link rel="alternate" type="application/feed+json" title="Blog - JSON" href="/versions/v3/blog/feed.json" />
+        <link rel="alternate" type="application/rss+xml" href="/versions/v3/blog/rss.xml" title="Blog - RSS" />
+        <link rel="alternate" type="application/atom+xml" href="/versions/v3/blog/atom.xml" title="Blog - Atom" />
+        <link rel="alternate" type="application/feed+json" href="/versions/v3/blog/feed.json" title="Blog - JSON" />
     </head>
 
     <body>
         <header>
             <a href="/versions/v3/index.html">Gijs<span>6</span></a>
-            <nav>
-                <a href="/versions/v3/index.html" class="active" aria-current="page">
+            <nav aria-label="Site">
+                <a class="active" href="/versions/v3/index.html" aria-current="page">
                     <div>
                         <span>Home</span>
                     </div>
@@ -69,9 +69,9 @@
         <main>
             <section>
                 <h1>Haii!</h1>
-                <p>Welcome! I'm Gijs, also known as <em>gijs6</em>, <em>gijsz</em> and <em>ggijs</em>. I'm a 16-year-old developer, part-time overthinker and full-time enthusiastic mess from Schiedam (in the Netherlands), and this is my little space on the interwebs.</p>
+                <p>Welcome! I'm Gijs, also known as <em>gijs6</em>, <em>gijsz</em> and <em>ggijs</em>. I'm a 17-year-old developer, part-time overthinker and full-time enthusiastic mess from Schiedam (in the Netherlands), and this is my little space on the interwebs.</p>
             </section>
-            <section>
+            <section aria-label="About me">
                 <h2>About me</h2>
                 <p>I don't have a clue how to describe myself, so please annoy other people by asking them about me (but since you found this site, you probably already know me (or maybe I really am famous)).</p>
                 <p>Here's what I'm up to right now:</p>
@@ -84,14 +84,13 @@
                     <li>procrastinating on choosing my next study</li>
                     <li>messing around with just about anything</li>
                 </ul>
-                <p>I speak Dutch (natively), English (pretty well), and <span lang="fr">un peu de Français aussi</span>.</p>
-                <p>I mainly use (the best language of all) Python, on Arch Linux btw, but also sometimes Elixir and (sadly) JavaScript. Pretty much all the code I write is open-source, and publicly available for you to <s>judge</s> see. You can see some of my projects on the <a href="/versions/v3/projects">projects page</a> and many more on my <a href="https://github.com/Gijs6">GitHub</a>, <a href="https://gitlab.com/ggijs">GitLab</a> and <a href="https://codeberg.org/Gijs6">Codeberg</a> accounts.</p>
-                <p>I like other things besides coding, such as graphic design, <a href="https://open.spotify.com/playlist/37i9dQZF1EpfNaZch4604X">music</a>, playing <a href="https://steamcommunity.com/id/Gijs6/">a nice game</a>, occasionally <a href="/versions/v3/blog/">writing</a> (sometimes even for <a href="https://nl.wikipedia.org/wiki/Gebruiker:Gijsz">Wikipedia</a>!), <a href="https://api.gijs6.nl/random-image">some photography</a>, and reading (trying to read more, currently reading <cite>Fahrenheit 451</cite> by Ray Bradbury).</p>
                 <p>I'm also part of <a href="https://dupunkto.org/">{du}punkto</a>, a small collective that I run with 3 friends, which is a lot of fun.</p>
+                <p>I mainly use (the best language of all) Python, on Arch Linux btw, but also sometimes Elixir and (sadly) JavaScript. Pretty much all the code I write is open-source, and publicly available for you to <s>judge</s> see. You can see some of my projects on the <a href="/versions/v3/projects">projects page</a>. Pretty much all my repo's are mirrored to <a href="https://github.com/Gijs6">GitHub</a>, <a href="https://gitlab.com/ggijs">GitLab</a> and <a href="https://codeberg.org/Gijs6">Codeberg</a>, and some repo's are mirrored to the <a href="https://git.dupunkto.org">{du}punkto git server</a>.</p>
+                <p>I like other things besides coding, such as graphic design, <a href="https://open.spotify.com/playlist/37i9dQZF1EpfNaZch4604X">music</a>, playing <a href="https://steamcommunity.com/id/Gijs6/">a nice game</a>, occasionally <a href="/versions/v3/blog/">writing</a> (sometimes even for <a href="https://nl.wikipedia.org/wiki/Gebruiker:Gijsz">Wikipedia</a>!), <a href="https://api.gijs6.nl/random-image">some photography</a>, and reading (trying to read more, currently reading <cite>Fahrenheit 451</cite> by Ray Bradbury).</p>
             </section>
-            <section>
+            <section aria-label="Contact">
                 <h2>Contact</h2>
-                <p>There are many ways to reach out, for example through carrier pigeons, telegraphs and letters. And of course, everyone's favourite method: email! Feel free to say hi, I always love a good conversation. My address is below:</p>
+                <p>There are many ways to reach out, for example through carrier pigeons, telegraphs and letters. And of course, everyone's favourite method: email! Feel free to say hi, I always love a good conversation. I speak Dutch (natively) and English (pretty well) (also <span lang="fr">un peu de Français aussi</span>), so feel free to contact me in either Dutch or English. My address is below:</p>
                 <address>
                     <code>me at gijs6 dot nl</code>
                 </address>
@@ -101,7 +100,7 @@
         <footer>
             <address>Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
-            <p>Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/d98a4f68a5bc8d2c92e5bbabbb9fb6066d75a2f0">d98a4f6</a> (<a href="https://gitlab.com/ggijs/gijs6.nl/-/commit/d98a4f68a5bc8d2c92e5bbabbb9fb6066d75a2f0">GitLab</a>, <a href="https://codeberg.org/Gijs6/gijs6.nl">Codeberg</a>), deployed on <time datetime="2026-05-27">May 27, 2026</time> at <time datetime="09:40:49">09:40:49 CEST</time></p>
+            <p>Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/e62e875765fd2da876514d0c2ac2a0ab8617b6c4">e62e875</a>, deployed on <time datetime="2026-06-25T21:09:19.010526+02:00">June 25, 2026 at 21:09:19 CEST</time></p>
         </footer>
     </body>
 </html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://gijs6.nl</id>
   <title>Gijs6 - blog</title>
-  <updated>2026-05-27T07:40:50.011418+00:00</updated>
+  <updated>2026-06-25T19:09:19.071995+00:00</updated>
   <author>
     <name>Gijs6</name>
     <email>me@gijs6.nl</email>
@@ -108,13 +108,13 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
         justify-content: space-between
     }
 
-    figure img {
+    figure a {
         max-width: 340px;
         width: 100%;
         flex: 1 1 260px
     }
 
-    figure:has(img:only-child) img {
+    figure:has(a:only-child) a {
         max-width: 100%
     }
 
@@ -124,29 +124,41 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
     }
 &lt;/style&gt;
 
-&lt;p&gt;The Dutch national exams are getting redesigned. The Board for Tests and Examinations (&lt;abbr title="College voor Toetsen en Examens" lang="nl"&gt;CvTE&lt;/abbr&gt;) has been running pilots since &lt;time datetime="2025"&gt;2025&lt;/time&gt;, starting with the Spanish exam for &lt;abbr title="hoger algemeen voortgezet onderwijs" lang="nl"&gt;havo&lt;/abbr&gt;. This year even more exams use the new layout, including the English exam for &lt;abbr title="voorbereidend wetenschappelijk onderwijs" lang="nl"&gt;vwo&lt;/abbr&gt;, which I took this year.&lt;/p&gt;
+&lt;p&gt;The Dutch national exams are getting redesigned. The Board for Tests and Examinations (&lt;abbr lang="nl" title="College voor Toetsen en Examens"&gt;CvTE&lt;/abbr&gt;) has been running pilots since &lt;time datetime="2025"&gt;2025&lt;/time&gt;, starting with the Spanish exam for &lt;abbr lang="nl" title="hoger algemeen voortgezet onderwijs"&gt;havo&lt;/abbr&gt;. This year even more exams use the new layout, including the English exam for &lt;abbr lang="nl" title="voorbereidend wetenschappelijk onderwijs"&gt;vwo&lt;/abbr&gt;, which I took this year.&lt;/p&gt;
 &lt;p&gt;The current design has been around since &lt;time datetime="2007"&gt;2007&lt;/time&gt;, so a refresh makes sense. The &lt;span lang="nl"&gt;CvTE&lt;/span&gt; says the main driver is new accessibility regulations. But having taken the new exam myself, I don't think it's an improvement at all.&lt;/p&gt;
-&lt;p&gt;For those unfamiliar with Dutch national exams: the design is pretty plain. No fancy shapes, just black 11pt Arial with sometimes some gray borders. You can see the &lt;a href="https://www.examenblad.nl/2025/vwo/vakken/talen/engels-vwo" hreflang="nl"&gt;&lt;time datetime="2025"&gt;2025&lt;/time&gt; English &lt;span lang="nl"&gt;vwo&lt;/span&gt; exam&lt;/a&gt; for reference.&lt;/p&gt;
+&lt;p&gt;For those unfamiliar with Dutch national exams: the design is pretty plain. No fancy shapes, just black 11pt Arial with sometimes some gray borders. You can see the &lt;a href="https://www.examenblad.nl/2025/vwo/documenten/cse-1/vw-1002-a-25-1-o" hreflang="nl"&gt;&lt;time datetime="2025"&gt;2025&lt;/time&gt; English &lt;span lang="nl"&gt;vwo&lt;/span&gt; exam&lt;/a&gt; for reference.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src="https://cdn.gijs6.nl/blog/exam-design/25-01.png" alt="Cover of the 2025 vwo English exam."&gt;
-    &lt;img src="https://cdn.gijs6.nl/blog/exam-design/25-02.png" alt="First questions page of the 2025 exam."&gt;
-    &lt;figcaption&gt;The &lt;time datetime="2025"&gt;2025&lt;/time&gt; design: cover and first questions page&lt;/figcaption&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven/page-01.png" alt="Cover of the 2025 vwo English exercise booklet"&gt;&lt;/a&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten/page-01.png" alt="Cover of the 2025 vwo English texts booklet"&gt;&lt;/a&gt;
+    &lt;figcaption&gt;The 2025 vwo English exam: exercise booklet cover (left) and texts booklet cover (right)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Honestly, this design is fine. There's room for improvement (the line-height is a bit tight, and the cover is not always clear), but it does its job. Everything that needs to be communicated is communicated, clearly and without any distractions.&lt;/p&gt;
-&lt;p&gt;That's what exam design should do. The goal isn't to look good or feel modern; it's to get information across as clearly as possible to as many candidates as possible. &lt;strong&gt;A good exam design goes completely unnoticed.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;So when you compare the old design to the &lt;a href="https://www.examenblad.nl/2026/vwo/vakken/talen/engels-vwo" hreflang="nl"&gt;new one&lt;/a&gt;, the problems become obvious pretty quickly.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src="https://cdn.gijs6.nl/blog/exam-design/26-01.png" alt="Cover of the 2026 vwo English exam."&gt;
-    &lt;img src="https://cdn.gijs6.nl/blog/exam-design/26-02.png" alt="First questions page of the 2026 exam."&gt;
-    &lt;figcaption&gt;The &lt;time datetime="2026"&gt;2026&lt;/time&gt; design: cover and first questions page&lt;/figcaption&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven/page-02.png" alt="First questions page of the 2025 vwo English exercise booklet"&gt;&lt;/a&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten/page-02.png" alt="First text page of the 2025 vwo English texts booklet"&gt;&lt;/a&gt;
+    &lt;figcaption&gt;The 2025 vwo English exam: exercise booklet questions page (left) and texts booklet text page (right)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;That's what exam design should do. The goal isn't to look good or feel modern; it's to get information across as clearly as possible to as many candidates as possible. &lt;strong&gt;A good exam design goes completely unnoticed.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So when you compare the old design to the &lt;a href="https://www.examenblad.nl/2026/vwo/documenten/cse-1/vw-1002-a-26-1-o" hreflang="nl"&gt;new one&lt;/a&gt;, the problems become obvious pretty quickly.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/page-01.png" alt="Cover of the 2026 vwo English exercise booklet"&gt;&lt;/a&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten/page-01.png" alt="Cover of the 2026 vwo English texts booklet"&gt;&lt;/a&gt;
+    &lt;figcaption&gt;The 2026 vwo English exam: exercise booklet cover (left) and texts booklet cover (right)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The new design is full of visual clutter. There are decorative diagonal shapes on the cover, text with weird borders snaking around it, icons, text blocks with gray backgrounds, gray text all over the place, and the word &lt;span lang="nl"&gt;"Vraag"&lt;/span&gt; printed in front of every single question number. None of this adds information. It just adds noise, which is exactly what you don't want when someone is trying to concentrate.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/page-02.png" alt="First questions page of the 2026 vwo English exercise booklet"&gt;&lt;/a&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten/page-03.png" alt="First text page of the 2026 vwo English texts booklet"&gt;&lt;/a&gt;
+    &lt;figcaption&gt;The 2026 vwo English exam: exercise booklet questions page (left) and texts booklet text page (right)&lt;/figcaption&gt;
+&lt;/figure&gt;
+
 &lt;p&gt;The accessibility argument is also hard to take seriously when you look at the gray background blocks they've introduced. Those blocks actually have worse contrast than anything in the old design. For some of the blocks, contrast ratio is around 6.89:1, which actually &lt;strong&gt;fails&lt;/strong&gt; &lt;abbr title="Web Content Accessibility Guidelines"&gt;WCAG&lt;/abbr&gt; AAA. The old design, boring as it was, had black text on white paper.&lt;/p&gt;
 &lt;p&gt;Then there's the bold text problem. In the new design, all questions are printed in bold. The idea is probably to make the questions stand out from the text surrounding them. But questions sometimes need emphasis within them too, and the way the &lt;span lang="nl"&gt;CvTE&lt;/span&gt; solved that was to make that text &lt;em&gt;even bolder&lt;/em&gt;. In practice, the difference is almost invisible. My English teacher pointed this out to me after the exam; I hadn't noticed it while actually sitting the test (which is exactly the problem).&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src="https://cdn.gijs6.nl/blog/exam-design/26-03.png" alt="Close-up of question 8 from the 2026 exam."&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/question-8.png" alt="Close-up of question 8 from the 2026 vwo English exam"&gt;&lt;/a&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;And then there's the points. In the old design, the number of points for each question was shown before the question number, so you could easily look at a page and immediately get a sense of how the points were across questions. In the new design, the points are in parentheses after the question. Scanning a page to plan your time is now noticeably harder.&lt;/p&gt;
@@ -168,13 +180,13 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
         justify-content: space-between
     }
 
-    figure img {
+    figure a {
         max-width: 340px;
         width: 100%;
         flex: 1 1 260px
     }
 
-    figure:has(img:only-child) img {
+    figure:has(a:only-child) a {
         max-width: 100%
     }
 
@@ -191,8 +203,8 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
 &lt;p&gt;Not all of that is equally important. When you pick up the booklet, the first thing you need to know is &lt;em&gt;what you are holding&lt;/em&gt;. Subject, year, and document type need to be immediately obvious. Date and time matter much less. So in my design, those three key pieces are the largest and boldest, and everything secondary is smaller and quieter.&lt;/p&gt;
 &lt;p&gt;I also removed the code in the bottom-left corner that appears current exams. That code is for administrative use and no student has ever needed it. I replaced it with something actually useful: a clear description of the document and exam.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src="https://cdn.gijs6.nl/blog/new-exam-design/o1.png" alt="Cover of the proposed exercise booklet design."&gt;
-    &lt;img src="https://cdn.gijs6.nl/blog/new-exam-design/t1.png" alt="Cover of the proposed texts booklet design."&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven/page-01.png" alt="Cover of the proposed exercise booklet"&gt;&lt;/a&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-01.png" alt="Cover of the proposed texts booklet"&gt;&lt;/a&gt;
     &lt;figcaption&gt;The proposed covers: exercise booklet (left) and texts booklet (right)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -201,15 +213,50 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
 &lt;p&gt;I dropped the word &lt;span lang="nl"&gt;"Vraag"&lt;/span&gt; before every question number, because it adds no information. Everyone already knows what a question number is (and if you don't, you probably should not be making your exams).&lt;/p&gt;
 &lt;p&gt;Point values are back in front of the question number, where they were in the old design. That makes it easy to scan down a page and understand how points are distributed at a glance. Small thing, but it matters when you're planning your time.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src="https://cdn.gijs6.nl/blog/new-exam-design/o2.png" alt="A questions page from the proposed exercise booklet design."&gt;
-    &lt;img src="https://cdn.gijs6.nl/blog/new-exam-design/t2.png" alt="A text page from the proposed texts booklet design."&gt;
-    &lt;img src="https://cdn.gijs6.nl/blog/new-exam-design/t3.png" alt="Another text page from the proposed texts booklet design."&gt;
-    &lt;figcaption&gt;Questions page and text pages&lt;/figcaption&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven/page-02.png" alt="Questions page of the proposed exercise booklet"&gt;&lt;/a&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-02.png" alt="Text page of the proposed texts booklet"&gt;&lt;/a&gt;
+    &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-03.png" alt="Another text page of the proposed texts booklet"&gt;&lt;/a&gt;
+    &lt;figcaption&gt;The proposed pages: exercise booklet (left) and texts booklet (center, right)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The old design wasn't exciting, but it was clear. Most of the problems with the new &lt;span lang="nl"&gt;CvTE&lt;/span&gt; design come from optimizing for the wrong thing: making the exam look more modern rather than making it easier to use. If you walked out of the exam hall thinking about question 3 and not the awful booklet, the design has done its job.&lt;/p&gt;
-&lt;p&gt;You can view the full design as a PDF: &lt;a href="https://cdn.gijs6.nl/blog/new-exam-design/o.pdf"&gt;exercise booklet&lt;/a&gt; and &lt;a href="https://cdn.gijs6.nl/blog/new-exam-design/t.pdf"&gt;texts booklet&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;p&gt;You can view the full design as a PDF: &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf"&gt;exercise booklet&lt;/a&gt; and &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"&gt;texts booklet&lt;/a&gt;.&lt;/p&gt;</content>
     <link href="https://gijs6.nl/blog/new-exam-design" />
     <published>2026-05-24T19:04:27+02:00</published>
+  </entry>
+  <entry>
+    <id>https://gijs6.nl/blog/dear-boomers</id>
+    <title>Dear boomers</title>
+    <updated>2026-05-30T22:10:17+02:00</updated>
+    <content>&lt;p&gt;Dear boomers, elders, fossils, and other 20th-century people,&lt;/p&gt;
+&lt;p&gt;I have some bad news: it is not "the past" anymore. I know that can be uncomfortable, especially since many of you remember the past as something better, and use it as a reference point where everything today looks worse by comparison.&lt;/p&gt;
+&lt;p&gt;But there is worse news: it will not become the past again. Not because anyone is refusing to go back, but because the past isn't a place we can return to. It was a specific combination of people, knowledge, technology, economics, and social norms that no longer exists. The world changed. Quite a lot, actually.&lt;/p&gt;
+&lt;p&gt;What used to be possible is not automatically a valid benchmark for what should be expected now.&lt;/p&gt;
+&lt;p&gt;You often use arguments like "you could just do X back then" or "that wasn't a problem before" as criticism of younger generations. But those aren't really arguments about the present. They're comparisons with a different world, under different conditions, with different rules.&lt;/p&gt;
+&lt;p&gt;Saying "I bought a house at 24" is not economic analysis. Saying "I didn't need a phone all day at school" is not an argument that phones are unnecessary for students (in fact, they are quite necessary every single day for every single student, thanks to the systems &lt;strong&gt;you&lt;/strong&gt; and &lt;strong&gt;your generation&lt;/strong&gt; set up). These are personal anecdotes from a world that no longer exists.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Having lived through earlier versions of society gives perspective, but it does not make that perspective applicable today.&lt;/strong&gt; The fact that you were young once does not make you an expert on today's youth any more than owning a steam train makes you an expert on modern urban rail systems.&lt;/p&gt;
+&lt;p&gt;You are absolutely allowed to dislike the changes, criticize them, or even try to fix what went wrong. But it only works if you start from the recognition that &lt;em&gt;everything&lt;/em&gt; has changed.&lt;/p&gt;
+&lt;p&gt;Kind regards,&lt;br /&gt;
+The present&lt;/p&gt;</content>
+    <link href="https://gijs6.nl/blog/dear-boomers" />
+    <published>2026-05-30T22:10:17+02:00</published>
+  </entry>
+  <entry>
+    <id>https://gijs6.nl/blog/phone-bans</id>
+    <title>On school phone bans</title>
+    <updated>2026-06-16T16:27:29+02:00</updated>
+    <content>&lt;p&gt;Pretty much all Dutch schools already have a phone ban or are considering one. And I think this is unfair.&lt;/p&gt;
+&lt;p&gt;Let me first say, I completely agree that phones do not belong in classrooms during lessons. They are distracting, addictive and take away your focus during the lesson. Banning phones during lessons is completely fair and understandable.&lt;/p&gt;
+&lt;p&gt;But what most Dutch schools are doing is a complete outright ban on phones in the entire school building. Which is indefensible in my opinion. Why would you not be allowed to have your phone in the hallway or during breaks? It's not like you're learning less just because you're looking at a screen instead of the floor while walking through school.&lt;/p&gt;
+&lt;p&gt;And what exactly is the point of banning phones during tussenuren? What goal are you even trying to achieve? There's no lesson being disrupted, nobody is losing focus. Students just have a free period and nothing to do, and Dutch schools can have A LOT of tussenuren. You're just taking something away for no reason whatsoever.&lt;/p&gt;
+&lt;p&gt;Oh and if we're doing this, it should apply to everyone equally. Teachers, support staff, the janitor, the secretary, everyone. You cannot tell students they can't have their phone while teachers and staff walk around with theirs all day. And I can already hear the teachers say 'oh but what if there is an emergency and I need to be called?' LIKE STUDENTS DON'T HAVE EMERGENCIES WHEN THEY SHOULD BE CALLED? 'Oh yes no but it is essential for me to access the system for the absences' WELL IT IS ALSO ESSENTIAL FOR US TO CHECK OUR SCHEDULE WHICH IS IN THE SAME DAMN SYSTEM.&lt;/p&gt;
+&lt;p&gt;Also, education has a big role in preparing children for society, and I hate to break it to you, but everyone in society uses mobile phones all the time. So it is way better to teach the children how to use their phone wisely and warn them about the dangers instead of just banning phones altogether. And spoiler: in higher education phones are just allowed too. So you're not preparing us for society, and you're not even preparing us for the next step in our education. Great job.&lt;/p&gt;
+&lt;p&gt;Thirdly, you cannot make all of our education systems digital and then take away our phones. I am absolutely outraged when I hear an adult (most often teachers) being angry at the fact that students are 'all looking at their phone when walking between lessons' WHEN THOSE VERY TEACHERS ARE THE ONES THAT SET UP SYSTEMS WHERE THE ONLY PLACE WE CAN SEE OUR SCHEDULE IS OUR PHONE. YOU CANNOT MAKE US DEPEND ON OUR PHONE FOR SCHOOL AND THEN GET ANGRY WHEN WE USE THEM.&lt;/p&gt;
+&lt;p&gt;Completely banning phones in the entire school is completely overkill, and it can hurt people too. There are quite a few people without any friends or anyone to talk to during the break, who use their phone to distract themselves by watching a movie or listening to music. Oh I don't know if you have realised this yet but this also means that they're practically banning listening to music in school. Which is completely ridiculous.&lt;/p&gt;
+&lt;p&gt;And if you're genuinely worried about phone use, there are so many better things you could do. Add more activities during breaks and tussenuren. Give students something to actually do. Make the school day more engaging. Put that energy into actually fixing things instead of just taking something away.&lt;/p&gt;
+&lt;p&gt;Oh and maybe, if students are spending entire lessons on their phones instead of paying attention, maybe the lesson just isn't interesting enough. Maybe the education itself is the problem.&lt;/p&gt;
+&lt;p&gt;The moment a school starts banning phones in hallways and during tussenuren, they've stopped caring about education and started caring about creating some authoritarian environment and obsession with control. And we're just supposed to accept that.&lt;/p&gt;</content>
+    <link href="https://gijs6.nl/blog/phone-bans" />
+    <published>2026-06-16T16:27:29+02:00</published>
   </entry>
 </feed>

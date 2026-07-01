@@ -1,142 +1,106 @@
-@import "https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap";
-
 :root {
+    --bg: #fff;
+    --fg: #1a1a1a;
+    --border: #ddd;
     --accent: #c11272;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #16151a;
+        --fg: #e9e9ea;
+        --border: #333;
+        --accent: #e454a0;
+    }
+}
+
 body {
-    flex-direction: column;
-    font-family: Mulish, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    font-family:
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
     line-height: 1.5;
-    display: flex;
 }
 
-body > header {
-    border-bottom: 5px solid var(--accent);
-    padding: 20px max(16px, min(5vw, 40px));
-}
-
-body > header > h1 {
-    margin: 0;
-    font-size: max(2.5em, min(10vw, 5em));
-    font-weight: 900;
-}
-
-body > main {
-    flex-grow: 1;
-    min-width: 0;
+.archive {
+    max-width: 720px;
+    margin: 0 auto;
     padding: max(24px, min(5vw, 50px)) max(16px, min(5vw, 40px));
 }
 
-body > main > p {
-    border-left: 3px solid var(--accent);
-    max-width: 600px;
+.archive__heading {
+    margin: 0 0 16px;
+    font-size: 2.25em;
+    font-weight: 800;
+}
+
+.archive__intro {
     margin: 0 0 40px;
-    padding-left: 15px;
 }
 
-body > main > section {
-    cursor: grab;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    counter-reset: version -1;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: max(24px, min(5vw, 50px));
-    min-width: 0;
+.archive__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    overflow-x: scroll;
-}
-
-body > main > section::-webkit-scrollbar {
-    display: none;
-}
-
-body > main > section.dragging {
-    cursor: grabbing;
-}
-
-body > main > section > a {
-    color: inherit;
-    -webkit-user-drag: none;
-    counter-increment: version;
     flex-direction: column;
-    gap: 5px;
-    text-decoration: none;
-    display: flex;
+    gap: 24px;
 }
 
-body > main > section > a > h2 {
-    text-transform: uppercase;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    margin: 0;
-    display: flex;
-}
-
-body > main > section > a > h2:before {
-    content: "0" counter(version);
-    color: var(--accent);
-    font-size: max(2em, min(6vw, 3em));
-    font-weight: 900;
-    line-height: 1;
-}
-
-body > main > section > a > span {
-    margin-bottom: 5px;
-}
-
-body > main > section > a > img {
-    min-width: min(40em, 75vw);
-    height: auto;
-    display: block;
-}
-
-body > main > .timeline-scrubber {
-    -ms-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    background: #ccc;
-    outline: none;
-    width: 100%;
-    height: 1px;
-    margin-top: 25px;
-    display: block;
-}
-
-body > main > .timeline-scrubber::-webkit-slider-thumb {
-    -ms-appearance: none;
-    appearance: none;
-    background: var(--accent);
-    cursor: grab;
-    border: none;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-}
-
-body > main > .timeline-scrubber::-moz-range-thumb {
-    -ms-appearance: none;
-    appearance: none;
-    background: var(--accent);
-    cursor: grab;
-    border: none;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-}
-
-body > footer {
-    border-top: 1px solid var(--accent);
-    color: var(--accent);
-    padding: 20px max(16px, min(5vw, 40px));
-}
-
-body > footer > p {
-    margin: 0;
-}
-
-body > footer > p > a {
+.archive__link {
     color: inherit;
+    text-decoration: none;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+}
+
+.archive__image {
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    flex: none;
+    width: 260px;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+
+@media (max-width: 500px) {
+    .archive__link {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .archive__image {
+        order: 2;
+        width: 100%;
+    }
+
+    .archive__content {
+        order: 1;
+    }
+}
+
+.archive__content {
+    flex-direction: column;
+    display: flex;
+}
+
+.archive__title {
+    margin: 0 0 6px;
+    font-size: 1.8em;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+.archive__link:hover .archive__title {
+    color: var(--accent);
+}
+
+.archive__dates {
+    font-size: 0.9em;
 }
