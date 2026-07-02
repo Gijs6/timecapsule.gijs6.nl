@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>My proposal for the Dutch national exam design - Gijs6</title>
+        <meta name="description" content="My little space on the interwebs: blog, projects, and whatever else I felt like putting here :)" />
+        <meta name="author" content="Gijs6" />
+        <meta name="generator" content="Custom Python+Jinja2 SSG" />
+
+        <link rel="icon" href="/versions/v4/favicon.png" />
+
+        <link rel="stylesheet" href="/versions/v4/assets/styles/main.min.css" />
+
+        <link rel="canonical" href="https://gijs6.nl/blog/new-exam-design" />
+
+        <link rel="me" href="https://contact.gijs6.nl" />
+        <link rel="me" href="https://github.com/Gijs6" />
+        <link rel="me" href="https://gitlab.com/ggijs" />
+        <link rel="me" href="https://codeberg.org/Gijs6" />
+
+        <link rel="license" href="https://unlicense.org/" />
+        <link rel="robots" href="/versions/v4/robots.txt" />
+        <link rel="sitemap" type="application/xml" href="/versions/v4/sitemap.xml" />
+        <link rel="security" href="/versions/v4/.well-known/security.txt" />
+
+        <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
+        <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
+        <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+    </head>
+
+    <body>
+        <header class="sidebar">
+            <a class="sidebar__logo" href="/versions/v4/index.html">Gijs<span class="sidebar__logo-accent">6</span></a>
+            <nav class="sidebar__nav" aria-label="Site">
+                <a class="sidebar__nav-link" href="/versions/v4/index.html">Home</a>
+                <a class="sidebar__nav-link sidebar__nav-link--active" aria-current="page" href="/versions/v4/blog/">Blog</a>
+                <a class="sidebar__nav-link" href="/versions/v4/projects">Projects</a>
+                <a class="sidebar__nav-link" href="/versions/v4/bookmarks">Bookmarks</a>
+                <a class="sidebar__nav-link" href="/versions/v4/colophon">Colophon</a>
+                <a class="sidebar__nav-link" href="https://contact.gijs6.nl">Contact</a>
+            </nav>
+        </header>
+        <main class="page">
+            <article class="page__article">
+                <hgroup class="page__intro">
+                    <h1 class="page__title">My proposal for the Dutch national exam design</h1>
+
+                    <p class="page__subtitle">
+                        <time datetime="2026-05-24T19:04:27+02:00">2026-05-24</time>
+                    </p>
+                </hgroup>
+                <style>
+                    figure {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: var(--spacing-md);
+                        margin: 0;
+                        justify-content: space-between;
+                    }
+
+                    figure a {
+                        max-width: 340px;
+                        width: 100%;
+                        flex: 1 1 260px;
+                    }
+
+                    figure:has(a:only-child) a {
+                        max-width: 100%;
+                    }
+
+                    figcaption {
+                        flex-basis: 100%;
+                        font-style: italic;
+                    }
+                </style>
+
+                <p>
+                    <em>This is a follow-up to <a href="exam-design">my post about the new Dutch exam design</a></em>
+                </p>
+                <p>Instead of just complaining, I decided to design something better. My proposal borrows heavily from the old design, because I still think the 2025 layout gets most things right. But it also fixes a few things that were already slightly off before the <span lang="nl">CvTE</span> made them worse.</p>
+                <h2>The cover</h2>
+                <p>The cover has a lot to communicate: the subject, the school level, the year, the <em lang="nl">tijdvak</em> (which sitting of the exam it is, because there are multiple each year), the date and time, and which document you're holding. For the exercise booklet specifically, it also shows the number of questions and the maximum score.</p>
+                <p>Not all of that is equally important. When you pick up the booklet, the first thing you need to know is <em>what you are holding</em>. Subject, year, and document type need to be immediately obvious. Date and time matter much less. So in my design, those three key pieces are the largest and boldest, and everything secondary is smaller and quieter.</p>
+                <p>I also removed the code in the bottom-left corner that appears on current exams. That code is for administrative use and no student has ever needed it. I replaced it with something actually useful: a clear description of the document and exam.</p>
+                <figure>
+                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven/page-01.png" alt="Cover of the proposed exercise booklet" /></a>
+                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-01.png" alt="Cover of the proposed texts booklet" /></a>
+                    <figcaption>The proposed covers: exercise booklet (left) and texts booklet (right)</figcaption>
+                </figure>
+
+                <h2>The rest of the exam</h2>
+                <p>The body of the exam stays close to the old design. Black text on a white background, no decorative shapes, no grey boxes, no icons. This isn't a stylistic preference: it's just the simplest and least distracting choice, which is what you want when you're asking people to read for up to 3 hours.</p>
+                <p>I dropped the word <span lang="nl">"Vraag"</span> before every question number, because it adds no information. Everyone already knows what a question number is (and if you don't, you probably shouldn't be setting exams).</p>
+                <p>Point values are back in front of the question number, where they were in the old design. That makes it easy to scan down a page and understand how points are distributed at a glance. Small thing, but it matters when you're planning your time.</p>
+                <figure>
+                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven/page-02.png" alt="Questions page of the proposed exercise booklet" /></a>
+                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-02.png" alt="Text page of the proposed texts booklet" /></a>
+                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-03.png" alt="Another text page of the proposed texts booklet" /></a>
+                    <figcaption>The proposed pages: exercise booklet (left) and texts booklet (centre, right)</figcaption>
+                </figure>
+
+                <p>The old design wasn't exciting, but it was clear. Most of the problems with the new <span lang="nl">CvTE</span> design come from optimising for the wrong thing: making the exam look more modern rather than making it easier to use. If you walked out of the exam hall thinking about question 3 and not the awful booklet, the design has done its job.</p>
+                <p>You can view the full design as a PDF: <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf">exercise booklet</a> and <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf">texts booklet</a>.</p>
+            </article>
+        </main>
+        <footer class="footer">
+            <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
+            <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
+            <p class="footer__line">Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/2a5bc445d30d27c974e0525e8ecca560372fbc3d">2a5bc44</a>, deployed on <time datetime="2026-07-02T08:08:33.033503+02:00">July 02, 2026 at 08:08:33 CEST</time></p>
+        </footer>
+    </body>
+</html>
