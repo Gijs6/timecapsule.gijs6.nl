@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
         <meta name="author" content="Gijs6" />
         <meta name="generator" content="Custom Python+Jinja2 SSG" />
 
-        <link rel="icon" href="/versions/v4/favicon.png" />
+        <link rel="icon" href="/versions/v4/favicon.ico" />
 
         <link rel="stylesheet" href="/versions/v4/assets/styles/main.min.css" />
 
@@ -32,14 +32,28 @@
 
     <body>
         <header class="sidebar">
-            <a class="sidebar__logo" href="/versions/v4/index.html">Gijs<span class="sidebar__logo-accent">6</span></a>
-            <nav class="sidebar__nav" aria-label="Site">
-                <a class="sidebar__nav-link" href="/versions/v4/index.html">Home</a>
-                <a class="sidebar__nav-link" href="/versions/v4/blog/">Blog</a>
-                <a class="sidebar__nav-link" href="/versions/v4/projects">Projects</a>
-                <a class="sidebar__nav-link sidebar__nav-link--active" aria-current="page" href="/versions/v4/bookmarks">Bookmarks</a>
-                <a class="sidebar__nav-link" href="/versions/v4/colophon">Colophon</a>
-                <a class="sidebar__nav-link" href="https://contact.gijs6.nl">Contact</a>
+            <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
+            <nav aria-label="Site">
+                <ul class="sidebar__nav">
+                    <li>
+                        <a class="sidebar__nav-link" href="/versions/v4/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="/versions/v4/blog/">Blog</a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="/versions/v4/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link sidebar__nav-link--active" aria-current="page" href="/versions/v4/bookmarks">Bookmarks</a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="/versions/v4/colophon">Colophon</a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="https://contact.gijs6.nl">Contact</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <main class="page">
@@ -83,9 +97,6 @@
                         </li>
                         <li class="bookmark-list__item">
                             <a class="bookmark-list__link" href="https://treinposities.nl" hreflang="nl" lang="nl">Treinposities.nl</a>
-                        </li>
-                        <li class="bookmark-list__item">
-                            <a class="bookmark-list__link" href="https://wegkenmerken.ndw.nu/verkeersborden" hreflang="nl" lang="nl">Wegkenmerken</a>
                         </li>
                         <li class="bookmark-list__item">
                             <a class="bookmark-list__link" href="https://www.ahprijsindex.nl" hreflang="nl" lang="nl">AH Prijsindex</a>
@@ -235,7 +246,7 @@
                     </ul>
                 </section>
                 <section class="bookmarks__group" aria-labelledby="math-heading">
-                    <h2 class="bookmarks__heading" id="math-heading">Math &amp; science</h2>
+                    <h2 class="bookmarks__heading" id="math-heading">Maths &amp; science</h2>
                     <ul class="bookmark-list">
                         <li class="bookmark-list__item">
                             <a class="bookmark-list__link" href="https://www.youtube.com/watch?v=dtjb2OhEQcU">Double Pendulums are Chaoticn't</a>
@@ -352,7 +363,10 @@
         <footer class="footer">
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
-            <p class="footer__line">Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/2a5bc445d30d27c974e0525e8ecca560372fbc3d">2a5bc44</a>, deployed on <time datetime="2026-07-02T08:08:33.033503+02:00">July 02, 2026 at 08:08:33 CEST</time></p>
+            <p class="footer__line">
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/7f874cccdfaa41f2c0a8ab449309967e4c82fadb"><code>7f874cc</code></a
+                >, deployed on <time datetime="2026-08-04T16:00:56.851800+02:00">4 August 2026 at 16:00:56 CEST</time>
+            </p>
         </footer>
     </body>
 </html>

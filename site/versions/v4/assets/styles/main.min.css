@@ -1,6 +1,4 @@
 :root {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 * {
@@ -13,6 +11,7 @@
     box-sizing: inherit;
 }
 html {
+    -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
@@ -48,7 +47,7 @@ h1,
 h2,
 h3,
 h4 {
-    text-wrap: auto;
+    text-wrap: balance;
 }
 p {
     text-wrap: pretty;
@@ -228,14 +227,14 @@ textarea:not([rows]) {
     --lightningcss-light: initial;
     --lightningcss-dark: ;
     color-scheme: light dark;
-    --color-bg: #fff;
-    --color-fg: #16181a;
-    --color-fg-muted: #5b5f63;
-    --color-border: #e2e2de;
-    --color-accent: #551b9a;
-    --color-sidebar: #551b9a;
-    --color-sidebar-fg: #fff;
-    --color-sidebar-fg-muted: #d3b8f0;
+    --color-card-bg: #ece9e4;
+    --color-card-fg: #16181a;
+    --color-card-fg-muted: #5b5f63;
+    --color-card-border: #d3d0c8;
+    --color-card-accent: #551b9a;
+    --color-body-bg: #551b9a;
+    --color-body-fg: #fff;
+    --color-body-fg-muted: #d3b8f0;
     --font-body: "Hanken Grotesk Variable", "Inter", sans-serif;
     --font-heading: "Bricolage Grotesque Variable", sans-serif;
     --font-mono: "Source Code Pro Variable", monospace;
@@ -265,11 +264,11 @@ textarea:not([rows]) {
         --lightningcss-dark: initial;
     }
     :root {
-        --color-bg: #17191b;
-        --color-fg: #f2f0ea;
-        --color-fg-muted: #a6aaa8;
-        --color-border: #2c2f2f;
-        --color-accent: #b48aef;
+        --color-card-bg: #1e2023;
+        --color-card-fg: #f2f0ea;
+        --color-card-fg-muted: #a6aaa8;
+        --color-card-border: #45494e;
+        --color-card-accent: #b48aef;
     }
 }
 a {
@@ -283,9 +282,9 @@ samp {
 }
 body {
     font-family: var(--font-body);
-    background-color: var(--color-bg);
-    color: var(--color-fg);
-    grid-template: "sidebar main" 1fr "sidebar footer"/300px 1fr;
+    background-color: var(--color-body-bg);
+    color: var(--color-card-fg);
+    grid-template: "sidebar main" 1fr "sidebar footer" / auto 1fr;
     line-height: 1.5;
     display: grid;
 }
@@ -297,12 +296,13 @@ body {
 }
 body > .sidebar {
     height: 100vh;
-    padding: var(--spacing-2xl);
-    background-color: var(--color-sidebar);
-    color: var(--color-sidebar-fg);
+    padding: var(--spacing-xl);
+    padding-top: var(--spacing-2xl);
+    padding-inline: var(--spacing-2xl);
+    color: var(--color-body-fg);
     grid-area: sidebar;
-    -webkit-align-self: start;
     align-self: start;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     overflow-y: auto;
@@ -316,19 +316,15 @@ body > .sidebar {
 }
 body > .sidebar > .sidebar__logo {
     font-family: var(--font-heading);
-    color: var(--color-sidebar-fg);
+    color: var(--color-body-fg);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-black);
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    align-items: baseline;
     margin-bottom: var(--spacing-xl);
     line-height: 1.15;
     text-decoration: none;
-    -webkit-transition: color 0.2s;
-    -moz-transition: color 0.2s;
     transition: color 0.2s;
-    display: block;
+    display: inline-flex;
 }
 @media (max-width: 750px) {
     body > .sidebar > .sidebar__logo {
@@ -336,103 +332,131 @@ body > .sidebar > .sidebar__logo {
     }
 }
 body > .sidebar > .sidebar__logo:hover {
-    color: var(--color-sidebar-fg-muted);
+    color: var(--color-body-fg-muted);
 }
 body > .sidebar > .sidebar__logo:focus-visible {
-    color: var(--color-sidebar-fg-muted);
+    color: var(--color-body-fg-muted);
 }
-body > .sidebar > .sidebar__logo > .sidebar__logo-accent {
-    color: var(--color-sidebar-fg-muted);
-    -webkit-transition: color 0.2s;
-    -moz-transition: color 0.2s;
+body > .sidebar > .sidebar__logo > .sidebar__logo-first {
+    order: -1;
+    display: inline-block;
+}
+body > .sidebar > .sidebar__logo > .sidebar__logo-last {
+    color: var(--color-body-fg-muted);
+    order: 1;
     transition: color 0.2s;
+    display: inline-block;
 }
-body > .sidebar > .sidebar__logo:hover > .sidebar__logo-accent {
-    color: var(--color-sidebar-fg);
+body > .sidebar > .sidebar__logo:hover > .sidebar__logo-first {
+    order: 1;
 }
-body > .sidebar > .sidebar__logo:focus-visible > .sidebar__logo-accent {
-    color: var(--color-sidebar-fg);
+body > .sidebar > .sidebar__logo:focus-visible > .sidebar__logo-first {
+    order: 1;
 }
-body > .sidebar > .sidebar__nav {
+body > .sidebar > .sidebar__logo:hover > .sidebar__logo-last {
+    color: var(--color-body-fg);
+    order: -1;
+}
+body > .sidebar > .sidebar__logo:focus-visible > .sidebar__logo-last {
+    color: var(--color-body-fg);
+    order: -1;
+}
+body > .sidebar > nav > .sidebar__nav {
     gap: var(--spacing-md);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-base);
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -moz-box-direction: normal;
-    -webkit-flex-direction: column;
     flex-direction: column;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
+    margin: 0;
+    list-style: none;
     display: flex;
 }
+body > .sidebar > nav > .sidebar__nav:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .sidebar > nav > .sidebar__nav:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .sidebar > nav > .sidebar__nav:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .sidebar > nav > .sidebar__nav:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .sidebar > nav > .sidebar__nav:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .sidebar > nav > .sidebar__nav:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
 @media (max-width: 750px) {
-    body > .sidebar > .sidebar__nav {
+    body > .sidebar > nav > .sidebar__nav {
         gap: var(--spacing-xs) var(--spacing-lg);
         font-size: var(--font-size-sm);
-        -webkit-box-orient: horizontal;
-        -moz-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -moz-box-direction: normal;
-        -webkit-flex-flow: wrap;
         flex-flow: wrap;
     }
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link {
-    color: var(--color-sidebar-fg-muted);
+body > .sidebar > nav > .sidebar__nav > li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link {
+    color: var(--color-body-fg-muted);
     text-decoration: none;
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link:hover {
-    color: var(--color-sidebar-fg);
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link:hover {
+    color: var(--color-body-fg);
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link:focus-visible {
-    color: var(--color-sidebar-fg);
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link:focus-visible {
+    color: var(--color-body-fg);
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link:focus-visible {
-    outline-color: var(--color-sidebar-fg);
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link:focus-visible {
+    outline-color: var(--color-body-fg);
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link.sidebar__nav-link--active {
-    color: var(--color-sidebar-fg);
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active {
+    color: var(--color-body-fg);
     position: relative;
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link.sidebar__nav-link--active:before {
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:before {
     content: "→ ";
     position: absolute;
     right: 100%;
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link.sidebar__nav-link--active:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):before {
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):before {
     padding-right: var(--spacing-2xs);
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link.sidebar__nav-link--active:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):before {
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):before {
     padding-right: var(--spacing-2xs);
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link.sidebar__nav-link--active:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):before {
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):before {
     padding-right: var(--spacing-2xs);
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link.sidebar__nav-link--active:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):before {
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):before {
     padding-left: var(--spacing-2xs);
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link.sidebar__nav-link--active:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):before {
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):before {
     padding-left: var(--spacing-2xs);
 }
-body > .sidebar > .sidebar__nav > .sidebar__nav-link.sidebar__nav-link--active:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):before {
+body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):before {
     padding-left: var(--spacing-2xs);
 }
 @media (max-width: 750px) {
-    body > .sidebar > .sidebar__nav > .sidebar__nav-link.sidebar__nav-link--active:before {
+    body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:before {
         position: static;
     }
 }
 body > .page {
-    max-width: 740px;
+    max-width: 1000px;
+    margin: var(--spacing-2xl) var(--spacing-2xl) var(--spacing-2xl) 0;
     padding: var(--spacing-2xl);
+    background-color: var(--color-card-bg);
+    border-radius: var(--spacing-lg);
     grid-area: main;
 }
 @media (max-width: 750px) {
     body > .page {
+        margin: var(--spacing-lg);
         padding: var(--spacing-lg);
+        margin-top: 0;
     }
 }
 body > .page > :last-child {
@@ -445,42 +469,36 @@ body > .page h1 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    letter-spacing: -0.01em;
     line-height: 1.15;
 }
 body > .page h2 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    letter-spacing: -0.01em;
     line-height: 1.15;
 }
 body > .page h3 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    letter-spacing: -0.01em;
     line-height: 1.15;
 }
 body > .page h4 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    letter-spacing: -0.01em;
     line-height: 1.15;
 }
 body > .page h5 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    letter-spacing: -0.01em;
     line-height: 1.15;
 }
 body > .page h6 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    letter-spacing: -0.01em;
     line-height: 1.15;
 }
 body > .page h1 {
@@ -497,7 +515,7 @@ body > .page h3 {
     font-size: var(--font-size-md);
 }
 body > .page a {
-    color: var(--color-accent);
+    color: var(--color-card-accent);
     text-underline-offset: 3px;
     text-decoration-thickness: 1.5px;
 }
@@ -517,50 +535,27 @@ body > .page ul {
     list-style: none;
 }
 body > .page ul:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: 0;
+    padding-left: var(--spacing-lg);
 }
 body > .page ul:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: 0;
+    padding-left: var(--spacing-lg);
 }
 body > .page ul:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: 0;
+    padding-left: var(--spacing-lg);
 }
 body > .page ul:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: 0;
+    padding-right: var(--spacing-lg);
 }
 body > .page ul:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: 0;
+    padding-right: var(--spacing-lg);
 }
 body > .page ul:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: 0;
-}
-body > .page ul > li {
-    position: relative;
-}
-body > .page ul > li:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
-}
-body > .page ul > li:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
-}
-body > .page ul > li:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
-}
-body > .page ul > li:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: var(--spacing-lg);
 }
-body > .page ul > li:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
-}
-body > .page ul > li:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
-}
-body > .page ul > li:before {
-    content: "→";
-    color: var(--color-accent);
+body > .page ul > li::marker {
+    content: "→ ";
+    color: var(--color-card-accent);
     font-weight: var(--font-weight-extrabold);
-    position: absolute;
-    left: 0;
 }
 body > .page ol:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: var(--spacing-lg);
@@ -581,45 +576,44 @@ body > .page ol:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :la
     padding-right: var(--spacing-lg);
 }
 body > .page ol > li::marker {
-    color: var(--color-accent);
+    color: var(--color-card-accent);
     font-weight: var(--font-weight-extrabold);
 }
 body > .page blockquote {
     margin-block: 0 var(--spacing-lg);
-    color: var(--color-fg-muted);
+    color: var(--color-card-fg-muted);
     margin-left: 0;
     margin-right: 0;
     font-style: italic;
 }
 body > .page blockquote:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    border-left: 3px solid var(--color-accent);
+    border-left: 3px solid var(--color-card-accent);
     padding-left: var(--spacing-lg);
 }
 body > .page blockquote:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    border-left: 3px solid var(--color-accent);
+    border-left: 3px solid var(--color-card-accent);
     padding-left: var(--spacing-lg);
 }
 body > .page blockquote:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    border-left: 3px solid var(--color-accent);
+    border-left: 3px solid var(--color-card-accent);
     padding-left: var(--spacing-lg);
 }
 body > .page blockquote:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    border-right: 3px solid var(--color-accent);
+    border-right: 3px solid var(--color-card-accent);
     padding-right: var(--spacing-lg);
 }
 body > .page blockquote:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    border-right: 3px solid var(--color-accent);
+    border-right: 3px solid var(--color-card-accent);
     padding-right: var(--spacing-lg);
 }
 body > .page blockquote:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    border-right: 3px solid var(--color-accent);
+    border-right: 3px solid var(--color-card-accent);
     padding-right: var(--spacing-lg);
 }
 body > .page pre {
     margin-block: 0 var(--spacing-lg);
     padding: var(--spacing-lg);
-    border: 1px solid var(--color-border);
-    -webkit-border-radius: var(--spacing-2xs);
+    border: 1px solid var(--color-card-border);
     border-radius: var(--spacing-2xs);
 }
 body > .page pre > code {
@@ -632,9 +626,8 @@ body > .page figure {
 }
 body > .page code {
     padding: var(--spacing-3xs) var(--spacing-xs);
-    -webkit-border-radius: var(--spacing-2xs);
     border-radius: var(--spacing-2xs);
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-card-border);
     font-size: var(--font-size-xs);
 }
 body > .page table {
@@ -643,26 +636,22 @@ body > .page table {
 }
 body > .page table th {
     padding: var(--spacing-xs) var(--spacing-sm);
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-card-border);
     text-align: left;
 }
 body > .page table td {
     padding: var(--spacing-xs) var(--spacing-sm);
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-card-border);
     text-align: left;
 }
 body > .page table th {
-    border-bottom: 2px solid var(--color-accent);
+    border-bottom: 2px solid var(--color-card-accent);
     font-family: var(--font-heading);
 }
 body > .page hr {
     margin-block: var(--spacing-lg);
     border: none;
-    border-top: 1px solid var(--color-border);
-}
-body > .page img {
-    -webkit-border-radius: var(--spacing-2xs);
-    border-radius: var(--spacing-2xs);
+    border-top: 1px solid var(--color-card-border);
 }
 body > .page .page__intro > .page__title {
     margin-bottom: var(--spacing-2xs);
@@ -672,19 +661,21 @@ body > .page .page__intro > h2:first-child {
 }
 body > .page .page__intro > .page__subtitle {
     margin-block: 0 var(--spacing-lg);
-    color: var(--color-fg-muted);
+    color: var(--color-card-fg-muted);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-semibold);
 }
 body > .footer {
     padding: var(--spacing-2xl);
-    border-top: 1px solid var(--color-border);
-    color: var(--color-fg-muted);
+    color: var(--color-body-fg-muted);
     grid-area: footer;
+    padding-top: 0;
+    padding-left: 0;
 }
 @media (max-width: 750px) {
     body > .footer {
         padding: var(--spacing-lg);
+        padding-top: 0;
     }
 }
 body > .footer > .footer__line {
@@ -698,12 +689,11 @@ body > .footer > .footer__line:last-child {
     margin-bottom: 0;
 }
 body > .footer > .footer__line > a {
-    color: var(--color-accent);
+    color: var(--color-body-fg);
     text-underline-offset: 3px;
     text-decoration-thickness: 1.5px;
 }
 body > .footer > .footer__line > time {
-    color: var(--color-fg);
     font-weight: var(--font-weight-bold);
 }
 body > .page:has(> .bookmarks) {
@@ -720,8 +710,7 @@ body > .page > .bookmarks {
 }
 body > .page > .bookmarks > .bookmarks__group {
     padding: var(--spacing-lg);
-    border: 1px solid var(--color-border);
-    -webkit-border-radius: var(--spacing-xs);
+    border: 1px solid var(--color-card-border);
     border-radius: var(--spacing-xs);
     break-inside: avoid;
     page-break-inside: avoid;
@@ -737,19 +726,64 @@ body > .page > .bookmarks > .bookmarks__group > .bookmark-list {
     margin-top: 0;
     margin-bottom: 0;
 }
+body > .page > .page__feeds > .page__feeds-list {
+    gap: var(--spacing-2xs);
+    flex-wrap: wrap;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+body > .page > .page__feeds > .page__feeds-list:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .page__feeds > .page__feeds-list:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .page__feeds > .page__feeds-list:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .page__feeds > .page__feeds-list:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .page__feeds > .page__feeds-list:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .page__feeds > .page__feeds-list:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .page__feeds > .page__feeds-list > li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body > .page > .page__feeds > .page__feeds-list > li:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .page__feeds > .page__feeds-list > li:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .page__feeds > .page__feeds-list > li:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .page__feeds > .page__feeds-list > li:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .page__feeds > .page__feeds-list > li:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .page__feeds > .page__feeds-list > li:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .page__feeds > .page__feeds-list > li::marker {
+    content: none;
+}
+body > .page > .page__feeds > .page__feeds-list > li:not(:last-child):after {
+    content: " ·";
+}
 body > .page > .post-list {
     margin-block: var(--spacing-lg);
     gap: var(--spacing-md);
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -moz-box-direction: normal;
-    -webkit-flex-direction: column;
     flex-direction: column;
     list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
     display: flex;
 }
 body > .page > .post-list:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
@@ -772,34 +806,22 @@ body > .page > .post-list:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang
 }
 body > .page > .post-list > .post-list__item {
     padding: var(--spacing-lg);
-    border: 1px solid var(--color-border);
-    -webkit-border-radius: var(--spacing-xs);
+    border: 1px solid var(--color-card-border);
     border-radius: var(--spacing-xs);
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-align-items: baseline;
     align-items: baseline;
     gap: var(--spacing-sm);
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
     display: flex;
 }
 body > .page > .post-list > .post-list__item > .post-list__date {
-    color: var(--color-fg-muted);
+    color: var(--color-card-fg-muted);
     font-size: var(--font-size-xs);
 }
 @media (max-width: 750px) {
     body > .page > .post-list > .post-list__item > .post-list__date {
-        -webkit-flex-basis: 100%;
         flex-basis: 100%;
     }
 }
@@ -807,20 +829,14 @@ body > .page > .post-list > .post-list__item > .post-list__title {
     font-family: var(--font-heading);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-base);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 body > .page > .project-list {
     margin-block: var(--spacing-lg);
     gap: var(--spacing-md);
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -moz-box-direction: normal;
-    -webkit-flex-direction: column;
     flex-direction: column;
     list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
     display: flex;
 }
 body > .page > .project-list:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
@@ -843,13 +859,12 @@ body > .page > .project-list:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :l
 }
 body > .page > .project-list > .project-list__item {
     padding: var(--spacing-lg);
-    border: 1px solid var(--color-border);
-    -webkit-border-radius: var(--spacing-xs);
+    border: 1px solid var(--color-card-border);
     border-radius: var(--spacing-xs);
     margin-top: 0;
     margin-bottom: 0;
 }
-body > .page > .project-list > .project-list__item:before {
+body > .page > .project-list > .project-list__item::marker {
     content: none;
 }
 body > .page > .project-list > .project-list__item > .project-list__title {
@@ -858,20 +873,58 @@ body > .page > .project-list > .project-list__item > .project-list__title {
 }
 body > .page > .project-list > .project-list__item > .project-list__description {
     margin-block: 0 var(--spacing-sm);
-    color: var(--color-fg-muted);
+    color: var(--color-card-fg-muted);
 }
 body > .page > .project-list > .project-list__item > .project-list__links {
     gap: var(--spacing-sm);
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
+    list-style: none;
     display: flex;
 }
-body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link {
+body > .page > .project-list > .project-list__item > .project-list__links:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item::marker {
+    content: none;
+}
+body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item > .project-list__link {
     font-size: var(--font-size-xs);
 }

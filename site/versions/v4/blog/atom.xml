@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB">
   <id>https://gijs6.nl</id>
   <title>Gijs6 - blog</title>
-  <updated>2026-07-02T06:08:33.119298+00:00</updated>
+  <updated>2026-08-04T14:00:56.935913+00:00</updated>
   <author>
     <name>Gijs6</name>
     <email>me@gijs6.nl</email>
@@ -17,7 +17,7 @@
     <updated>2025-04-06T22:26:01+02:00</updated>
     <content>&lt;p&gt;Hello there! Welcome to this "blog" :D&lt;/p&gt;
 &lt;p&gt;But that word "blog" doesn't tell you much about what you can expect to find on this "frequently updated website"[1]. "blog" is a word without that much actual meaning to it.
-Is a blog a place to talk about your latest projects? Is a blog a place to reflect on what you have achieved (&lt;em&gt;like an &lt;span lang="nl"&gt;NLT-logboek&lt;/span&gt;&lt;/em&gt;)? Is a blog a collection of stories from a road trip through Western Senegal? Is a blog a place to rant about politics? Is a blog just an old place where people wrote things before Twitter existed? Is a blog a place to showcase your work and impress others? Should a blog be made out of lengthy essays with fancy references, or should it be made out of short messages about anything that is on someone's mind?&lt;/p&gt;
+Is a blog a place to talk about your latest projects? Is a blog a place to reflect on what you have achieved (&lt;i&gt;like an &lt;span lang="nl"&gt;NLT-logboek&lt;/span&gt;&lt;/i&gt;)? Is a blog a collection of stories from a road trip through Western Senegal? Is a blog a place to rant about politics? Is a blog just an old place where people wrote things before Twitter existed? Is a blog a place to showcase your work and impress others? Should a blog be made out of lengthy essays with fancy references, or should it be made out of short messages about anything that is on someone's mind?&lt;/p&gt;
 &lt;p&gt;I think a blog can be all of those, and it definitely shouldn't be a precisely defined thing, &lt;strong&gt;and that is amazing&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;And I do not know the purpose of this blog. I just wanted to write some things, and I wanted a little place on the internet to store and show them, so here I am.&lt;/p&gt;
 &lt;p&gt;This is probably the worst welcome post in existence.&lt;/p&gt;
@@ -33,10 +33,10 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
     <title>The Dutch Government is ruining its election system</title>
     <updated>2025-04-08T22:03:31+02:00</updated>
     <content>&lt;p&gt;The Dutch Minister of the Interior and Kingdom Relations Judith Uitermark (NSC) recently announced her plan to transform the Dutch election system by introducing a new system where 125 of the 150 members of the Second Chamber (the most important parliament in the Netherlands) would be elected via regional elections.[1] Her justification? It's to "strengthen the regional bond between voters and elected officials." What a load of nonsense. Let's be clear: this is a step in the wrong direction, and it's a move that will ultimately weaken Dutch democracy itself.&lt;/p&gt;
-&lt;p&gt;Let's break this down. The election for the Second Chamber is supposed to be a &lt;strong&gt;national&lt;/strong&gt; election, not a regional one. We already have regional elections: the Provincial Council elections (&lt;em lang="nl"&gt;Provinciale Statenverkiezingen&lt;/em&gt;). So, if there's an issue with regional representation, why on earth would you mess with the national system? If regional representation is flawed, FIX THE REGIONAL SYSTEM. Don't mess with the national one. Once again, &lt;strong&gt;the elections for the Second Chamber are national elections&lt;/strong&gt;, so everyone in the entire country should be able to vote for the same candidates on their ballot. Otherwise, it's just a bunch of completely separate regional elections which happen to be added up for one parliament. How can you justify a &lt;strong&gt;NATIONAL&lt;/strong&gt; election where your ballot differs depending on where you live?&lt;/p&gt;
+&lt;p&gt;Let's break this down. The election for the Second Chamber is supposed to be a &lt;strong&gt;national&lt;/strong&gt; election, not a regional one. We already have regional elections: the Provincial Council elections (&lt;i lang="nl"&gt;Provinciale Statenverkiezingen&lt;/i&gt;). So, if there's an issue with regional representation, why on earth would you mess with the national system? If regional representation is flawed, FIX THE REGIONAL SYSTEM. Don't mess with the national one. Once again, &lt;strong&gt;the elections for the Second Chamber are national elections&lt;/strong&gt;, so everyone in the entire country should be able to vote for the same candidates on their ballot. Otherwise, it's just a bunch of completely separate regional elections which happen to be added up for one parliament. How can you justify a &lt;strong&gt;NATIONAL&lt;/strong&gt; election where your ballot differs depending on where you live?&lt;/p&gt;
 &lt;p&gt;But that's just the start of the problems. Smaller parties will have their votes scattered across multiple districts, making it much harder for them to secure any seats at all. These parties, which rely on proportional representation, will see their votes effectively wasted.[2] What's the point of voting if your vote doesn't even count? This is the kind of thing we see in places like the United States, where if you don't vote for one of the two main parties, you might as well not vote at all. That is not democracy.&lt;/p&gt;
 &lt;p&gt;Think about it: systems where votes are effectively lost, like in the U.S., or where a party can get a minority of the votes, but a majority of seats in Parliament, like in the UK, are systems that can generate simply &lt;strong&gt;undemocratic&lt;/strong&gt; outcomes. And now, the Dutch government is trying to take us down that very same path.&lt;/p&gt;
-&lt;p&gt;It's time to stop this before it's too late. I truly hope the Second Chamber, or the First Chamber, or hell, even the &lt;em lang="nl"&gt;Raad van State&lt;/em&gt; steps in to block this plan. At this point, I don't care where it comes from. Just stop it. We cannot allow the Dutch election system to be ruined like this. We cannot allow the Dutch government to just abolish this core democratic principle.&lt;/p&gt;
+&lt;p&gt;It's time to stop this before it's too late. I truly hope the Second Chamber, or the First Chamber, or hell, even the &lt;i lang="nl"&gt;Raad van State&lt;/i&gt; steps in to block this plan. At this point, I don't care where it comes from. Just stop it. We cannot allow the Dutch election system to be ruined like this. We cannot allow the Dutch government to just abolish this core democratic principle.&lt;/p&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="https://www.rtl.nl/nieuws/politiek/artikel/5501188/minister-wil-verkiezingen-drastisch-veranderen-kamerleden-provincie"&gt;&lt;em&gt;Minister wil verkiezingen drastisch veranderen: Tweede Kamerleden per provincie gekozen&lt;/em&gt; - RTL Nieuws&lt;/a&gt;&lt;/li&gt;
@@ -100,18 +100,15 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
     <updated>2026-05-24T00:39:42+02:00</updated>
     <content>&lt;style&gt;
     figure {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         gap: var(--spacing-md);
-        margin: 0;
-        justify-content: space-between
+        margin: 0
     }
 
     figure a {
         max-width: 340px;
-        width: 100%;
-        flex: 1 1 260px
+        width: 100%
     }
 
     figure:has(a:only-child) a {
@@ -119,7 +116,7 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
     }
 
     figcaption {
-        flex-basis: 100%;
+        grid-column: 1 / -1;
         font-style: italic
     }
 &lt;/style&gt;
@@ -130,14 +127,14 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
 &lt;figure&gt;
     &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven/page-01.png" alt="Cover of the 2025 vwo English exercise booklet"&gt;&lt;/a&gt;
     &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten/page-01.png" alt="Cover of the 2025 vwo English texts booklet"&gt;&lt;/a&gt;
-    &lt;figcaption&gt;The 2025 vwo English exam: exercise booklet cover (left) and texts booklet cover (right)&lt;/figcaption&gt;
+    &lt;figcaption&gt;The &lt;time datetime="2025"&gt;2025&lt;/time&gt; vwo English exam: exercise booklet cover (left) and texts booklet cover (right)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Honestly, this design is fine. There's room for improvement (the line-height is a bit tight, and the cover is not always clear), but it does its job. Everything that needs to be communicated is communicated, clearly and without any distractions.&lt;/p&gt;
 &lt;figure&gt;
     &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven/page-02.png" alt="First questions page of the 2025 vwo English exercise booklet"&gt;&lt;/a&gt;
     &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten/page-02.png" alt="First text page of the 2025 vwo English texts booklet"&gt;&lt;/a&gt;
-    &lt;figcaption&gt;The 2025 vwo English exam: exercise booklet questions page (left) and texts booklet text page (right)&lt;/figcaption&gt;
+    &lt;figcaption&gt;The &lt;time datetime="2025"&gt;2025&lt;/time&gt; vwo English exam: exercise booklet questions page (left) and texts booklet text page (right)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;That's what exam design should do. The goal isn't to look good or feel modern: it's to get information across as clearly as possible to as many candidates as possible. &lt;strong&gt;A good exam design goes completely unnoticed.&lt;/strong&gt;&lt;/p&gt;
@@ -145,14 +142,14 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
 &lt;figure&gt;
     &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/page-01.png" alt="Cover of the 2026 vwo English exercise booklet"&gt;&lt;/a&gt;
     &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten/page-01.png" alt="Cover of the 2026 vwo English texts booklet"&gt;&lt;/a&gt;
-    &lt;figcaption&gt;The 2026 vwo English exam: exercise booklet cover (left) and texts booklet cover (right)&lt;/figcaption&gt;
+    &lt;figcaption&gt;The &lt;time datetime="2026"&gt;2026&lt;/time&gt; vwo English exam: exercise booklet cover (left) and texts booklet cover (right)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The new design is full of visual clutter. There are decorative diagonal shapes on the cover, text with weird borders snaking around it, icons, text blocks with grey backgrounds, grey text all over the place, and the word &lt;span lang="nl"&gt;"Vraag"&lt;/span&gt; printed in front of every single question number. None of this adds information. It just adds noise, which is exactly what you don't want when someone is trying to concentrate.&lt;/p&gt;
 &lt;figure&gt;
     &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/page-02.png" alt="First questions page of the 2026 vwo English exercise booklet"&gt;&lt;/a&gt;
     &lt;a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten.pdf"&gt;&lt;img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten/page-03.png" alt="First text page of the 2026 vwo English texts booklet"&gt;&lt;/a&gt;
-    &lt;figcaption&gt;The 2026 vwo English exam: exercise booklet questions page (left) and texts booklet text page (right)&lt;/figcaption&gt;
+    &lt;figcaption&gt;The &lt;time datetime="2026"&gt;2026&lt;/time&gt; vwo English exam: exercise booklet questions page (left) and texts booklet text page (right)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The accessibility argument is also hard to take seriously when you look at the grey background blocks they've introduced. Those blocks actually have worse contrast than anything in the old design. For some of the blocks, the contrast ratio is 6.89:1, which actually &lt;strong&gt;fails&lt;/strong&gt; &lt;abbr title="Web Content Accessibility Guidelines"&gt;WCAG&lt;/abbr&gt; AAA. The old design, boring as it was, had black text on white paper.&lt;/p&gt;
@@ -172,18 +169,15 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
     <updated>2026-05-24T19:04:27+02:00</updated>
     <content>&lt;style&gt;
     figure {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         gap: var(--spacing-md);
-        margin: 0;
-        justify-content: space-between
+        margin: 0
     }
 
     figure a {
         max-width: 340px;
-        width: 100%;
-        flex: 1 1 260px
+        width: 100%
     }
 
     figure:has(a:only-child) a {
@@ -191,15 +185,15 @@ Is a blog a place to talk about your latest projects? Is a blog a place to refle
     }
 
     figcaption {
-        flex-basis: 100%;
+        grid-column: 1 / -1;
         font-style: italic
     }
 &lt;/style&gt;
 
 &lt;p&gt;&lt;em&gt;This is a follow-up to &lt;a href="exam-design"&gt;my post about the new Dutch exam design&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Instead of just complaining, I decided to design something better. My proposal borrows heavily from the old design, because I still think the 2025 layout gets most things right. But it also fixes a few things that were already slightly off before the &lt;span lang="nl"&gt;CvTE&lt;/span&gt; made them worse.&lt;/p&gt;
+&lt;p&gt;Instead of just complaining, I decided to design something better. My proposal borrows heavily from the old design, because I still think the &lt;time datetime="2025"&gt;2025&lt;/time&gt; layout gets most things right. But it also fixes a few things that were already slightly off before the &lt;span lang="nl"&gt;CvTE&lt;/span&gt; made them worse.&lt;/p&gt;
 &lt;h2&gt;The cover&lt;/h2&gt;
-&lt;p&gt;The cover has a lot to communicate: the subject, the school level, the year, the &lt;em lang="nl"&gt;tijdvak&lt;/em&gt; (which sitting of the exam it is, because there are multiple each year), the date and time, and which document you're holding. For the exercise booklet specifically, it also shows the number of questions and the maximum score.&lt;/p&gt;
+&lt;p&gt;The cover has a lot to communicate: the subject, the school level, the year, the &lt;i lang="nl"&gt;tijdvak&lt;/i&gt; (which sitting of the exam it is, because there are multiple each year), the date and time, and which document you're holding. For the exercise booklet specifically, it also shows the number of questions and the maximum score.&lt;/p&gt;
 &lt;p&gt;Not all of that is equally important. When you pick up the booklet, the first thing you need to know is &lt;em&gt;what you are holding&lt;/em&gt;. Subject, year, and document type need to be immediately obvious. Date and time matter much less. So in my design, those three key pieces are the largest and boldest, and everything secondary is smaller and quieter.&lt;/p&gt;
 &lt;p&gt;I also removed the code in the bottom-left corner that appears on current exams. That code is for administrative use and no student has ever needed it. I replaced it with something actually useful: a clear description of the document and exam.&lt;/p&gt;
 &lt;figure&gt;
@@ -248,15 +242,557 @@ The present&lt;/p&gt;</content>
     <content>&lt;p&gt;Pretty much all Dutch schools already have a phone ban or are considering one. And I think this is unfair.&lt;/p&gt;
 &lt;p&gt;Let me first say, I completely agree that phones do not belong in classrooms during lessons. They are distracting and addictive, and they take away your focus during the lesson. Banning phones during lessons is completely fair and understandable.&lt;/p&gt;
 &lt;p&gt;But what most Dutch schools are doing is an outright ban on phones in the entire school building, which is indefensible in my opinion. Why would you not be allowed to have your phone in the hallway or during breaks? It's not like you're learning less just because you're looking at a screen instead of the floor while walking through school.&lt;/p&gt;
-&lt;p&gt;And what exactly is the point of banning phones during &lt;em lang="nl"&gt;tussenuren&lt;/em&gt;? What goal are you even trying to achieve? There's no lesson being disrupted, and nobody is losing focus. Students just have a free period and nothing to do, and Dutch schools can have A LOT of &lt;em lang="nl"&gt;tussenuren&lt;/em&gt;. You're just taking something away for no reason whatsoever.&lt;/p&gt;
+&lt;p&gt;And what exactly is the point of banning phones during &lt;i lang="nl"&gt;tussenuren&lt;/i&gt;? What goal are you even trying to achieve? There's no lesson being disrupted, and nobody is losing focus. Students just have a free period and nothing to do, and Dutch schools can have A LOT of &lt;i lang="nl"&gt;tussenuren&lt;/i&gt;. You're just taking something away for no reason whatsoever.&lt;/p&gt;
 &lt;p&gt;Oh and if we're doing this, it should apply to everyone equally. Teachers, support staff, the janitor, the secretary, everyone. You cannot tell students they can't have their phones while teachers and staff walk around with theirs all day. And I can already hear the teachers say, "Oh but what if there is an emergency and I need to be called?" LIKE STUDENTS DON'T HAVE EMERGENCIES WHEN THEY SHOULD BE CALLED? "Oh yes no but it is essential for me to access the attendance system." WELL IT IS ALSO ESSENTIAL FOR US TO CHECK OUR SCHEDULE WHICH IS IN THE SAME DAMN SYSTEM.&lt;/p&gt;
 &lt;p&gt;Also, education has a big role in preparing children for society, and I hate to break it to you, but everyone in society uses mobile phones all the time. So it is way better to teach the children how to use their phones wisely and warn them about the dangers instead of just banning phones altogether. And spoiler: in higher education, phones are just allowed too. So you're not preparing us for society, and you're not even preparing us for the next step in our education. Great job.&lt;/p&gt;
 &lt;p&gt;On top of that, you cannot make all of our education systems digital and then take away our phones. I am absolutely outraged when I hear an adult (most often teachers) being angry at the fact that students are "all looking at their phones when walking between lessons" WHEN THOSE VERY TEACHERS ARE THE ONES THAT SET UP SYSTEMS WHERE THE ONLY PLACE WE CAN SEE OUR SCHEDULE IS OUR PHONE. YOU CANNOT MAKE US DEPEND ON OUR PHONES FOR SCHOOL AND THEN GET ANGRY WHEN WE USE THEM.&lt;/p&gt;
 &lt;p&gt;Completely banning phones in the entire school is total overkill, and it can hurt people too. There are quite a few people without any friends or anyone to talk to during breaks, who use their phones to distract themselves by watching a movie or listening to music. Oh, I don't know if you have realised this yet, but this also means that they're practically banning listening to music in school, which is completely ridiculous.&lt;/p&gt;
-&lt;p&gt;And if you're genuinely worried about phone use, there are so many better things you could do. Add more activities during breaks and &lt;em lang="nl"&gt;tussenuren&lt;/em&gt;. Give students something to actually do. Make the school day more engaging. Put that energy into actually fixing things instead of just taking something away.&lt;/p&gt;
+&lt;p&gt;And if you're genuinely worried about phone use, there are so many better things you could do. Add more activities during breaks and &lt;i lang="nl"&gt;tussenuren&lt;/i&gt;. Give students something to actually do. Make the school day more engaging. Put that energy into actually fixing things instead of just taking something away.&lt;/p&gt;
 &lt;p&gt;Oh and maybe, if students are spending entire lessons on their phones instead of paying attention, maybe the lesson just isn't interesting enough. Maybe the education itself is the problem.&lt;/p&gt;
-&lt;p&gt;The moment a school starts banning phones in hallways and during &lt;em lang="nl"&gt;tussenuren&lt;/em&gt;, they've stopped caring about education and started caring about creating an authoritarian, control-obsessed environment. And we're just supposed to accept that.&lt;/p&gt;</content>
+&lt;p&gt;The moment a school starts banning phones in hallways and during &lt;i lang="nl"&gt;tussenuren&lt;/i&gt;, they've stopped caring about education and started caring about creating an authoritarian, control-obsessed environment. And we're just supposed to accept that.&lt;/p&gt;</content>
     <link href="https://gijs6.nl/blog/phone-bans" />
     <published>2026-06-16T16:27:29+02:00</published>
+  </entry>
+  <entry>
+    <id>https://gijs6.nl/blog/banknote-redesign</id>
+    <title>Euro banknotes are getting a redesign and I have opinions</title>
+    <updated>2026-07-25T23:59:52+02:00</updated>
+    <content>&lt;style&gt;
+    .banknotes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+        margin: 0 0 var(--spacing-lg) 0;
+    }
+
+    .banknotes &gt; .banknotes__figure {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+        margin-block: 0 !important;
+    }
+
+    .banknotes &gt; .banknotes__figure &gt; a &gt; .banknotes__image {
+        --note-size: 145px;
+        max-height: var(--note-size);
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+
+    .banknotes &gt; .banknotes__figure &gt; a &gt; .banknotes__image--vertical {
+        max-width: var(--note-size);
+        max-height: none;
+    }
+
+    .series {
+        float: right;
+        margin: var(--spacing-sm) 0 var(--spacing-sm) var(--spacing-sm);
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: auto auto;
+        grid-auto-flow: column;
+        gap: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    @media (max-width: 1050px) {
+        .series {
+            float: none;
+            margin: var(--spacing-sm) 0;
+            width: fit-content;
+        }
+    }
+
+    .series &gt; .series__figure {
+        display: contents;
+    }
+
+    .series &gt; .series__figure &gt; .series__image {
+        --series-max-width: 200px;
+        max-width: var(--series-max-width);
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: white;
+        justify-self: center;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;The European Central Bank (BCE/ECB/ЕЦБ/EZB/EKP/EKT/ESB/EKB/BĊE/EBC) is redesigning the euro banknotes. After years of committees and surveys, we've finally reached the fun part: 10 designs made the shortlist, and they went public this month.&lt;/p&gt;
+&lt;h2&gt;The old notes&lt;/h2&gt;
+&lt;div class="series"&gt;
+    &lt;figure class="series__figure"&gt;
+        &lt;img class="series__image" src="https://cdn.gijs6.nl/blog/banknote-redesign/first-series.png" alt="The first euro banknote series (2002)"&gt;
+        &lt;figcaption&gt;The first series (&lt;time datetime="2002"&gt;2002&lt;/time&gt;-&lt;time datetime="2013"&gt;2013&lt;/time&gt;)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="series__figure"&gt;
+        &lt;img class="series__image" src="https://cdn.gijs6.nl/blog/banknote-redesign/europa-series.png" alt="The Europa series euro banknotes (2013-2019)"&gt;
+        &lt;figcaption&gt;The Europa series (&lt;time datetime="2013"&gt;2013&lt;/time&gt;-present)&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The first euro banknote series was made by Austrian designer Robert Kalina in &lt;time datetime="2002"&gt;2002&lt;/time&gt;. It's built around windows, doorways, and bridges, but none of them are real buildings.&lt;/p&gt;
+&lt;p&gt;After that came the "Europa series", a redesign of the first one by designer Reinhold Gerstetter.&lt;/p&gt;
+&lt;h2&gt;Why?&lt;/h2&gt;
+&lt;p&gt;The Europa series still does its job, so why? The ECB gives a few reasons.&lt;/p&gt;
+&lt;p&gt;The boring-but-important one is counterfeiting: reproduction tech keeps getting better, so every so often the notes need fresh security features to stay ahead. A full redesign is a good excuse to add those./And they say the new notes will also be more accessible, especially for people who are visually impaired. They want to make them more durable and more sustainable too.&lt;/p&gt;
+&lt;h2&gt;Two new themes&lt;/h2&gt;
+&lt;p&gt;After many surveys, the ECB picked 2 themes: "European culture" and "Rivers and birds" for the new notes. Here's how the ECB describes them:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;"European culture: Europe's rich cultural heritage and dynamic cultural and creative sectors strengthen the European identity, forging a shared sense of belonging. Culture promotes common values, inclusion and dialogue in Europe and across the globe. It brings people together."&lt;/li&gt;
+&lt;li&gt;"Rivers and birds: Rivers and birds recognise no borders, symbolising freedom and unity amongst Europeans and our connection to nature. Europe boasts a wide variety of rivers and birds that inspire us and remind us of our responsibility to protect the environment."&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each note gets its own motifs depending on the theme:&lt;/p&gt;
+&lt;h3&gt;European culture&lt;/h3&gt;
+&lt;p&gt;The front shows a famous European, and the back shows a scene that matches that note's theme.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Note&lt;/th&gt;
+&lt;th&gt;Person&lt;/th&gt;
+&lt;th&gt;Theme&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;€5&lt;/td&gt;
+&lt;td&gt;Maria Callas&lt;/td&gt;
+&lt;td&gt;Performing arts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;€10&lt;/td&gt;
+&lt;td&gt;Ludwig van Beethoven&lt;/td&gt;
+&lt;td&gt;Music&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;€20&lt;/td&gt;
+&lt;td&gt;Marie Curie (born Skłodowska)&lt;/td&gt;
+&lt;td&gt;Universities and schools&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;€50&lt;/td&gt;
+&lt;td&gt;Miguel de Cervantes Saavedra&lt;/td&gt;
+&lt;td&gt;Libraries&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;€100&lt;/td&gt;
+&lt;td&gt;Leonardo da Vinci&lt;/td&gt;
+&lt;td&gt;Museums and exhibitions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;€200&lt;/td&gt;
+&lt;td&gt;Bertha von Suttner&lt;/td&gt;
+&lt;td&gt;Public squares&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Rivers and birds&lt;/h3&gt;
+&lt;p&gt;Here the front shows a landscape and a bird, and the back shows an EU institution.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Note&lt;/th&gt;
+&lt;th&gt;Landscape&lt;/th&gt;
+&lt;th&gt;Bird&lt;/th&gt;
+&lt;th&gt;Building&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;€5&lt;/td&gt;
+&lt;td&gt;Mountain spring&lt;/td&gt;
+&lt;td&gt;Wallcreeper&lt;/td&gt;
+&lt;td&gt;European Parliament&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;€10&lt;/td&gt;
+&lt;td&gt;Waterfall&lt;/td&gt;
+&lt;td&gt;Kingfisher&lt;/td&gt;
+&lt;td&gt;European Commission&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;€20&lt;/td&gt;
+&lt;td&gt;River valley&lt;/td&gt;
+&lt;td&gt;Bee-eater colony&lt;/td&gt;
+&lt;td&gt;European Central Bank&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;€50&lt;/td&gt;
+&lt;td&gt;Meandering river&lt;/td&gt;
+&lt;td&gt;White stork&lt;/td&gt;
+&lt;td&gt;Court of Justice of the European Union&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;€100&lt;/td&gt;
+&lt;td&gt;River mouth&lt;/td&gt;
+&lt;td&gt;Avocet&lt;/td&gt;
+&lt;td&gt;European Council and Council of the European Union&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;€200&lt;/td&gt;
+&lt;td&gt;Seascape&lt;/td&gt;
+&lt;td&gt;Northern gannet&lt;/td&gt;
+&lt;td&gt;European Court of Auditors&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;The shortlist&lt;/h2&gt;
+&lt;p&gt;Getting from 2 themes to 10 designs took a while. Over 1,200 designers and studios across the EU applied, 25 were asked to make full proposals, and a jury of 21 independent experts picked the 10 you see below. The ECB has a &lt;a href="https://surveys.ecb.europa.eu/10b/neweuro"&gt;public survey&lt;/a&gt; open until &lt;time datetime="2026-09-21"&gt;21 September 2026&lt;/time&gt;, and at the end of the year, they will make a descision&lt;/p&gt;
+&lt;p&gt;Side note:everything below is just my opinion. I'm not an amazing designer, I've got no special expertise here, I just really like this stuff and have thoughts. So (after reading this) go look at the designs yourself and make up your own mind. (And then go vote!)&lt;/p&gt;
+&lt;h3&gt;Design A by &lt;span lang="nl"&gt;Studio Joost Grootens&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="banknotes"&gt;
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/5-front.jpg" alt="Design A 5 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/5-back.jpg" alt="Design A 5 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/10-front.jpg" alt="Design A 10 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/10-back.jpg" alt="Design A 10 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/20-front.jpg" alt="Design A 20 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/20-back.jpg" alt="Design A 20 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/50-front.jpg" alt="Design A 50 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/50-back.jpg" alt="Design A 50 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/100-front.jpg" alt="Design A 100 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/100-back.jpg" alt="Design A 100 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/200-front.jpg" alt="Design A 200 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-a/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-a/200-back.jpg" alt="Design A 200 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The notes are fine, but that's about it for me. The rest falls a bit flat: the fronts feel empty, the portraits aren't visually really appealing, and those silhouette figures are just weird. This gives me school textbook vibes, not money.&lt;/p&gt;
+&lt;h3&gt;Design B by &lt;span lang="de"&gt;PunktFormStrich&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="banknotes"&gt;
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/5-front.jpg" alt="Design B 5 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/5-back.jpg" alt="Design B 5 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/10-front.jpg" alt="Design B 10 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/10-back.jpg" alt="Design B 10 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/20-front.jpg" alt="Design B 20 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/20-back.jpg" alt="Design B 20 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/50-front.jpg" alt="Design B 50 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/50-back.jpg" alt="Design B 50 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/100-front.jpg" alt="Design B 100 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/100-back.jpg" alt="Design B 100 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/200-front.jpg" alt="Design B 200 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-b/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-b/200-back.jpg" alt="Design B 200 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Wow, okay, these are gorgeous. Design A stuck to one main colour with a secondary accent, but this one really uses each note's colour amazingly. The buildings look great, and you can directly tell that the river landscapes are actually rivers. My favourite bit are the little details under the birds, it's genuinely fun to read (it's in English though, I would have have liked something language-neutral). These feel like notes that could really exist. Just beautiful.&lt;/p&gt;
+&lt;h3&gt;Design C by &lt;span lang="de"&gt;Neue Gestaltung GmbH&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="banknotes"&gt;
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/5-front.jpg" alt="Design C 5 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/5-back.jpg" alt="Design C 5 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/10-front.jpg" alt="Design C 10 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/10-back.jpg" alt="Design C 10 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/20-front.jpg" alt="Design C 20 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/20-back.jpg" alt="Design C 20 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/50-front.jpg" alt="Design C 50 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/50-back.jpg" alt="Design C 50 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/100-front.jpg" alt="Design C 100 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/100-back.jpg" alt="Design C 100 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/200-front.jpg" alt="Design C 200 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-c/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-c/200-back.jpg" alt="Design C 200 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Someone please remind them this was meant to be a banknote, not a company report. The left and right bits are okay (the portraits are a bit dull, but the little constellations on the map of Europe are cool), but the middle ruins it. You can just about tell what it's supposed to be, a piano, a chemistry set, some books, but it looks so, so corporate. Way more like the cover of a company report than money.&lt;/p&gt;
+&lt;h3&gt;Design D by &lt;span lang="fr"&gt;Rudy Guedj&lt;/span&gt; and &lt;span lang="fr"&gt;François Girard-Meunier&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="banknotes"&gt;
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/5-front.jpg" alt="Design D 5 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/5-back.jpg" alt="Design D 5 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/10-front.jpg" alt="Design D 10 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/10-back.jpg" alt="Design D 10 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/20-front.jpg" alt="Design D 20 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/20-back.jpg" alt="Design D 20 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/50-front.jpg" alt="Design D 50 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/50-back.jpg" alt="Design D 50 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/100-front.jpg" alt="Design D 100 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/100-back.jpg" alt="Design D 100 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/200-front.jpg" alt="Design D 200 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-d/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-d/200-back.jpg" alt="Design D 200 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Okay, this one is on another level. Design B still left some white space along the sides, but here the notes are filled with colour from edge to edge, and it works so well. I absolutely love this. The details ARE SO GOOD: the actual waveform of a bird call, tiny footprints of the birds, a feather, more bird-sound stuff, IT'S SO GOOD. The backs are about as European as it gets too (I don't get the hands though). The 10 and 50 notes look a bit too alik tough. But overall, just really, really good.&lt;/p&gt;
+&lt;h3&gt;Design E by &lt;span lang="el"&gt;Myrsini Vardopoulou&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="banknotes"&gt;
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/5-front.jpg" alt="Design E 5 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/5-back.jpg" alt="Design E 5 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/10-front.jpg" alt="Design E 10 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/10-back.jpg" alt="Design E 10 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/20-front.jpg" alt="Design E 20 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/20-back.jpg" alt="Design E 20 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/50-front.jpg" alt="Design E 50 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/50-back.jpg" alt="Design E 50 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/100-front.jpg" alt="Design E 100 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/100-back.jpg" alt="Design E 100 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/200-front.jpg" alt="Design E 200 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-e/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-e/200-back.jpg" alt="Design E 200 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;These feel washed out to me. Flat, lifeless, really like pale colours, kind of boring. And because everything is so muted, the notes are hard to tell apart, which doesn't help. Not terrible, but far from great.&lt;/p&gt;
+&lt;h3&gt;Design F by &lt;span lang="de"&gt;Jan Robert Dünnweller&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="banknotes"&gt;
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/5-front.jpg" alt="Design F 5 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/5-back.jpg" alt="Design F 5 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/10-front.jpg" alt="Design F 10 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/10-back.jpg" alt="Design F 10 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/20-front.jpg" alt="Design F 20 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/20-back.jpg" alt="Design F 20 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/50-front.jpg" alt="Design F 50 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/50-back.jpg" alt="Design F 50 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/100-front.jpg" alt="Design F 100 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/100-back.jpg" alt="Design F 100 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/200-front.jpg" alt="Design F 200 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-f/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-f/200-back.jpg" alt="Design F 200 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Gorgeous, honestly so beautifully drawn. But well... it isn't really money. Each note is an amazing bit of art, really nicely done, and yet I just can't picture handing one over at a shop. Beautiful, just not quite money.&lt;/p&gt;
+&lt;h3&gt;Design G by &lt;span lang="es"&gt;Rubio &amp;amp; del Amo&lt;/span&gt; and &lt;span lang="es"&gt;Cruz más Cruz&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="banknotes"&gt;
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/5-front.jpg" alt="Design G 5 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/5-back.jpg" alt="Design G 5 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/10-front.jpg" alt="Design G 10 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/10-back.jpg" alt="Design G 10 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/20-front.jpg" alt="Design G 20 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/20-back.jpg" alt="Design G 20 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/50-front.jpg" alt="Design G 50 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/50-back.jpg" alt="Design G 50 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/100-front.jpg" alt="Design G 100 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/100-back.jpg" alt="Design G 100 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/200-front.jpg" alt="Design G 200 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-g/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-g/200-back.jpg" alt="Design G 200 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Pretty sure the brief was money for the Eurozone, not Monopoly. It all feels too busy and too playful for real currency. That said, it's nicely designed, and these are the coolest portraits on the whole list. But like design C, the art style is so corporate.&lt;/p&gt;
+&lt;h3&gt;Design H by &lt;span lang="de"&gt;Atelier Goppel-Toperngpong&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="banknotes"&gt;
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/5-front.jpg" alt="Design H 5 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/5-back.jpg" alt="Design H 5 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/10-front.jpg" alt="Design H 10 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/10-back.jpg" alt="Design H 10 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/20-front.jpg" alt="Design H 20 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/20-back.jpg" alt="Design H 20 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/50-front.jpg" alt="Design H 50 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/50-back.jpg" alt="Design H 50 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/100-front.jpg" alt="Design H 100 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/100-back.jpg" alt="Design H 100 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/200-front.jpg" alt="Design H 200 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-h/"&gt;&lt;img class="banknotes__image banknotes__image--horizontal" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-h/200-back.jpg" alt="Design H 200 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Fantastic. Honestly so, so beautiful. The buildings are gorgeous, the colours are lovely, and these are by far the nicest birds on the whole shortlist. It looks a lot like the current notes, but in a good way. It feels familiar and fresh at the same time, and out of all ten this is the one I can most easily picture actually becoming real money. It could maybe use a bit more of that "Europe" feeling somewhere, but otherwise just gorgeous.&lt;/p&gt;
+&lt;h3&gt;Design I by &lt;span lang="fr"&gt;Isabelle Daëron&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="banknotes"&gt;
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/5-front.jpg" alt="Design I 5 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/5-back.jpg" alt="Design I 5 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/10-front.jpg" alt="Design I 10 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/10-back.jpg" alt="Design I 10 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/20-front.jpg" alt="Design I 20 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/20-back.jpg" alt="Design I 20 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/50-front.jpg" alt="Design I 50 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/50-back.jpg" alt="Design I 50 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/100-front.jpg" alt="Design I 100 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/100-back.jpg" alt="Design I 100 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/200-front.jpg" alt="Design I 200 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-i/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-i/200-back.jpg" alt="Design I 200 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A bit boring, nothing too special here. They look more like a set of Pokemon cards than banknotes. And it doesn't feel very creative either: it's like they followed the assignment to the letter and then just did nothing, not adding anything creative.&lt;/p&gt;
+&lt;h3&gt;Design J by &lt;span lang="fi"&gt;Ville Tietäväinen&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="banknotes"&gt;
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/5-front.jpg" alt="Design J 5 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/5-back.jpg" alt="Design J 5 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/10-front.jpg" alt="Design J 10 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/10-back.jpg" alt="Design J 10 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/20-front.jpg" alt="Design J 20 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/20-back.jpg" alt="Design J 20 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/50-front.jpg" alt="Design J 50 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/50-back.jpg" alt="Design J 50 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/100-front.jpg" alt="Design J 100 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/100-back.jpg" alt="Design J 100 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+
+    &lt;figure class="banknotes__figure"&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/200-front.jpg" alt="Design J 200 euro note, front"&gt;&lt;/a&gt;
+        &lt;a href="https://cdn.gijs6.nl/blog/banknote-redesign/design-j/"&gt;&lt;img class="banknotes__image banknotes__image--vertical" src="https://cdn.gijs6.nl/blog/banknote-redesign/thumbs/design-j/200-back.jpg" alt="Design J 200 euro note, back"&gt;&lt;/a&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Pretty similar to design I, but a bit better. I really like the buildings shown as silhouettes inside the wings, and the birds have a cool style, even if they look more like a comic than a banknote. The little figures along the bottom of the backs add to that comic feel too. Not bad, just not really money again.&lt;/p&gt;
+&lt;h2&gt;So, which one?&lt;/h2&gt;
+&lt;p&gt;Design D and design H are my clear favourites, with design B close behind them, all beautiful and the ones that feel most like real, usable money.&lt;/p&gt;
+&lt;h2&gt;Two more things&lt;/h2&gt;
+&lt;p&gt;I think rivers and birds is a much better theme than European culture. With European culture you're guaranteed to disappoint someone: it's so big and so diverse that whoever you pick to put on a note, you're leaving out a hundred other things that deserved a spot just as much. There is a reason the current notes use fictional bridges and not real ones. Rivers and birds gives designers a lot more to play with, and it's way more universal too.&lt;/p&gt;
+&lt;p&gt;I'm also not a fan of the fully vertical notes (design G, I, and J). That's just not how people hold banknotes, and it makes them look like they were made for your phone screen instead of your wallet.&lt;/p&gt;
+&lt;h2&gt;Go vote&lt;/h2&gt;
+&lt;p&gt;A big thanks to everyone behind these 10 designs. Even the ones I didn't like had a ton of work and care put into them, so big love to all of you.&lt;/p&gt;
+&lt;p&gt;If you've got opinions too (and after all this, how could you not), go fill in the &lt;a href="https://surveys.ecb.europa.eu/10b/neweuro"&gt;ECB's survey&lt;/a&gt; before &lt;time datetime="2026-09-21"&gt;21 September 2026&lt;/time&gt; and let them know what you think.&lt;/p&gt;</content>
+    <link href="https://gijs6.nl/blog/banknote-redesign" />
+    <published>2026-07-25T23:59:52+02:00</published>
   </entry>
 </feed>

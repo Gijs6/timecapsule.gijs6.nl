@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
         <meta name="author" content="Gijs6" />
         <meta name="generator" content="Custom Python+Jinja2 SSG" />
 
-        <link rel="icon" href="/versions/v4/favicon.png" />
+        <link rel="icon" href="/versions/v4/favicon.ico" />
 
         <link rel="stylesheet" href="/versions/v4/assets/styles/main.min.css" />
 
@@ -32,14 +32,28 @@
 
     <body>
         <header class="sidebar">
-            <a class="sidebar__logo" href="/versions/v4/index.html">Gijs<span class="sidebar__logo-accent">6</span></a>
-            <nav class="sidebar__nav" aria-label="Site">
-                <a class="sidebar__nav-link" href="/versions/v4/index.html">Home</a>
-                <a class="sidebar__nav-link" href="/versions/v4/blog/">Blog</a>
-                <a class="sidebar__nav-link sidebar__nav-link--active" aria-current="page" href="/versions/v4/projects">Projects</a>
-                <a class="sidebar__nav-link" href="/versions/v4/bookmarks">Bookmarks</a>
-                <a class="sidebar__nav-link" href="/versions/v4/colophon">Colophon</a>
-                <a class="sidebar__nav-link" href="https://contact.gijs6.nl">Contact</a>
+            <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
+            <nav aria-label="Site">
+                <ul class="sidebar__nav">
+                    <li>
+                        <a class="sidebar__nav-link" href="/versions/v4/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="/versions/v4/blog/">Blog</a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link sidebar__nav-link--active" aria-current="page" href="/versions/v4/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="/versions/v4/bookmarks">Bookmarks</a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="/versions/v4/colophon">Colophon</a>
+                    </li>
+                    <li>
+                        <a class="sidebar__nav-link" href="https://contact.gijs6.nl">Contact</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <main class="page">
@@ -49,94 +63,179 @@
             </hgroup>
             <ul class="project-list">
                 <li class="project-list__item">
-                    <h3 class="project-list__title">Stapler</h3>
+                    <h2 class="project-list__title">Stapler</h2>
                     <p class="project-list__description">A simple static site generator built with Python and Jinja.</p>
-                    <p class="project-list__links">
-                        <a class="project-list__link" href="https://github.com/Gijs6/stapler">GitHub ↗</a>
-                        <a class="project-list__link" href="https://codeberg.org/gijs6/stapler">Codeberg ↗</a>
-                        <a class="project-list__link" href="https://gitlab.com/ggijs/stapler">GitLab ↗</a>
-                    </p>
+                    <ul class="project-list__links">
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://github.com/Gijs6/stapler">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://codeberg.org/gijs6/stapler">Codeberg <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gitlab.com/ggijs/stapler">GitLab <span aria-hidden="true">↗</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="project-list__item">
-                    <h3 class="project-list__title">Outflow</h3>
+                    <h2 class="project-list__title">Outflow</h2>
                     <p class="project-list__description">A simple and clean weather webapp.</p>
-                    <p class="project-list__links">
-                        <a class="project-list__link" href="https://outflow.gijs6.nl">Visit ↗</a>
-                        <a class="project-list__link" href="https://github.com/Gijs6/outflow">GitHub ↗</a>
-                        <a class="project-list__link" href="https://codeberg.org/gijs6/outflow">Codeberg ↗</a>
-                        <a class="project-list__link" href="https://gitlab.com/ggijs/outflow">GitLab ↗</a>
-                    </p>
+                    <ul class="project-list__links">
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://outflow.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://github.com/Gijs6/outflow">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://codeberg.org/gijs6/outflow">Codeberg <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gitlab.com/ggijs/outflow">GitLab <span aria-hidden="true">↗</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="project-list__item">
-                    <h3 class="project-list__title">Huebox</h3>
+                    <h2 class="project-list__title">Huebox</h2>
                     <p class="project-list__description">A simple colour palette manager.</p>
-                    <p class="project-list__links">
-                        <a class="project-list__link" href="https://huebox.gijs6.nl">Visit ↗</a>
-                        <a class="project-list__link" href="https://github.com/Gijs6/huebox">GitHub ↗</a>
-                        <a class="project-list__link" href="https://codeberg.org/gijs6/huebox">Codeberg ↗</a>
-                        <a class="project-list__link" href="https://gitlab.com/ggijs/huebox">GitLab ↗</a>
-                    </p>
+                    <ul class="project-list__links">
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://huebox.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://github.com/Gijs6/huebox">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://codeberg.org/gijs6/huebox">Codeberg <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gitlab.com/ggijs/huebox">GitLab <span aria-hidden="true">↗</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="project-list__item">
-                    <h3 class="project-list__title">Gemeentle</h3>
+                    <h2 class="project-list__title">Gemeentle</h2>
                     <p class="project-list__description">A daily Dutch municipality guessing game. Turns out the Netherlands has a lot of municipalities you've never heard of.</p>
-                    <p class="project-list__links">
-                        <a class="project-list__link" href="https://gemeentle.gijs6.nl">Visit ↗</a>
-                        <a class="project-list__link" href="https://github.com/Gijs6/gemeentle">GitHub ↗</a>
-                        <a class="project-list__link" href="https://codeberg.org/gijs6/gemeentle">Codeberg ↗</a>
-                        <a class="project-list__link" href="https://gitlab.com/ggijs/gemeentle">GitLab ↗</a>
-                    </p>
+                    <ul class="project-list__links">
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gemeentle.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://github.com/Gijs6/gemeentle">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://codeberg.org/gijs6/gemeentle">Codeberg <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gitlab.com/ggijs/gemeentle">GitLab <span aria-hidden="true">↗</span></a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="project-list__item">
-                    <h3 class="project-list__title">school.gijs6.nl</h3>
+                    <h2 class="project-list__title">school.gijs6.nl</h2>
                     <p class="project-list__description">The place where I store all my school summaries.</p>
-                    <p class="project-list__links">
-                        <a class="project-list__link" href="https://school.gijs6.nl">Visit ↗</a>
-                        <a class="project-list__link" href="https://github.com/Gijs6/school.gijs6.nl">GitHub ↗</a>
-                        <a class="project-list__link" href="https://codeberg.org/gijs6/school.gijs6.nl">Codeberg ↗</a>
-                        <a class="project-list__link" href="https://gitlab.com/ggijs/school.gijs6.nl">GitLab ↗</a>
-                        <a class="project-list__link" href="https://git.dupunkto.org/sites/school.gijs6.nl">{du}punkto ↗</a>
-                    </p>
+                    <ul class="project-list__links">
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://school.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://github.com/Gijs6/school.gijs6.nl">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://codeberg.org/gijs6/school.gijs6.nl">Codeberg <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gitlab.com/ggijs/school.gijs6.nl">GitLab <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://git.dupunkto.org/sites/school.gijs6.nl">{du}punkto <span aria-hidden="true">↗</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="project-list__item">
-                    <h3 class="project-list__title">gijs6.nl</h3>
+                    <h2 class="project-list__title">gijs6.nl</h2>
                     <p class="project-list__description">This very site. I hope you like it. Please like it.</p>
-                    <p class="project-list__links">
-                        <a class="project-list__link" href="https://gijs6.nl">Visit ↗</a>
-                        <a class="project-list__link" href="https://github.com/Gijs6/gijs6.nl">GitHub ↗</a>
-                        <a class="project-list__link" href="https://codeberg.org/gijs6/gijs6.nl">Codeberg ↗</a>
-                        <a class="project-list__link" href="https://gitlab.com/ggijs/gijs6.nl">GitLab ↗</a>
-                        <a class="project-list__link" href="https://git.dupunkto.org/sites/gijs6.nl">{du}punkto ↗</a>
-                    </p>
+                    <ul class="project-list__links">
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://github.com/Gijs6/gijs6.nl">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://codeberg.org/gijs6/gijs6.nl">Codeberg <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gitlab.com/ggijs/gijs6.nl">GitLab <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://git.dupunkto.org/sites/gijs6.nl">{du}punkto <span aria-hidden="true">↗</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="project-list__item">
-                    <h3 class="project-list__title">Meliag</h3>
+                    <h2 class="project-list__title">Meliag</h2>
                     <p class="project-list__description">A train info webapp for Dutch train stations (hopefully works better than the actual trains).</p>
-                    <p class="project-list__links">
-                        <a class="project-list__link" href="https://meliag.gijs6.nl">Visit ↗</a>
-                        <a class="project-list__link" href="https://github.com/Gijs6/meliag">GitHub ↗</a>
-                        <a class="project-list__link" href="https://codeberg.org/gijs6/meliag">Codeberg ↗</a>
-                        <a class="project-list__link" href="https://gitlab.com/ggijs/meliag">GitLab ↗</a>
-                    </p>
+                    <ul class="project-list__links">
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://meliag.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://github.com/Gijs6/meliag">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://codeberg.org/gijs6/meliag">Codeberg <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gitlab.com/ggijs/meliag">GitLab <span aria-hidden="true">↗</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="project-list__item">
-                    <h3 class="project-list__title">Watchtower</h3>
+                    <h2 class="project-list__title">Watchtower</h2>
                     <p class="project-list__description">A web app to monitor sites for changes.</p>
-                    <p class="project-list__links">
-                        <a class="project-list__link" href="https://github.com/Gijs6/watchtower">GitHub ↗</a>
-                        <a class="project-list__link" href="https://codeberg.org/gijs6/watchtower">Codeberg ↗</a>
-                        <a class="project-list__link" href="https://gitlab.com/ggijs/watchtower">GitLab ↗</a>
-                    </p>
+                    <ul class="project-list__links">
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://github.com/Gijs6/watchtower">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://codeberg.org/gijs6/watchtower">Codeberg <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gitlab.com/ggijs/watchtower">GitLab <span aria-hidden="true">↗</span></a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="project-list__item">
-                    <h3 class="project-list__title">Mesh</h3>
+                    <h2 class="project-list__title">Shelf</h2>
+                    <p class="project-list__description">A simple notes and todo app.</p>
+                    <ul class="project-list__links">
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://github.com/Gijs6/shelf">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://codeberg.org/gijs6/shelf">Codeberg <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://gitlab.com/ggijs/shelf">GitLab <span aria-hidden="true">↗</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="project-list__item">
+                    <h2 class="project-list__title">Mesh</h2>
                     <p class="project-list__description">A distributed uptime monitor for the {du}punkto network, made together with the rest of {du}punkto.</p>
-                    <p class="project-list__links">
-                        <a class="project-list__link" href="https://git.dupunkto.org/~dupunkto/mesh">{du}punkto ↗</a>
-                        <a class="project-list__link" href="https://github.com/dupunkto/mesh">GitHub ↗</a>
-                        <a class="project-list__link" href="https://codeberg.org/dupunkto/mesh">Codeberg ↗</a>
-                    </p>
+                    <ul class="project-list__links">
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://git.dupunkto.org/~dupunkto/mesh">{du}punkto <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://github.com/dupunkto/mesh">GitHub <span aria-hidden="true">↗</span></a>
+                        </li>
+                        <li class="project-list__link-item">
+                            <a class="project-list__link" href="https://codeberg.org/dupunkto/mesh">Codeberg <span aria-hidden="true">↗</span></a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <p>You can find all my projects on my <a href="https://github.com/Gijs6">GitHub profile</a>, <a href="https://gitlab.com/ggijs">GitLab profile</a>, <a href="https://codeberg.org/Gijs6">Codeberg profile</a>, or in the <a href="https://git.dupunkto.org">{du}punkto repos</a>.</p>
@@ -144,7 +243,10 @@
         <footer class="footer">
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
-            <p class="footer__line">Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/2a5bc445d30d27c974e0525e8ecca560372fbc3d">2a5bc44</a>, deployed on <time datetime="2026-07-02T08:08:33.033503+02:00">July 02, 2026 at 08:08:33 CEST</time></p>
+            <p class="footer__line">
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/7f874cccdfaa41f2c0a8ab449309967e4c82fadb"><code>7f874cc</code></a
+                >, deployed on <time datetime="2026-08-04T16:00:56.851800+02:00">4 August 2026 at 16:00:56 CEST</time>
+            </p>
         </footer>
     </body>
 </html>
