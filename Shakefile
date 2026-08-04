@@ -1,16 +1,13 @@
 #!/bin/bash
-
-format() {
-  prettier --write "site/**/*.{css,js,html,xml}"
-}
+SRC="site/**"
 
 serve() {
-  server --dir site --port 8005
+  i:serve_static site 8005
 }
 
 deploy() {
   format
-  lift deploy
+  g:deploy
 }
 
 scrape() {
