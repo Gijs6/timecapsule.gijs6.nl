@@ -16,7 +16,7 @@ def normalize_url(url):
         (
             parsed.scheme,
             parsed.netloc,
-            parsed.path.rstrip("/") if parsed.path != "/" else parsed.path,
+            parsed.path or "/",
             parsed.params,
             parsed.query,
             "",
@@ -33,17 +33,19 @@ def get_file_path(url, output_dir, base_domain):
     parsed = urlparse(url)
     path = parsed.path.lstrip("/") or "index"
 
+    if path.endswith("/"):
+        path = f"{path}index"
+
+    _, ext = os.path.splitext(path)
+
     if parsed.query:
         query_part = parsed.query.replace("=", "_").replace("&", "_")
-        _, ext = os.path.splitext(path)
         if ext:
             path = f"{path[: -len(ext)]}_{query_part}{ext}"
         else:
             path = f"{path}_{query_part}.html"
-    else:
-        _, ext = os.path.splitext(path)
-        if not ext:
-            path = f"{path}.html"
+    elif not ext:
+        path = f"{path}.html"
 
     return os.path.join(output_dir, base_domain, path)
 

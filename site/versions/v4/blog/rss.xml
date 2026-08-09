@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 05 Aug 2026 07:07:16 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 14:34:36 +0000</lastBuildDate>
     <item>
       <title>Introduction</title>
       <link>https://gijs6.nl/blog/introduction</link>
@@ -781,6 +781,24 @@ The present&lt;/p&gt;</description>
 &lt;p&gt;If you've got opinions too (and after all this, how could you not), go fill in the &lt;a href="https://surveys.ecb.europa.eu/10b/neweuro"&gt;ECB's survey&lt;/a&gt; before &lt;time datetime="2026-09-21"&gt;21 September 2026&lt;/time&gt; and let them know what you think.&lt;/p&gt;</description>
       <guid isPermaLink="false">https://gijs6.nl/blog/banknote-redesign</guid>
       <pubDate>Sat, 25 Jul 2026 23:59:52 +0200</pubDate>
+    </item>
+    <item>
+      <title>Why do we even do inheritance?</title>
+      <link>https://gijs6.nl/blog/inheritance</link>
+      <description>&lt;p&gt;Why do we even do inheritance? Why do your kids get a right to your shit when you're dead? Those kids never had to do a damn thing for it and yet they get it anyway. And if you want to support your kid financially so badly, just do that while you're still alive.&lt;/p&gt;
+&lt;p&gt;It's just rich people staying rich for no reason. Your kid didn't do anything. They were just born to the right parents, and now they get a free house or a pile of money for it. That's not fair, that's just luck.&lt;/p&gt;
+&lt;p&gt;As far as I'm concerned we should just abolish the whole inheritance system. And just think about the advantages of that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A ton of houses would become available, because they wouldn't stay stuck in families anymore but would just go on the market&lt;/li&gt;
+&lt;li&gt;We'd shrink wealth inequality and opportunity inequality&lt;/li&gt;
+&lt;li&gt;All the money you have left over could go straight to the tax office, and then we could actually do so many nice things with it that everyone benefits from&lt;/li&gt;
+&lt;li&gt;Rich families would actually have to stay rich by doing something, instead of just waiting for grandpa to die&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And before anyone starts: no, I'm not saying you have to sell your grandma's ring or her photo albums, stuff that actually has sentimental value you can just keep. I'm talking about the million-euro house and the 300k sitting in some account that you're about to inherit.&lt;/p&gt;
+&lt;p&gt;By the way, hii to all the VVD voters reading this, you're probably sitting super mad in your own house right now (paid for with money you got from an inheritance), but I'd love to remind you that liberal economics makes a very clear difference between earned income (where you actually did something) and unearned income, and unless you commit murder, your parents dying isn't something you had to do anything for&lt;/p&gt;
+&lt;!-- Oke en nog 2 dingen, mensen die 'sterfbelasting' zeggen kunnen moeilijk hard de tering krijgen en mensen die 'daar is al een keer belasting over betaald' zeggen moeten verplicht nog even 3havo economie volgen want dat is gewoon niet hoe belasting werkt --&gt;</description>
+      <guid isPermaLink="false">https://gijs6.nl/blog/inheritance</guid>
+      <pubDate>Thu, 06 Aug 2026 20:37:34 +0200</pubDate>
     </item>
   </channel>
 </rss>

@@ -18,13 +18,14 @@ html {
     scrollbar-gutter: stable;
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 body {
     min-height: 100vh;
     margin: 0;
+    overflow-x: hidden;
 }
 img {
-    shape-margin: var(--spacing-sm);
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -60,6 +61,7 @@ h5,
 h6,
 p {
     overflow-wrap: break-word;
+    word-break: break-word;
 }
 h1,
 h2,
@@ -68,6 +70,8 @@ h4,
 h5,
 h6,
 p,
+hgroup,
+address,
 blockquote,
 figure,
 pre,
@@ -89,43 +93,46 @@ pre {
     overflow-x: auto;
 }
 ul:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
+    padding-left: 2ch;
 }
 ul:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
+    padding-left: 2ch;
 }
 ul:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
+    padding-left: 2ch;
 }
 ol:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
+    padding-left: 2ch;
 }
 ol:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
+    padding-left: 2ch;
 }
 ol:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
+    padding-left: 2ch;
 }
 ul:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
+    padding-right: 2ch;
 }
 ul:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
+    padding-right: 2ch;
 }
 ul:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
+    padding-right: 2ch;
 }
 ol:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
+    padding-right: 2ch;
 }
 ol:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
+    padding-right: 2ch;
 }
 ol:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
+    padding-right: 2ch;
 }
 :is(ul, ol) > li {
-    margin-block: var(--spacing-sm);
+    margin-block: 0 var(--spacing-sm);
+}
+:is(ul, ol) > li:last-child {
+    margin-bottom: 0;
 }
 dl > dt {
     font-weight: 700;
@@ -134,22 +141,22 @@ dl > dt:not(:first-child) {
     margin-top: var(--spacing-sm);
 }
 dl > dd:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    margin-left: var(--spacing-lg);
+    margin-left: 2ch;
 }
 dl > dd:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    margin-left: var(--spacing-lg);
+    margin-left: 2ch;
 }
 dl > dd:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    margin-left: var(--spacing-lg);
+    margin-left: 2ch;
 }
 dl > dd:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    margin-right: var(--spacing-lg);
+    margin-right: 2ch;
 }
 dl > dd:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    margin-right: var(--spacing-lg);
+    margin-right: 2ch;
 }
 dl > dd:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    margin-right: var(--spacing-lg);
+    margin-right: 2ch;
 }
 table {
     border-collapse: collapse;
@@ -165,7 +172,7 @@ textarea:not([rows]) {
     min-height: 10em;
 }
 :target {
-    scroll-margin-block: 5ex;
+    scroll-margin-block: var(--spacing-xl);
 }
 @font-face {
     font-family: Bricolage Grotesque Variable;
@@ -227,49 +234,79 @@ textarea:not([rows]) {
     --lightningcss-light: initial;
     --lightningcss-dark: ;
     color-scheme: light dark;
-    --color-card-bg: #ece9e4;
-    --color-card-fg: #16181a;
-    --color-card-fg-muted: #5b5f63;
-    --color-card-border: #d3d0c8;
-    --color-card-accent: #551b9a;
-    --color-body-bg: #551b9a;
-    --color-body-fg: #fff;
-    --color-body-fg-muted: #d3b8f0;
+    --color-white: #fff;
+    --color-off-white: #efece7;
+    --color-black: #1a1c1e;
+    --color-gray-light: #d3d0c8;
+    --color-gray: #a6aaa8;
+    --color-gray-dark: #5b5f63;
+    --color-gray-darker: #45494e;
+    --color-purple: #551b9a;
+    --color-purple-light: #b48aef;
+    --color-purple-lighter: #d3b8f0;
+    --color-card-bg: var(--color-off-white);
+    --color-card-fg: var(--color-black);
+    --color-card-fg-muted: var(--color-gray-dark);
+    --color-card-border: var(--color-gray-light);
+    --color-card-accent: var(--color-purple);
+    --color-body-bg: var(--color-purple);
+    --color-body-fg: var(--color-white);
+    --color-body-fg-muted: var(--color-purple-lighter);
     --font-body: "Hanken Grotesk Variable", "Inter", sans-serif;
     --font-heading: "Bricolage Grotesque Variable", sans-serif;
     --font-mono: "Source Code Pro Variable", monospace;
     --font-size-xs: 0.875rem;
     --font-size-sm: 1rem;
-    --font-size-base: 1.125rem;
     --font-size-md: 1.25rem;
-    --font-size-lg: 1.75rem;
-    --font-size-xl: 3rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 1.875rem;
+    --font-size-2xl: 2.375rem;
+    --font-size-3xl: 3rem;
+    --line-height-body: 1.5;
+    --line-height-heading: 1.15;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --font-weight-black: 900;
     --spacing-3xs: 0.125rem;
     --spacing-2xs: 0.25rem;
-    --spacing-xs: 0.375rem;
-    --spacing-sm: 0.625rem;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
     --spacing-md: 1rem;
-    --spacing-lg: 1.25rem;
+    --spacing-lg: 1.5rem;
     --spacing-xl: 2rem;
     --spacing-2xl: 3rem;
     --spacing-3xl: 4rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --layout-space: var(--spacing-2xl);
+    --layout-space-start: 0;
+    --flow-gap: var(--spacing-md);
 }
 @media (prefers-color-scheme: dark) {
     :root {
         --lightningcss-light: ;
         --lightningcss-dark: initial;
     }
+}
+@media (max-width: 750px) {
     :root {
-        --color-card-bg: #1e2023;
-        --color-card-fg: #f2f0ea;
-        --color-card-fg-muted: #a6aaa8;
-        --color-card-border: #45494e;
-        --color-card-accent: #b48aef;
+        --layout-space: var(--spacing-lg);
+        --layout-space-start: var(--layout-space);
     }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-card-bg: var(--color-black);
+        --color-card-fg: var(--color-off-white);
+        --color-card-fg-muted: var(--color-gray);
+        --color-card-border: var(--color-gray-darker);
+        --color-card-accent: var(--color-purple-light);
+    }
+}
+html {
+    font-size: max(0.9rem, min(0.7rem + 0.5vw, 1.05rem));
 }
 a {
     color: currentColor;
@@ -283,6 +320,32 @@ a {
     background-color: var(--color-card-accent);
     color: var(--color-card-bg);
 }
+.sidebar ::-moz-selection {
+    background-color: var(--color-body-fg);
+    color: var(--color-body-bg);
+}
+.sidebar ::selection {
+    background-color: var(--color-body-fg);
+    color: var(--color-body-bg);
+}
+.footer ::-moz-selection {
+    background-color: var(--color-body-fg);
+    color: var(--color-body-bg);
+}
+.footer ::selection {
+    background-color: var(--color-body-fg);
+    color: var(--color-body-bg);
+}
+:focus-visible {
+    outline: 2px solid var(--color-card-accent);
+    outline-offset: 2px;
+}
+.sidebar :focus-visible {
+    outline-color: var(--color-body-fg);
+}
+.footer :focus-visible {
+    outline-color: var(--color-body-fg);
+}
 code,
 pre,
 samp {
@@ -290,10 +353,10 @@ samp {
 }
 body {
     font-family: var(--font-body);
+    line-height: var(--line-height-body);
     background-color: var(--color-body-bg);
     color: var(--color-card-fg);
     grid-template: "sidebar main" 1fr "sidebar footer" / auto 1fr;
-    line-height: 1.5;
     display: grid;
 }
 @media (max-width: 750px) {
@@ -303,33 +366,33 @@ body {
     }
 }
 body > .sidebar {
+    min-width: 250px;
     height: 100vh;
-    padding: var(--spacing-xl);
-    padding-top: var(--spacing-2xl);
-    padding-inline: var(--spacing-2xl);
+    padding: var(--layout-space);
     color: var(--color-body-fg);
     grid-area: sidebar;
     align-self: start;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 @media (max-width: 750px) {
     body > .sidebar {
+        min-width: 0;
         height: auto;
-        padding: var(--spacing-lg);
         position: static;
     }
 }
 body > .sidebar > .sidebar__logo {
     font-family: var(--font-heading);
     color: var(--color-body-fg);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-black);
+    line-height: var(--line-height-heading);
     align-items: baseline;
     margin-bottom: var(--spacing-xl);
-    line-height: 1.15;
     text-decoration: none;
     transition: color 0.2s;
     display: inline-flex;
@@ -372,7 +435,7 @@ body > .sidebar > .sidebar__logo:focus-visible > .sidebar__logo-last {
 body > .sidebar > nav > .sidebar__nav {
     gap: var(--spacing-md);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-md);
     flex-direction: column;
     margin: 0;
     list-style: none;
@@ -398,7 +461,7 @@ body > .sidebar > nav > .sidebar__nav:is(:lang(ae), :lang(ar), :lang(arc), :lang
 }
 @media (max-width: 750px) {
     body > .sidebar > nav > .sidebar__nav {
-        gap: var(--spacing-xs) var(--spacing-lg);
+        gap: var(--spacing-xs) var(--spacing-md);
         font-size: var(--font-size-sm);
         flex-flow: wrap;
     }
@@ -417,35 +480,14 @@ body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link:hover {
 body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link:focus-visible {
     color: var(--color-body-fg);
 }
-body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link:focus-visible {
-    outline-color: var(--color-body-fg);
-}
 body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active {
     color: var(--color-body-fg);
     position: relative;
 }
 body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:before {
     content: "→ "/"";
+    right: calc(100% + var(--spacing-2xs));
     position: absolute;
-    right: 100%;
-}
-body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):before {
-    padding-right: var(--spacing-2xs);
-}
-body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):before {
-    padding-right: var(--spacing-2xs);
-}
-body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):before {
-    padding-right: var(--spacing-2xs);
-}
-body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):before {
-    padding-left: var(--spacing-2xs);
-}
-body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):before {
-    padding-left: var(--spacing-2xs);
-}
-body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):before {
-    padding-left: var(--spacing-2xs);
 }
 @media (max-width: 750px) {
     body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:before {
@@ -453,142 +495,155 @@ body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-lin
     }
 }
 body > .page {
+    min-width: 0;
     max-width: 1000px;
-    margin: var(--spacing-2xl) var(--spacing-2xl) var(--spacing-2xl) 0;
+    margin: var(--layout-space);
     padding: var(--spacing-2xl);
     background-color: var(--color-card-bg);
-    border-radius: var(--spacing-lg);
+    border-radius: var(--radius-lg);
     grid-area: main;
+    overflow-x: hidden;
+}
+body > .page:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    margin-left: var(--layout-space-start);
+}
+body > .page:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    margin-left: var(--layout-space-start);
+}
+body > .page:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    margin-left: var(--layout-space-start);
+}
+body > .page:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    margin-right: var(--layout-space-start);
+}
+body > .page:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    margin-right: var(--layout-space-start);
+}
+body > .page:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    margin-right: var(--layout-space-start);
 }
 @media (max-width: 750px) {
     body > .page {
-        margin: var(--spacing-lg);
-        padding: var(--spacing-lg);
+        padding: var(--spacing-xl) var(--spacing-lg);
         margin-top: 0;
     }
 }
 body > .page > :last-child {
     margin-bottom: 0;
 }
-body > .page > :last-child > :last-child {
+body > .page > .page__article > :last-child {
+    margin-bottom: 0;
+}
+body > .page > section:last-child > :last-child {
     margin-bottom: 0;
 }
 body > .page h1 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    line-height: 1.15;
+    line-height: var(--line-height-heading);
 }
 body > .page h2 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    line-height: 1.15;
+    line-height: var(--line-height-heading);
 }
 body > .page h3 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    line-height: 1.15;
+    line-height: var(--line-height-heading);
 }
 body > .page h4 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    line-height: 1.15;
+    line-height: var(--line-height-heading);
 }
 body > .page h5 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    line-height: 1.15;
+    line-height: var(--line-height-heading);
 }
 body > .page h6 {
     margin-block: var(--spacing-lg) var(--spacing-sm);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-extrabold);
-    line-height: 1.15;
+    line-height: var(--line-height-heading);
 }
 body > .page h1 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-3xl);
     margin-block: 0 var(--spacing-lg);
+    word-break: break-word;
+}
+@media (max-width: 750px) {
+    body > .page h1 {
+        font-size: var(--font-size-2xl);
+    }
 }
 body > .page h2 {
-    font-size: var(--font-size-lg);
-}
-body > .page .bookmarks__heading {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
+    margin-top: var(--spacing-xl);
 }
 body > .page h3 {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-lg);
 }
 body > .page a {
     color: var(--color-card-accent);
-    text-underline-offset: 3px;
+    text-underline-offset: 1px;
     text-decoration-thickness: 1.5px;
 }
 body > .page p {
-    margin-block: var(--spacing-md);
+    margin-block: 0 var(--flow-gap);
 }
 body > .page .page__subtitle {
-    margin-block: var(--spacing-md);
+    margin-block: 0 var(--flow-gap);
 }
 body > .page ul {
-    margin-block: var(--spacing-md);
+    margin-block: 0 var(--flow-gap);
 }
 body > .page ol {
-    margin-block: var(--spacing-md);
+    margin-block: 0 var(--flow-gap);
+}
+body > .page dl {
+    margin-block: 0 var(--flow-gap);
+}
+body > .page address {
+    margin-block: 0 var(--flow-gap);
+}
+body > .page blockquote {
+    margin-block: 0 var(--flow-gap);
+}
+body > .page figure {
+    margin-block: 0 var(--flow-gap);
+}
+body > .page pre {
+    margin-block: 0 var(--flow-gap);
+}
+body > .page table {
+    margin-block: 0 var(--flow-gap);
+}
+body > .page li > ul {
+    margin-block: var(--spacing-xs) 0;
+}
+body > .page li > ol {
+    margin-block: var(--spacing-xs) 0;
 }
 body > .page ul {
     list-style: none;
-}
-body > .page ul:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
-}
-body > .page ul:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
-}
-body > .page ul:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
-}
-body > .page ul:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
-}
-body > .page ul:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
-}
-body > .page ul:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
 }
 body > .page ul > li::marker {
     content: "→ "/"";
     color: var(--color-card-accent);
     font-weight: var(--font-weight-extrabold);
 }
-body > .page ol:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
-}
-body > .page ol:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
-}
-body > .page ol:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
-    padding-left: var(--spacing-lg);
-}
-body > .page ol:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
-}
-body > .page ol:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
-}
-body > .page ol:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
-    padding-right: var(--spacing-lg);
-}
 body > .page ol > li::marker {
     color: var(--color-card-accent);
     font-weight: var(--font-weight-extrabold);
 }
 body > .page blockquote {
-    margin-block: 0 var(--spacing-lg);
     color: var(--color-card-fg-muted);
     margin-left: 0;
     margin-right: 0;
@@ -619,100 +674,192 @@ body > .page blockquote:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(b
     padding-right: var(--spacing-lg);
 }
 body > .page pre {
-    margin-block: 0 var(--spacing-lg);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border: 1px solid var(--color-card-border);
-    border-radius: var(--spacing-2xs);
+    border-radius: var(--radius-md);
 }
 body > .page pre > code {
     background: 0 0;
     border: none;
     padding: 0;
 }
-body > .page figure {
-    margin-block: 0 var(--spacing-lg);
-}
 body > .page code {
-    padding: var(--spacing-3xs) var(--spacing-xs);
-    border-radius: var(--spacing-2xs);
+    padding: var(--spacing-3xs) var(--spacing-2xs);
+    border-radius: var(--radius-sm);
     border: 1px solid var(--color-card-border);
     font-size: var(--font-size-xs);
 }
 body > .page table {
     width: 100%;
-    margin-block: var(--spacing-lg);
 }
 body > .page table th {
     padding: var(--spacing-xs) var(--spacing-sm);
     border-bottom: 1px solid var(--color-card-border);
     text-align: left;
+}
+body > .page table th:first-child:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page table th:first-child:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page table th:first-child:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page table th:first-child:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page table th:first-child:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page table th:first-child:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page table th:last-child:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-right: 0;
+}
+body > .page table th:last-child:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-right: 0;
+}
+body > .page table th:last-child:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-right: 0;
+}
+body > .page table th:last-child:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-left: 0;
+}
+body > .page table th:last-child:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-left: 0;
+}
+body > .page table th:last-child:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-left: 0;
 }
 body > .page table td {
     padding: var(--spacing-xs) var(--spacing-sm);
     border-bottom: 1px solid var(--color-card-border);
     text-align: left;
 }
+body > .page table td:first-child:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page table td:first-child:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page table td:first-child:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: 0;
+}
+body > .page table td:first-child:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page table td:first-child:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page table td:first-child:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: 0;
+}
+body > .page table td:last-child:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-right: 0;
+}
+body > .page table td:last-child:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-right: 0;
+}
+body > .page table td:last-child:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-right: 0;
+}
+body > .page table td:last-child:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-left: 0;
+}
+body > .page table td:last-child:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-left: 0;
+}
+body > .page table td:last-child:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-left: 0;
+}
 body > .page table th {
     border-bottom: 2px solid var(--color-card-accent);
     font-family: var(--font-heading);
 }
 body > .page hr {
-    margin-block: var(--spacing-lg);
+    margin-block: var(--spacing-xl);
     border: none;
     border-top: 1px solid var(--color-card-border);
 }
 body > .page .page__intro > .page__title {
-    margin-bottom: var(--spacing-2xs);
+    margin-block: 0 var(--spacing-2xs);
 }
 body > .page .page__intro > h2:first-child {
-    margin-bottom: var(--spacing-2xs);
+    margin-block: 0 var(--spacing-2xs);
 }
 body > .page .page__intro > .page__subtitle {
     margin-block: 0 var(--spacing-lg);
     color: var(--color-card-fg-muted);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-md);
     font-weight: var(--font-weight-semibold);
 }
 body > .footer {
-    padding: var(--spacing-2xl);
+    padding: 0 var(--layout-space) var(--layout-space) 0;
     color: var(--color-body-fg-muted);
     grid-area: footer;
-    padding-top: 0;
-    padding-left: 0;
 }
-@media (max-width: 750px) {
-    body > .footer {
-        padding: var(--spacing-lg);
-        padding-top: 0;
-    }
+body > .footer:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: var(--layout-space-start);
 }
-body > .footer > .footer__reply {
-    margin-block: 0 var(--spacing-xl);
+body > .footer:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: var(--layout-space-start);
+}
+body > .footer:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+    padding-left: var(--layout-space-start);
+}
+body > .footer:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: var(--layout-space-start);
+}
+body > .footer:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: var(--layout-space-start);
+}
+body > .footer:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+    padding-right: var(--layout-space-start);
 }
 body > .footer > .footer__line {
-    margin-block: var(--spacing-xs);
     font-style: normal;
-}
-body > .footer > .footer__line:first-child {
-    margin-top: 0;
-}
-body > .footer > .footer__line:last-child {
-    margin-bottom: 0;
 }
 body > .footer > .footer__line > a {
     color: var(--color-body-fg);
-    text-underline-offset: 3px;
+    text-underline-offset: 1px;
+    font-weight: var(--font-weight-bold);
     text-decoration-thickness: 1.5px;
 }
 body > .footer > .footer__line > time {
+    color: var(--color-body-fg);
+    text-underline-offset: 1px;
     font-weight: var(--font-weight-bold);
+    text-decoration-thickness: 1.5px;
 }
-body > .page:has(> .bookmarks) {
-    max-width: 1000px;
+body > .footer > .footer__reply {
+    font-style: normal;
+}
+body > .footer > .footer__reply > a {
+    color: var(--color-body-fg);
+    text-underline-offset: 1px;
+    font-weight: var(--font-weight-bold);
+    text-decoration-thickness: 1.5px;
+}
+body > .footer > .footer__reply > time {
+    color: var(--color-body-fg);
+    text-underline-offset: 1px;
+    font-weight: var(--font-weight-bold);
+    text-decoration-thickness: 1.5px;
+}
+body > .footer > .footer__line {
+    margin-block: 0 var(--spacing-xs);
+}
+body > .footer > .footer__reply {
+    margin-block: 0 var(--flow-gap);
+}
+body > .footer > :last-child {
+    margin-bottom: 0;
 }
 body > .page > .bookmarks {
     column-count: 2;
-    column-gap: var(--spacing-lg);
+    column-gap: var(--spacing-md);
 }
 @media (max-width: 750px) {
     body > .page > .bookmarks {
@@ -720,9 +867,9 @@ body > .page > .bookmarks {
     }
 }
 body > .page > .bookmarks > .bookmarks__group {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border: 1px solid var(--color-card-border);
-    border-radius: var(--spacing-xs);
+    border-radius: var(--radius-md);
     break-inside: avoid;
     page-break-inside: avoid;
     margin-bottom: var(--spacing-md);
@@ -736,6 +883,12 @@ body > .page > .bookmarks > .bookmarks__group > .bookmarks__heading {
 body > .page > .bookmarks > .bookmarks__group > .bookmark-list {
     margin-top: 0;
     margin-bottom: 0;
+}
+body > .page > .bookmarks > .bookmarks__group > .bookmark-list > li:not(:last-child) {
+    margin-bottom: var(--spacing-xs);
+}
+body > .page > .page__feeds {
+    margin-block: 0 var(--flow-gap);
 }
 body > .page > .page__feeds > .page__feeds-list {
     gap: var(--spacing-2xs);
@@ -788,12 +941,13 @@ body > .page > .page__feeds > .page__feeds-list > li::marker {
     content: none;
 }
 body > .page > .page__feeds > .page__feeds-list > li:not(:last-child):after {
-    content: " ·";
+    content: " ·"/"";
 }
 body > .page > .post-list {
-    margin-block: var(--spacing-lg);
     gap: var(--spacing-md);
     flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
     list-style: none;
     display: flex;
 }
@@ -816,12 +970,12 @@ body > .page > .post-list:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang
     padding-right: 0;
 }
 body > .page > .post-list > .post-list__item {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border: 1px solid var(--color-card-border);
-    border-radius: var(--spacing-xs);
+    border-radius: var(--radius-md);
     justify-content: space-between;
     align-items: baseline;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-2xs) var(--spacing-md);
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
@@ -841,14 +995,15 @@ body > .page > .post-list > .post-list__item > .post-list__meta {
 body > .page > .post-list > .post-list__item > .post-list__title {
     font-family: var(--font-heading);
     font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-md);
     margin-top: 0;
     margin-bottom: 0;
 }
 body > .page > .project-list {
-    margin-block: var(--spacing-lg);
     gap: var(--spacing-md);
     flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
     list-style: none;
     display: flex;
 }
@@ -871,9 +1026,9 @@ body > .page > .project-list:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :l
     padding-right: 0;
 }
 body > .page > .project-list > .project-list__item {
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border: 1px solid var(--color-card-border);
-    border-radius: var(--spacing-xs);
+    border-radius: var(--radius-md);
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -881,7 +1036,7 @@ body > .page > .project-list > .project-list__item::marker {
     content: none;
 }
 body > .page > .project-list > .project-list__item > .project-list__title {
-    margin-block: 0 var(--spacing-2xs);
+    margin-block: 0 var(--spacing-xs);
     font-size: var(--font-size-md);
 }
 body > .page > .project-list > .project-list__item > .project-list__description {
@@ -889,7 +1044,7 @@ body > .page > .project-list > .project-list__item > .project-list__description 
     color: var(--color-card-fg-muted);
 }
 body > .page > .project-list > .project-list__item > .project-list__links {
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xs) var(--spacing-md);
     flex-wrap: wrap;
     margin: 0;
     list-style: none;

@@ -35,10 +35,19 @@ archive() {
   local domain
   domain=$(python3 -c "from urllib.parse import urlparse; print(urlparse('$url').netloc)")
 
+  if [[ -z "$domain" ]]; then
+    echo "Could not determine domain from '$url'"
+    return 1
+  fi
+
+  # Both dirs are wiped first, otherwise files from an earlier scrape linger
+  # when the site drops or renames a page.
   echo "==> Scraping $url..."
+  rm -rf "downloaded-site/$domain"
   python scripts/scrape.py "$url" --delay 0.1
 
   echo "==> Copying to site/versions/$version/..."
+  rm -rf "site/versions/$version"
   mkdir -p "site/versions/$version"
   cp -r "downloaded-site/$domain/." "site/versions/$version/"
 
