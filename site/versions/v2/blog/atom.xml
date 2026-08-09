@@ -8,7 +8,7 @@
     <email>me@gijs6.nl</email>
     <uri>https://gijs6.nl</uri>
   </author>
-  <link href="https://gijs6.nl/blog" rel="alternate" />
+  <link href="https://gijs6.nl/blog/" rel="alternate" />
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <subtitle>A big mess of fun pages, interesting projects, my own thoughts and opinions and more.</subtitle>
   <entry>
