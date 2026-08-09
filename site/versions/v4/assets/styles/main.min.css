@@ -306,7 +306,7 @@ textarea:not([rows]) {
     }
 }
 html {
-    font-size: max(0.9rem, min(0.7rem + 0.5vw, 1.05rem));
+    font-size: max(0.9rem, min(0.75rem + 0.35vw, 1rem));
 }
 a {
     color: currentColor;
