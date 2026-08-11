@@ -305,52 +305,6 @@ textarea:not([rows]) {
         --color-card-accent: var(--color-purple-light);
     }
 }
-html {
-    font-size: max(0.9rem, min(0.75rem + 0.35vw, 1rem));
-}
-a {
-    color: currentColor;
-    font-weight: var(--font-weight-bold);
-}
-::-moz-selection {
-    background-color: var(--color-card-accent);
-    color: var(--color-card-bg);
-}
-::selection {
-    background-color: var(--color-card-accent);
-    color: var(--color-card-bg);
-}
-.sidebar ::-moz-selection {
-    background-color: var(--color-body-fg);
-    color: var(--color-body-bg);
-}
-.sidebar ::selection {
-    background-color: var(--color-body-fg);
-    color: var(--color-body-bg);
-}
-.footer ::-moz-selection {
-    background-color: var(--color-body-fg);
-    color: var(--color-body-bg);
-}
-.footer ::selection {
-    background-color: var(--color-body-fg);
-    color: var(--color-body-bg);
-}
-:focus-visible {
-    outline: 2px solid var(--color-card-accent);
-    outline-offset: 2px;
-}
-.sidebar :focus-visible {
-    outline-color: var(--color-body-fg);
-}
-.footer :focus-visible {
-    outline-color: var(--color-body-fg);
-}
-code,
-pre,
-samp {
-    font-family: var(--font-mono);
-}
 body {
     font-family: var(--font-body);
     line-height: var(--line-height-body);
@@ -358,6 +312,31 @@ body {
     color: var(--color-card-fg);
     grid-template: "sidebar main" 1fr "sidebar footer" / auto 1fr;
     display: grid;
+}
+body a {
+    color: currentColor;
+    font-weight: var(--font-weight-bold);
+}
+body ::-moz-selection {
+    background-color: var(--color-card-accent);
+    color: var(--color-card-bg);
+}
+body ::selection {
+    background-color: var(--color-card-accent);
+    color: var(--color-card-bg);
+}
+body :focus-visible {
+    outline: 2px solid var(--color-card-accent);
+    outline-offset: 2px;
+}
+body code {
+    font-family: var(--font-mono);
+}
+body pre {
+    font-family: var(--font-mono);
+}
+body samp {
+    font-family: var(--font-mono);
 }
 @media (max-width: 750px) {
     body {
@@ -377,6 +356,17 @@ body > .sidebar {
     top: 0;
     overflow-x: hidden;
     overflow-y: auto;
+}
+body > .sidebar ::-moz-selection {
+    background-color: var(--color-body-fg);
+    color: var(--color-body-bg);
+}
+body > .sidebar ::selection {
+    background-color: var(--color-body-fg);
+    color: var(--color-body-bg);
+}
+body > .sidebar :focus-visible {
+    outline-color: var(--color-body-fg);
 }
 @media (max-width: 750px) {
     body > .sidebar {
@@ -817,6 +807,17 @@ body > .footer:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi)
 }
 body > .footer:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: var(--layout-space-start);
+}
+body > .footer ::-moz-selection {
+    background-color: var(--color-body-fg);
+    color: var(--color-body-bg);
+}
+body > .footer ::selection {
+    background-color: var(--color-body-fg);
+    color: var(--color-body-bg);
+}
+body > .footer :focus-visible {
+    outline-color: var(--color-body-fg);
 }
 body > .footer > .footer__line {
     font-style: normal;
