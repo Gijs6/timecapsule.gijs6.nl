@@ -28,9 +28,27 @@
         <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
         <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
         <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": ["WebSite", "SoftwareSourceCode"], "@id": "https://gijs6.nl/#website", "url": "https://gijs6.nl/", "name": "Gijs6", "description": "A big mess of fun pages, interesting projects, my own thoughts and opinions and more.", "inLanguage": "en-GB", "author": { "@id": "https://gijs6.nl/#person" }, "license": "https://unlicense.org/", "hasPart": { "@id": "https://gijs6.nl/blog/#blog" }, "codeRepository": ["https://github.com/Gijs6/gijs6.nl", "https://gitlab.com/ggijs/gijs6.nl", "https://codeberg.org/gijs6/gijs6.nl", "https://git.dupunkto.org/sites/gijs6.nl"], "programmingLanguage": "Python" },
+                    { "@type": "Blog", "@id": "https://gijs6.nl/blog/#blog", "name": "Gijs6 - blog", "url": "https://gijs6.nl/blog/", "inLanguage": "en-GB", "isPartOf": { "@id": "https://gijs6.nl/#website" }, "author": { "@id": "https://gijs6.nl/#person" } },
+                    { "@type": "Person", "@id": "https://gijs6.nl/#person", "name": "Gijs6", "givenName": "Gijs", "familyName": "ten Berg", "alternateName": ["Gijs", "Gijs ten Berg", "gijsz", "ggijs", "ggijs109"], "url": "https://gijs6.nl/", "image": "https://cdn.gijs6.nl/images/me.jpg", "email": "me@gijs6.nl", "sameAs": ["https://github.com/Gijs6", "https://gitlab.com/ggijs", "https://codeberg.org/Gijs6", "https://contact.gijs6.nl"], "worksFor": { "@id": "https://gijs6.nl/#qdentity" }, "alumniOf": { "@id": "https://gijs6.nl/#school" }, "memberOf": { "@id": "https://gijs6.nl/#dupunkto" } },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#qdentity", "name": "Qdentity", "url": "https://qdentity.com" },
+                    { "@type": "HighSchool", "@id": "https://gijs6.nl/#school", "name": "Lyceum Schravenlant", "url": "https://www.lyceumschravenlant.nl/" },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#dupunkto", "name": "{du}punkto", "url": "https://dupunkto.org/" }
+                ]
+            }
+        </script>
+
+        <script type="application/ld+json">
+            { "@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://gijs6.nl/blog/inheritance", "headline": "Why do we even do inheritance?", "url": "https://gijs6.nl/blog/inheritance", "author": { "@id": "https://gijs6.nl/#person" }, "publisher": { "@id": "https://gijs6.nl/#person" }, "isPartOf": { "@id": "https://gijs6.nl/blog/#blog" }, "wordCount": 314, "license": "https://unlicense.org/", "datePublished": "2026-08-06T20:37:34+02:00" }
+        </script>
     </head>
 
-    <body>
+    <body class="body">
         <header class="sidebar">
             <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
             <nav aria-label="Site">
@@ -56,26 +74,36 @@
                 </ul>
             </nav>
         </header>
+
         <main class="page">
-            <article class="page__article">
+            <article class="page__article h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/inheritance">
+                <meta itemprop="url" content="https://gijs6.nl/blog/inheritance" />
+                <meta itemprop="wordCount" content="314" />
+                <meta itemprop="license" content="https://unlicense.org/" />
                 <hgroup class="page__intro">
-                    <h1 class="page__title">Why do we even do inheritance?</h1>
-                    <p class="page__subtitle"><time datetime="2026-08-06T20:37:34+02:00">2026-08-06</time> · 2 min read · 314 words</p>
+                    <h1 class="page__title p-name" itemprop="headline">Why do we even do inheritance?</h1>
+                    <p class="page__subtitle">
+                        <a hidden class="p-author h-card u-url p-name" href="/versions/v4/index.html" itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person"><span itemprop="name">Gijs6</span></a
+                        ><a href="/versions/v4/blog/inheritance"><time class="dt-published" itemprop="datePublished" datetime="2026-08-06T20:37:34+02:00">2026-08-06</time></a> · 2 min read · 314 words
+                    </p>
                 </hgroup>
-                <p>Why do we even do inheritance? Why do your kids get a right to your shit when you're dead? Those kids never had to do a damn thing for it and yet they get it anyway. And if you want to support your kid financially so badly, just do that while you're still alive.</p>
-                <p>It's just rich people staying rich for no reason. Your kid didn't do anything. They were just born to the right parents, and now they get a free house or a pile of money for it. That's not fair, that's just luck.</p>
-                <p>As far as I'm concerned we should just abolish the whole inheritance system. And just think about the advantages of that:</p>
-                <ul>
-                    <li>A ton of houses would become available, because they wouldn't stay stuck in families anymore but would just go on the market</li>
-                    <li>We'd shrink wealth inequality and opportunity inequality</li>
-                    <li>All the money you have left over could go straight to the tax office, and then we could actually do so many nice things with it that everyone benefits from</li>
-                    <li>Rich families would actually have to stay rich by doing something, instead of just waiting for grandpa to die</li>
-                </ul>
-                <p>And before anyone starts: no, I'm not saying you have to sell your grandma's ring or her photo albums, stuff that actually has sentimental value you can just keep. I'm talking about the million-euro house and the 300k sitting in some account that you're about to inherit.</p>
-                <p>By the way, hii to all the VVD voters reading this, you're probably sitting super mad in your own house right now (paid for with money you got from an inheritance), but I'd love to remind you that liberal economics makes a very clear difference between earned income (where you actually did something) and unearned income, and unless you commit murder, your parents dying isn't something you had to do anything for</p>
-                <!-- Oke en nog 2 dingen, mensen die 'sterfbelasting' zeggen kunnen moeilijk hard de tering krijgen en mensen die 'daar is al een keer belasting over betaald' zeggen moeten verplicht nog even 3havo economie volgen want dat is gewoon niet hoe belasting werkt -->
+                <div class="e-content" itemprop="articleBody">
+                    <p>Why do we even do inheritance? Why do your kids get a right to your shit when you're dead? Those kids never had to do a damn thing for it and yet they get it anyway. And if you want to support your kid financially so badly, just do that while you're still alive.</p>
+                    <p>It's just rich people staying rich for no reason. Your kid didn't do anything. They were just born to the right parents, and now they get a free house or a pile of money for it. That's not fair, that's just luck.</p>
+                    <p>As far as I'm concerned we should just abolish the whole inheritance system. And just think about the advantages of that:</p>
+                    <ul>
+                        <li>A ton of houses would become available, because they wouldn't stay stuck in families anymore but would just go on the market</li>
+                        <li>We'd shrink wealth inequality and opportunity inequality</li>
+                        <li>All the money you have left over could go straight to the tax office, and then we could actually do so many nice things with it that everyone benefits from</li>
+                        <li>Rich families would actually have to stay rich by doing something, instead of just waiting for grandpa to die</li>
+                    </ul>
+                    <p>And before anyone starts: no, I'm not saying you have to sell your grandma's ring or her photo albums, stuff that actually has sentimental value you can just keep. I'm talking about the million-euro house and the 300k sitting in some account that you're about to inherit.</p>
+                    <p>By the way, hii to all the VVD voters reading this, you're probably sitting super mad in your own house right now (paid for with money you got from an inheritance), but I'd love to remind you that liberal economics makes a very clear difference between earned income (where you actually did something) and unearned income, and unless you commit murder, your parents dying isn't something you had to do anything for</p>
+                    <!-- Oke en nog 2 dingen, mensen die 'sterfbelasting' zeggen kunnen moeilijk hard de tering krijgen en mensen die 'daar is al een keer belasting over betaald' zeggen moeten verplicht nog even 3havo economie volgen want dat is gewoon niet hoe belasting werkt -->
+                </div>
             </article>
         </main>
+
         <footer class="footer">
             <p class="footer__reply">
                 <a href="https://contact.gijs6.nl">Reply to this post</a>
@@ -84,12 +112,12 @@
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
             <p class="footer__line">
-                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/c23d7ead07c869188a82b8d15346e49b485e7c86"><code>c23d7ea</code></a
-                >, deployed on <time datetime="2026-08-11T11:41:24.040500+02:00">11 August 2026 at 11:41:24 CEST</time>
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/4dfb0a8326f156f11543bbc1f4a1b846d503e089"><code>4dfb0a8</code></a
+                >, deployed on <time datetime="2026-08-15T16:47:44.733+02:00">15 August 2026 at 16:47:44 CEST</time>
             </p>
 
             <p class="footer__line">
-                <a href="https://github.com/Gijs6/gijs6.nl/blob/c23d7ead07c869188a82b8d15346e49b485e7c86/site/blog/inheritance.md">View this page's source <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Gijs6/gijs6.nl/blob/4dfb0a8326f156f11543bbc1f4a1b846d503e089/site/blog/inheritance.md">View this page's source <span aria-hidden="true">↗</span></a>
             </p>
         </footer>
     </body>

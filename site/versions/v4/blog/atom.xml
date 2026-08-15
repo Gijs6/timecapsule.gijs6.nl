@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB">
   <id>https://gijs6.nl</id>
   <title>Gijs6 - blog</title>
-  <updated>2026-08-11T09:41:24.440574+00:00</updated>
+  <updated>2026-08-15T14:47:45.115472+00:00</updated>
   <author>
     <name>Gijs6</name>
     <email>me@gijs6.nl</email>
-    <uri>https://gijs6.nl</uri>
+    <uri>https://gijs6.nl/</uri>
   </author>
   <link href="https://gijs6.nl/blog" rel="alternate" />
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>

@@ -28,9 +28,27 @@
         <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
         <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
         <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": ["WebSite", "SoftwareSourceCode"], "@id": "https://gijs6.nl/#website", "url": "https://gijs6.nl/", "name": "Gijs6", "description": "A big mess of fun pages, interesting projects, my own thoughts and opinions and more.", "inLanguage": "en-GB", "author": { "@id": "https://gijs6.nl/#person" }, "license": "https://unlicense.org/", "hasPart": { "@id": "https://gijs6.nl/blog/#blog" }, "codeRepository": ["https://github.com/Gijs6/gijs6.nl", "https://gitlab.com/ggijs/gijs6.nl", "https://codeberg.org/gijs6/gijs6.nl", "https://git.dupunkto.org/sites/gijs6.nl"], "programmingLanguage": "Python" },
+                    { "@type": "Blog", "@id": "https://gijs6.nl/blog/#blog", "name": "Gijs6 - blog", "url": "https://gijs6.nl/blog/", "inLanguage": "en-GB", "isPartOf": { "@id": "https://gijs6.nl/#website" }, "author": { "@id": "https://gijs6.nl/#person" } },
+                    { "@type": "Person", "@id": "https://gijs6.nl/#person", "name": "Gijs6", "givenName": "Gijs", "familyName": "ten Berg", "alternateName": ["Gijs", "Gijs ten Berg", "gijsz", "ggijs", "ggijs109"], "url": "https://gijs6.nl/", "image": "https://cdn.gijs6.nl/images/me.jpg", "email": "me@gijs6.nl", "sameAs": ["https://github.com/Gijs6", "https://gitlab.com/ggijs", "https://codeberg.org/Gijs6", "https://contact.gijs6.nl"], "worksFor": { "@id": "https://gijs6.nl/#qdentity" }, "alumniOf": { "@id": "https://gijs6.nl/#school" }, "memberOf": { "@id": "https://gijs6.nl/#dupunkto" } },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#qdentity", "name": "Qdentity", "url": "https://qdentity.com" },
+                    { "@type": "HighSchool", "@id": "https://gijs6.nl/#school", "name": "Lyceum Schravenlant", "url": "https://www.lyceumschravenlant.nl/" },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#dupunkto", "name": "{du}punkto", "url": "https://dupunkto.org/" }
+                ]
+            }
+        </script>
+
+        <script type="application/ld+json">
+            { "@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://gijs6.nl/blog/new-exam-design", "headline": "My proposal for the Dutch national exam design", "url": "https://gijs6.nl/blog/new-exam-design", "author": { "@id": "https://gijs6.nl/#person" }, "publisher": { "@id": "https://gijs6.nl/#person" }, "isPartOf": { "@id": "https://gijs6.nl/blog/#blog" }, "wordCount": 489, "license": "https://unlicense.org/", "datePublished": "2026-05-24T19:04:27+02:00" }
+        </script>
     </head>
 
-    <body>
+    <body class="body">
         <header class="sidebar">
             <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
             <nav aria-label="Site">
@@ -56,64 +74,74 @@
                 </ul>
             </nav>
         </header>
+
         <main class="page">
-            <article class="page__article">
+            <article class="page__article h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/new-exam-design">
+                <meta itemprop="url" content="https://gijs6.nl/blog/new-exam-design" />
+                <meta itemprop="wordCount" content="489" />
+                <meta itemprop="license" content="https://unlicense.org/" />
                 <hgroup class="page__intro">
-                    <h1 class="page__title">My proposal for the Dutch national exam design</h1>
-                    <p class="page__subtitle"><time datetime="2026-05-24T19:04:27+02:00">2026-05-24</time> · 2 min read · 489 words</p>
+                    <h1 class="page__title p-name" itemprop="headline">My proposal for the Dutch national exam design</h1>
+                    <p class="page__subtitle">
+                        <a hidden class="p-author h-card u-url p-name" href="/versions/v4/index.html" itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person"><span itemprop="name">Gijs6</span></a
+                        ><a href="/versions/v4/blog/new-exam-design"><time class="dt-published" itemprop="datePublished" datetime="2026-05-24T19:04:27+02:00">2026-05-24</time></a> · 2 min read · 489 words
+                    </p>
                 </hgroup>
-                <style>
-                    figure {
-                        display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-                        gap: var(--spacing-md);
-                        margin: 0;
-                    }
+                <div class="e-content" itemprop="articleBody">
+                    <style>
+                        figure {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                            gap: var(--spacing-md);
+                            margin: 0;
+                        }
 
-                    figure a {
-                        max-width: 340px;
-                        width: 100%;
-                    }
+                        figure a {
+                            max-width: 340px;
+                            width: 100%;
+                        }
 
-                    figure:has(a:only-child) a {
-                        max-width: 100%;
-                    }
+                        figure:has(a:only-child) a {
+                            max-width: 100%;
+                        }
 
-                    figcaption {
-                        grid-column: 1 / -1;
-                        font-style: italic;
-                    }
-                </style>
+                        figcaption {
+                            grid-column: 1 / -1;
+                            font-style: italic;
+                        }
+                    </style>
 
-                <p>
-                    <em>This is a follow-up to <a href="exam-design">my post about the new Dutch exam design</a></em>
-                </p>
-                <p>Instead of just complaining, I decided to design something better. My proposal borrows heavily from the old design, because I still think the <time datetime="2025">2025</time> layout gets most things right. But it also fixes a few things that were already slightly off before the <span lang="nl">CvTE</span> made them worse.</p>
-                <h2>The cover</h2>
-                <p>The cover has a lot to communicate: the subject, the school level, the year, the <i lang="nl">tijdvak</i> (which sitting of the exam it is, because there are multiple each year), the date and time, and which document you're holding. For the exercise booklet specifically, it also shows the number of questions and the maximum score.</p>
-                <p>Not all of that is equally important. When you pick up the booklet, the first thing you need to know is <em>what you are holding</em>. Subject, year, and document type need to be immediately obvious. Date and time matter much less. So in my design, those three key pieces are the largest and boldest, and everything secondary is smaller and quieter.</p>
-                <p>I also removed the code in the bottom-left corner that appears on current exams. That code is for administrative use and no student has ever needed it. I replaced it with something actually useful: a clear description of the document and exam.</p>
-                <figure>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven/page-01.png" alt="Cover of the proposed exercise booklet" /></a>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-01.png" alt="Cover of the proposed texts booklet" /></a>
-                    <figcaption>The proposed covers: exercise booklet (left) and texts booklet (right)</figcaption>
-                </figure>
+                    <p>
+                        <em>This is a follow-up to <a href="exam-design">my post about the new Dutch exam design</a></em>
+                    </p>
+                    <p>Instead of just complaining, I decided to design something better. My proposal borrows heavily from the old design, because I still think the <time datetime="2025">2025</time> layout gets most things right. But it also fixes a few things that were already slightly off before the <span lang="nl">CvTE</span> made them worse.</p>
+                    <h2>The cover</h2>
+                    <p>The cover has a lot to communicate: the subject, the school level, the year, the <i lang="nl">tijdvak</i> (which sitting of the exam it is, because there are multiple each year), the date and time, and which document you're holding. For the exercise booklet specifically, it also shows the number of questions and the maximum score.</p>
+                    <p>Not all of that is equally important. When you pick up the booklet, the first thing you need to know is <em>what you are holding</em>. Subject, year, and document type need to be immediately obvious. Date and time matter much less. So in my design, those three key pieces are the largest and boldest, and everything secondary is smaller and quieter.</p>
+                    <p>I also removed the code in the bottom-left corner that appears on current exams. That code is for administrative use and no student has ever needed it. I replaced it with something actually useful: a clear description of the document and exam.</p>
+                    <figure>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven/page-01.png" alt="Cover of the proposed exercise booklet" /></a>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-01.png" alt="Cover of the proposed texts booklet" /></a>
+                        <figcaption>The proposed covers: exercise booklet (left) and texts booklet (right)</figcaption>
+                    </figure>
 
-                <h2>The rest of the exam</h2>
-                <p>The body of the exam stays close to the old design. Black text on a white background, no decorative shapes, no grey boxes, no icons. This isn't a stylistic preference: it's just the simplest and least distracting choice, which is what you want when you're asking people to read for up to 3 hours.</p>
-                <p>I dropped the word <span lang="nl">"Vraag"</span> before every question number, because it adds no information. Everyone already knows what a question number is (and if you don't, you probably shouldn't be setting exams).</p>
-                <p>Point values are back in front of the question number, where they were in the old design. That makes it easy to scan down a page and understand how points are distributed at a glance. Small thing, but it matters when you're planning your time.</p>
-                <figure>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven/page-02.png" alt="Questions page of the proposed exercise booklet" /></a>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-02.png" alt="Text page of the proposed texts booklet" /></a>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-03.png" alt="Another text page of the proposed texts booklet" /></a>
-                    <figcaption>The proposed pages: exercise booklet (left) and texts booklet (centre, right)</figcaption>
-                </figure>
+                    <h2>The rest of the exam</h2>
+                    <p>The body of the exam stays close to the old design. Black text on a white background, no decorative shapes, no grey boxes, no icons. This isn't a stylistic preference: it's just the simplest and least distracting choice, which is what you want when you're asking people to read for up to 3 hours.</p>
+                    <p>I dropped the word <span lang="nl">"Vraag"</span> before every question number, because it adds no information. Everyone already knows what a question number is (and if you don't, you probably shouldn't be setting exams).</p>
+                    <p>Point values are back in front of the question number, where they were in the old design. That makes it easy to scan down a page and understand how points are distributed at a glance. Small thing, but it matters when you're planning your time.</p>
+                    <figure>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven/page-02.png" alt="Questions page of the proposed exercise booklet" /></a>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-02.png" alt="Text page of the proposed texts booklet" /></a>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten/page-03.png" alt="Another text page of the proposed texts booklet" /></a>
+                        <figcaption>The proposed pages: exercise booklet (left) and texts booklet (centre, right)</figcaption>
+                    </figure>
 
-                <p>The old design wasn't exciting, but it was clear. Most of the problems with the new <span lang="nl">CvTE</span> design come from optimising for the wrong thing: making the exam look more modern rather than making it easier to use. If you walked out of the exam hall thinking about question 3 and not the awful booklet, the design has done its job.</p>
-                <p>You can view the full design as a PDF: <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf">exercise booklet</a> and <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf">texts booklet</a>.</p>
+                    <p>The old design wasn't exciting, but it was clear. Most of the problems with the new <span lang="nl">CvTE</span> design come from optimising for the wrong thing: making the exam look more modern rather than making it easier to use. If you walked out of the exam hall thinking about question 3 and not the awful booklet, the design has done its job.</p>
+                    <p>You can view the full design as a PDF: <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/opgaven.pdf">exercise booklet</a> and <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/new/teksten.pdf">texts booklet</a>.</p>
+                </div>
             </article>
         </main>
+
         <footer class="footer">
             <p class="footer__reply">
                 <a href="https://contact.gijs6.nl">Reply to this post</a>
@@ -122,12 +150,12 @@
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
             <p class="footer__line">
-                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/c23d7ead07c869188a82b8d15346e49b485e7c86"><code>c23d7ea</code></a
-                >, deployed on <time datetime="2026-08-11T11:41:24.040500+02:00">11 August 2026 at 11:41:24 CEST</time>
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/4dfb0a8326f156f11543bbc1f4a1b846d503e089"><code>4dfb0a8</code></a
+                >, deployed on <time datetime="2026-08-15T16:47:44.733+02:00">15 August 2026 at 16:47:44 CEST</time>
             </p>
 
             <p class="footer__line">
-                <a href="https://github.com/Gijs6/gijs6.nl/blob/c23d7ead07c869188a82b8d15346e49b485e7c86/site/blog/new-exam-design.md">View this page's source <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Gijs6/gijs6.nl/blob/4dfb0a8326f156f11543bbc1f4a1b846d503e089/site/blog/new-exam-design.md">View this page's source <span aria-hidden="true">↗</span></a>
             </p>
         </footer>
     </body>

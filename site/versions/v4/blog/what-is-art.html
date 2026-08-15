@@ -28,9 +28,27 @@
         <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
         <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
         <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": ["WebSite", "SoftwareSourceCode"], "@id": "https://gijs6.nl/#website", "url": "https://gijs6.nl/", "name": "Gijs6", "description": "A big mess of fun pages, interesting projects, my own thoughts and opinions and more.", "inLanguage": "en-GB", "author": { "@id": "https://gijs6.nl/#person" }, "license": "https://unlicense.org/", "hasPart": { "@id": "https://gijs6.nl/blog/#blog" }, "codeRepository": ["https://github.com/Gijs6/gijs6.nl", "https://gitlab.com/ggijs/gijs6.nl", "https://codeberg.org/gijs6/gijs6.nl", "https://git.dupunkto.org/sites/gijs6.nl"], "programmingLanguage": "Python" },
+                    { "@type": "Blog", "@id": "https://gijs6.nl/blog/#blog", "name": "Gijs6 - blog", "url": "https://gijs6.nl/blog/", "inLanguage": "en-GB", "isPartOf": { "@id": "https://gijs6.nl/#website" }, "author": { "@id": "https://gijs6.nl/#person" } },
+                    { "@type": "Person", "@id": "https://gijs6.nl/#person", "name": "Gijs6", "givenName": "Gijs", "familyName": "ten Berg", "alternateName": ["Gijs", "Gijs ten Berg", "gijsz", "ggijs", "ggijs109"], "url": "https://gijs6.nl/", "image": "https://cdn.gijs6.nl/images/me.jpg", "email": "me@gijs6.nl", "sameAs": ["https://github.com/Gijs6", "https://gitlab.com/ggijs", "https://codeberg.org/Gijs6", "https://contact.gijs6.nl"], "worksFor": { "@id": "https://gijs6.nl/#qdentity" }, "alumniOf": { "@id": "https://gijs6.nl/#school" }, "memberOf": { "@id": "https://gijs6.nl/#dupunkto" } },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#qdentity", "name": "Qdentity", "url": "https://qdentity.com" },
+                    { "@type": "HighSchool", "@id": "https://gijs6.nl/#school", "name": "Lyceum Schravenlant", "url": "https://www.lyceumschravenlant.nl/" },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#dupunkto", "name": "{du}punkto", "url": "https://dupunkto.org/" }
+                ]
+            }
+        </script>
+
+        <script type="application/ld+json">
+            { "@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://gijs6.nl/blog/what-is-art", "headline": "What is art?", "url": "https://gijs6.nl/blog/what-is-art", "author": { "@id": "https://gijs6.nl/#person" }, "publisher": { "@id": "https://gijs6.nl/#person" }, "isPartOf": { "@id": "https://gijs6.nl/blog/#blog" }, "wordCount": 723, "license": "https://unlicense.org/", "datePublished": "2025-08-25T22:17:10+02:00" }
+        </script>
     </head>
 
-    <body>
+    <body class="body">
         <header class="sidebar">
             <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
             <nav aria-label="Site">
@@ -56,30 +74,40 @@
                 </ul>
             </nav>
         </header>
+
         <main class="page">
-            <article class="page__article">
+            <article class="page__article h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/what-is-art">
+                <meta itemprop="url" content="https://gijs6.nl/blog/what-is-art" />
+                <meta itemprop="wordCount" content="723" />
+                <meta itemprop="license" content="https://unlicense.org/" />
                 <hgroup class="page__intro">
-                    <h1 class="page__title">What is art?</h1>
-                    <p class="page__subtitle"><time datetime="2025-08-25T22:17:10+02:00">2025-08-25</time> · 4 min read · 723 words</p>
+                    <h1 class="page__title p-name" itemprop="headline">What is art?</h1>
+                    <p class="page__subtitle">
+                        <a hidden class="p-author h-card u-url p-name" href="/versions/v4/index.html" itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person"><span itemprop="name">Gijs6</span></a
+                        ><a href="/versions/v4/blog/what-is-art"><time class="dt-published" itemprop="datePublished" datetime="2025-08-25T22:17:10+02:00">2025-08-25</time></a> · 4 min read · 723 words
+                    </p>
                 </hgroup>
-                <p>Defining what art is isn't easy. According to the dictionary on my desk, art is "the result of the ability to creatively express emotions and thoughts".</p>
-                <p>But that definition raises some questions. If you remove all traces of an artist from an artwork, is it still art? If you paint a canvas completely white, is that art? Is 4 minutes and 33 seconds of silence art? Is this blog art? Is simply everything humans create art, since you can't really make something without thinking about it?</p>
-                <p>If you say that "being art" isn't binary but more like a spectrum, you'd probably say that minimalistic and simple works are less art-ish, and big, detailed works are more art-ish. But does that mean 20 hours of white noise is more art-ish than 4 minutes and 33 seconds of silence? Does that mean a 10-hour and 7-minute movie of paint drying is less art-ish than a simple cartoon? If you judge how art-ish something is based only on how much "information" it contains, you completely dismiss the story behind the artwork.</p>
-                <p>So I think you can't call something art just by observing it. You need to know the background, who made it, how it was made, and why it was made, so you can interpret the emotions it is trying to convey.</p>
-                <p>If you know that the 607-minute-long film about paint drying is a protest against censorship and the unfair costs facing independent filmmakers, then I think it's far more art-ish than a simple cartoon made for children. If you understand that an artwork represents emotions and thoughts, then it becomes meaningful. Context is everything.</p>
-                <p>And this is where it gets interesting. Take that banana duct-taped to a wall that everyone loves to mock. People dismiss it as "not real art" because it's just a banana. But maybe they're missing the point entirely.</p>
-                <p>What if that banana actually <em>does</em> make you think? What if it forces you to question why we assign value to objects, why we create hierarchies of "high" and "low" culture, why we need things to be permanent and precious to matter? What if the absurdity is exactly the point: that in our desperation to categorise and commodify everything, we've lost sight of what actually makes us reflect on the world around us?</p>
-                <p>The problem isn't that "anything can be art". The problem is that people think there should be gatekeepers deciding what counts. They want someone else to tell them what's meaningful so they don't have to do the <em>extremely</em> hard work of thinking for themselves.</p>
-                <p>And this brings us to an even bigger problem: how schools completely miss the point of art education.</p>
-                <h2>School ruins art</h2>
-                <p>From my experience, art class in school is where they teach what counts as "real art". Instead of encouraging students to find meaning in their own experiences and explore what art can be, schools restrict that exploration. Classical music is "sophisticated", but the song that made you cry at 3 AM isn't worth discussing. Oil paintings are "serious art", but that meme you and your friends laugh at is just "internet culture".</p>
-                <p>The worst part? Schools teach students that there are "correct" interpretations of artworks. It feels like they have the "right" interpretation of every artwork ever made, and theirs is the only correct one. No room for personal interpretation, no space for students to find their own meaning in the chaos. No consideration that maybe this painting speaks to <em>your</em> feelings or thoughts. School treats art as if every artwork can be reduced to a few principles you're supposed to memorise.</p>
-                <h2>Actual meaning</h2>
-                <p>So what is art, really? I personally think art is anything that creates genuine meaning in the realm of intention and interpretation. It doesn't matter if it's a Renaissance building or a niche shoegaze track. If it makes you <em>think</em> or <em>feel</em> something real, then it's functioning as art.</p>
-                <p>Art forces us to confront the fundamentals of being human. Why do we feel the need to create? Why do some patterns of sound or colour move us to tears, while others don't affect us at all? Why do we desperately want to share our inner experiences with others, even though we can never truly know if they understand?</p>
-                <p>These questions don't have answers, and that's exactly what makes them worth asking.</p>
+                <div class="e-content" itemprop="articleBody">
+                    <p>Defining what art is isn't easy. According to the dictionary on my desk, art is "the result of the ability to creatively express emotions and thoughts".</p>
+                    <p>But that definition raises some questions. If you remove all traces of an artist from an artwork, is it still art? If you paint a canvas completely white, is that art? Is 4 minutes and 33 seconds of silence art? Is this blog art? Is simply everything humans create art, since you can't really make something without thinking about it?</p>
+                    <p>If you say that "being art" isn't binary but more like a spectrum, you'd probably say that minimalistic and simple works are less art-ish, and big, detailed works are more art-ish. But does that mean 20 hours of white noise is more art-ish than 4 minutes and 33 seconds of silence? Does that mean a 10-hour and 7-minute movie of paint drying is less art-ish than a simple cartoon? If you judge how art-ish something is based only on how much "information" it contains, you completely dismiss the story behind the artwork.</p>
+                    <p>So I think you can't call something art just by observing it. You need to know the background, who made it, how it was made, and why it was made, so you can interpret the emotions it is trying to convey.</p>
+                    <p>If you know that the 607-minute-long film about paint drying is a protest against censorship and the unfair costs facing independent filmmakers, then I think it's far more art-ish than a simple cartoon made for children. If you understand that an artwork represents emotions and thoughts, then it becomes meaningful. Context is everything.</p>
+                    <p>And this is where it gets interesting. Take that banana duct-taped to a wall that everyone loves to mock. People dismiss it as "not real art" because it's just a banana. But maybe they're missing the point entirely.</p>
+                    <p>What if that banana actually <em>does</em> make you think? What if it forces you to question why we assign value to objects, why we create hierarchies of "high" and "low" culture, why we need things to be permanent and precious to matter? What if the absurdity is exactly the point: that in our desperation to categorise and commodify everything, we've lost sight of what actually makes us reflect on the world around us?</p>
+                    <p>The problem isn't that "anything can be art". The problem is that people think there should be gatekeepers deciding what counts. They want someone else to tell them what's meaningful so they don't have to do the <em>extremely</em> hard work of thinking for themselves.</p>
+                    <p>And this brings us to an even bigger problem: how schools completely miss the point of art education.</p>
+                    <h2>School ruins art</h2>
+                    <p>From my experience, art class in school is where they teach what counts as "real art". Instead of encouraging students to find meaning in their own experiences and explore what art can be, schools restrict that exploration. Classical music is "sophisticated", but the song that made you cry at 3 AM isn't worth discussing. Oil paintings are "serious art", but that meme you and your friends laugh at is just "internet culture".</p>
+                    <p>The worst part? Schools teach students that there are "correct" interpretations of artworks. It feels like they have the "right" interpretation of every artwork ever made, and theirs is the only correct one. No room for personal interpretation, no space for students to find their own meaning in the chaos. No consideration that maybe this painting speaks to <em>your</em> feelings or thoughts. School treats art as if every artwork can be reduced to a few principles you're supposed to memorise.</p>
+                    <h2>Actual meaning</h2>
+                    <p>So what is art, really? I personally think art is anything that creates genuine meaning in the realm of intention and interpretation. It doesn't matter if it's a Renaissance building or a niche shoegaze track. If it makes you <em>think</em> or <em>feel</em> something real, then it's functioning as art.</p>
+                    <p>Art forces us to confront the fundamentals of being human. Why do we feel the need to create? Why do some patterns of sound or colour move us to tears, while others don't affect us at all? Why do we desperately want to share our inner experiences with others, even though we can never truly know if they understand?</p>
+                    <p>These questions don't have answers, and that's exactly what makes them worth asking.</p>
+                </div>
             </article>
         </main>
+
         <footer class="footer">
             <p class="footer__reply">
                 <a href="https://contact.gijs6.nl">Reply to this post</a>
@@ -88,12 +116,12 @@
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
             <p class="footer__line">
-                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/c23d7ead07c869188a82b8d15346e49b485e7c86"><code>c23d7ea</code></a
-                >, deployed on <time datetime="2026-08-11T11:41:24.040500+02:00">11 August 2026 at 11:41:24 CEST</time>
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/4dfb0a8326f156f11543bbc1f4a1b846d503e089"><code>4dfb0a8</code></a
+                >, deployed on <time datetime="2026-08-15T16:47:44.733+02:00">15 August 2026 at 16:47:44 CEST</time>
             </p>
 
             <p class="footer__line">
-                <a href="https://github.com/Gijs6/gijs6.nl/blob/c23d7ead07c869188a82b8d15346e49b485e7c86/site/blog/what-is-art.md">View this page's source <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Gijs6/gijs6.nl/blob/4dfb0a8326f156f11543bbc1f4a1b846d503e089/site/blog/what-is-art.md">View this page's source <span aria-hidden="true">↗</span></a>
             </p>
         </footer>
     </body>

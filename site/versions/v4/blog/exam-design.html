@@ -28,9 +28,27 @@
         <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
         <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
         <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": ["WebSite", "SoftwareSourceCode"], "@id": "https://gijs6.nl/#website", "url": "https://gijs6.nl/", "name": "Gijs6", "description": "A big mess of fun pages, interesting projects, my own thoughts and opinions and more.", "inLanguage": "en-GB", "author": { "@id": "https://gijs6.nl/#person" }, "license": "https://unlicense.org/", "hasPart": { "@id": "https://gijs6.nl/blog/#blog" }, "codeRepository": ["https://github.com/Gijs6/gijs6.nl", "https://gitlab.com/ggijs/gijs6.nl", "https://codeberg.org/gijs6/gijs6.nl", "https://git.dupunkto.org/sites/gijs6.nl"], "programmingLanguage": "Python" },
+                    { "@type": "Blog", "@id": "https://gijs6.nl/blog/#blog", "name": "Gijs6 - blog", "url": "https://gijs6.nl/blog/", "inLanguage": "en-GB", "isPartOf": { "@id": "https://gijs6.nl/#website" }, "author": { "@id": "https://gijs6.nl/#person" } },
+                    { "@type": "Person", "@id": "https://gijs6.nl/#person", "name": "Gijs6", "givenName": "Gijs", "familyName": "ten Berg", "alternateName": ["Gijs", "Gijs ten Berg", "gijsz", "ggijs", "ggijs109"], "url": "https://gijs6.nl/", "image": "https://cdn.gijs6.nl/images/me.jpg", "email": "me@gijs6.nl", "sameAs": ["https://github.com/Gijs6", "https://gitlab.com/ggijs", "https://codeberg.org/Gijs6", "https://contact.gijs6.nl"], "worksFor": { "@id": "https://gijs6.nl/#qdentity" }, "alumniOf": { "@id": "https://gijs6.nl/#school" }, "memberOf": { "@id": "https://gijs6.nl/#dupunkto" } },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#qdentity", "name": "Qdentity", "url": "https://qdentity.com" },
+                    { "@type": "HighSchool", "@id": "https://gijs6.nl/#school", "name": "Lyceum Schravenlant", "url": "https://www.lyceumschravenlant.nl/" },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#dupunkto", "name": "{du}punkto", "url": "https://dupunkto.org/" }
+                ]
+            }
+        </script>
+
+        <script type="application/ld+json">
+            { "@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://gijs6.nl/blog/exam-design", "headline": "The new Dutch exam design is worse", "url": "https://gijs6.nl/blog/exam-design", "author": { "@id": "https://gijs6.nl/#person" }, "publisher": { "@id": "https://gijs6.nl/#person" }, "isPartOf": { "@id": "https://gijs6.nl/blog/#blog" }, "wordCount": 641, "license": "https://unlicense.org/", "datePublished": "2026-05-24T00:39:42+02:00" }
+        </script>
     </head>
 
-    <body>
+    <body class="body">
         <header class="sidebar">
             <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
             <nav aria-label="Site">
@@ -56,78 +74,88 @@
                 </ul>
             </nav>
         </header>
+
         <main class="page">
-            <article class="page__article">
+            <article class="page__article h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/exam-design">
+                <meta itemprop="url" content="https://gijs6.nl/blog/exam-design" />
+                <meta itemprop="wordCount" content="641" />
+                <meta itemprop="license" content="https://unlicense.org/" />
                 <hgroup class="page__intro">
-                    <h1 class="page__title">The new Dutch exam design is worse</h1>
-                    <p class="page__subtitle"><time datetime="2026-05-24T00:39:42+02:00">2026-05-24</time> · 3 min read · 641 words</p>
+                    <h1 class="page__title p-name" itemprop="headline">The new Dutch exam design is worse</h1>
+                    <p class="page__subtitle">
+                        <a hidden class="p-author h-card u-url p-name" href="/versions/v4/index.html" itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person"><span itemprop="name">Gijs6</span></a
+                        ><a href="/versions/v4/blog/exam-design"><time class="dt-published" itemprop="datePublished" datetime="2026-05-24T00:39:42+02:00">2026-05-24</time></a> · 3 min read · 641 words
+                    </p>
                 </hgroup>
-                <style>
-                    figure {
-                        display: grid;
-                        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-                        gap: var(--spacing-md);
-                        margin: 0;
-                    }
+                <div class="e-content" itemprop="articleBody">
+                    <style>
+                        figure {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                            gap: var(--spacing-md);
+                            margin: 0;
+                        }
 
-                    figure a {
-                        max-width: 340px;
-                        width: 100%;
-                    }
+                        figure a {
+                            max-width: 340px;
+                            width: 100%;
+                        }
 
-                    figure:has(a:only-child) a {
-                        max-width: 100%;
-                    }
+                        figure:has(a:only-child) a {
+                            max-width: 100%;
+                        }
 
-                    figcaption {
-                        grid-column: 1 / -1;
-                        font-style: italic;
-                    }
-                </style>
+                        figcaption {
+                            grid-column: 1 / -1;
+                            font-style: italic;
+                        }
+                    </style>
 
-                <p>The Dutch national exams are getting redesigned. The Board for Tests and Examinations (<abbr lang="nl" title="College voor Toetsen en Examens">CvTE</abbr>) has been running pilots since <time datetime="2025">2025</time>, starting with the Spanish exam for <abbr lang="nl" title="hoger algemeen voortgezet onderwijs">havo</abbr>. This year even more exams use the new layout, including the English exam for <abbr lang="nl" title="voorbereidend wetenschappelijk onderwijs">vwo</abbr>, which I took.</p>
-                <p>The current design has been around since <time datetime="2007">2007</time>, so a refresh makes sense. The <span lang="nl">CvTE</span> says the main driver is new accessibility regulations. But having taken the new exam myself, I don't think it's an improvement at all.</p>
-                <p>
-                    For those unfamiliar with Dutch national exams: the design is pretty plain. No fancy shapes, just black 11pt Arial with the occasional grey border. You can see the <a href="https://www.examenblad.nl/2025/vwo/documenten/cse-1/vw-1002-a-25-1-o" hreflang="nl"><time datetime="2025">2025</time> English <span lang="nl">vwo</span> exam</a> for reference.
-                </p>
-                <figure>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven/page-01.png" alt="Cover of the 2025 vwo English exercise booklet" /></a>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten/page-01.png" alt="Cover of the 2025 vwo English texts booklet" /></a>
-                    <figcaption>The <time datetime="2025">2025</time> vwo English exam: exercise booklet cover (left) and texts booklet cover (right)</figcaption>
-                </figure>
+                    <p>The Dutch national exams are getting redesigned. The Board for Tests and Examinations (<abbr lang="nl" title="College voor Toetsen en Examens">CvTE</abbr>) has been running pilots since <time datetime="2025">2025</time>, starting with the Spanish exam for <abbr lang="nl" title="hoger algemeen voortgezet onderwijs">havo</abbr>. This year even more exams use the new layout, including the English exam for <abbr lang="nl" title="voorbereidend wetenschappelijk onderwijs">vwo</abbr>, which I took.</p>
+                    <p>The current design has been around since <time datetime="2007">2007</time>, so a refresh makes sense. The <span lang="nl">CvTE</span> says the main driver is new accessibility regulations. But having taken the new exam myself, I don't think it's an improvement at all.</p>
+                    <p>
+                        For those unfamiliar with Dutch national exams: the design is pretty plain. No fancy shapes, just black 11pt Arial with the occasional grey border. You can see the <a href="https://www.examenblad.nl/2025/vwo/documenten/cse-1/vw-1002-a-25-1-o" hreflang="nl"><time datetime="2025">2025</time> English <span lang="nl">vwo</span> exam</a> for reference.
+                    </p>
+                    <figure>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven/page-01.png" alt="Cover of the 2025 vwo English exercise booklet" /></a>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten/page-01.png" alt="Cover of the 2025 vwo English texts booklet" /></a>
+                        <figcaption>The <time datetime="2025">2025</time> vwo English exam: exercise booklet cover (left) and texts booklet cover (right)</figcaption>
+                    </figure>
 
-                <p>Honestly, this design is fine. There's room for improvement (the line-height is a bit tight, and the cover is not always clear), but it does its job. Everything that needs to be communicated is communicated, clearly and without any distractions.</p>
-                <figure>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven/page-02.png" alt="First questions page of the 2025 vwo English exercise booklet" /></a>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten/page-02.png" alt="First text page of the 2025 vwo English texts booklet" /></a>
-                    <figcaption>The <time datetime="2025">2025</time> vwo English exam: exercise booklet questions page (left) and texts booklet text page (right)</figcaption>
-                </figure>
+                    <p>Honestly, this design is fine. There's room for improvement (the line-height is a bit tight, and the cover is not always clear), but it does its job. Everything that needs to be communicated is communicated, clearly and without any distractions.</p>
+                    <figure>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/opgaven/page-02.png" alt="First questions page of the 2025 vwo English exercise booklet" /></a>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2025/teksten/page-02.png" alt="First text page of the 2025 vwo English texts booklet" /></a>
+                        <figcaption>The <time datetime="2025">2025</time> vwo English exam: exercise booklet questions page (left) and texts booklet text page (right)</figcaption>
+                    </figure>
 
-                <p>That's what exam design should do. The goal isn't to look good or feel modern: it's to get information across as clearly as possible to as many candidates as possible. <strong>A good exam design goes completely unnoticed.</strong></p>
-                <p>So when you compare the old design to the <a href="https://www.examenblad.nl/2026/vwo/documenten/cse-1/vw-1002-a-26-1-o" hreflang="nl">new one</a>, the problems become obvious pretty quickly.</p>
-                <figure>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/page-01.png" alt="Cover of the 2026 vwo English exercise booklet" /></a>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten/page-01.png" alt="Cover of the 2026 vwo English texts booklet" /></a>
-                    <figcaption>The <time datetime="2026">2026</time> vwo English exam: exercise booklet cover (left) and texts booklet cover (right)</figcaption>
-                </figure>
+                    <p>That's what exam design should do. The goal isn't to look good or feel modern: it's to get information across as clearly as possible to as many candidates as possible. <strong>A good exam design goes completely unnoticed.</strong></p>
+                    <p>So when you compare the old design to the <a href="https://www.examenblad.nl/2026/vwo/documenten/cse-1/vw-1002-a-26-1-o" hreflang="nl">new one</a>, the problems become obvious pretty quickly.</p>
+                    <figure>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/page-01.png" alt="Cover of the 2026 vwo English exercise booklet" /></a>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten/page-01.png" alt="Cover of the 2026 vwo English texts booklet" /></a>
+                        <figcaption>The <time datetime="2026">2026</time> vwo English exam: exercise booklet cover (left) and texts booklet cover (right)</figcaption>
+                    </figure>
 
-                <p>The new design is full of visual clutter. There are decorative diagonal shapes on the cover, text with weird borders snaking around it, icons, text blocks with grey backgrounds, grey text all over the place, and the word <span lang="nl">"Vraag"</span> printed in front of every single question number. None of this adds information. It just adds noise, which is exactly what you don't want when someone is trying to concentrate.</p>
-                <figure>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/page-02.png" alt="First questions page of the 2026 vwo English exercise booklet" /></a>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten/page-03.png" alt="First text page of the 2026 vwo English texts booklet" /></a>
-                    <figcaption>The <time datetime="2026">2026</time> vwo English exam: exercise booklet questions page (left) and texts booklet text page (right)</figcaption>
-                </figure>
+                    <p>The new design is full of visual clutter. There are decorative diagonal shapes on the cover, text with weird borders snaking around it, icons, text blocks with grey backgrounds, grey text all over the place, and the word <span lang="nl">"Vraag"</span> printed in front of every single question number. None of this adds information. It just adds noise, which is exactly what you don't want when someone is trying to concentrate.</p>
+                    <figure>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/page-02.png" alt="First questions page of the 2026 vwo English exercise booklet" /></a>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/teksten/page-03.png" alt="First text page of the 2026 vwo English texts booklet" /></a>
+                        <figcaption>The <time datetime="2026">2026</time> vwo English exam: exercise booklet questions page (left) and texts booklet text page (right)</figcaption>
+                    </figure>
 
-                <p>The accessibility argument is also hard to take seriously when you look at the grey background blocks they've introduced. Those blocks actually have worse contrast than anything in the old design. For some of the blocks, the contrast ratio is 6.89:1, which actually <strong>fails</strong> <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> AAA. The old design, boring as it was, had black text on white paper.</p>
-                <p>Then there's the bold text problem. In the new design, all questions are printed in bold. The idea is probably to make the questions stand out from the text surrounding them. But questions sometimes need emphasis within them too, and the way the <span lang="nl">CvTE</span> solved that was to make that text <em>even bolder</em>. In practice, the difference is almost invisible. My English teacher pointed this out to me after the exam. I hadn't noticed it while actually sitting the test (which is exactly the problem).</p>
-                <figure>
-                    <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/question-8.png" alt="Close-up of question 8 from the 2026 vwo English exam" /></a>
-                </figure>
+                    <p>The accessibility argument is also hard to take seriously when you look at the grey background blocks they've introduced. Those blocks actually have worse contrast than anything in the old design. For some of the blocks, the contrast ratio is 6.89:1, which actually <strong>fails</strong> <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> AAA. The old design, boring as it was, had black text on white paper.</p>
+                    <p>Then there's the bold text problem. In the new design, all questions are printed in bold. The idea is probably to make the questions stand out from the text surrounding them. But questions sometimes need emphasis within them too, and the way the <span lang="nl">CvTE</span> solved that was to make that text <em>even bolder</em>. In practice, the difference is almost invisible. My English teacher pointed this out to me after the exam. I hadn't noticed it while actually sitting the test (which is exactly the problem).</p>
+                    <figure>
+                        <a href="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven.pdf"><img src="https://cdn.gijs6.nl/blog/dutch-exam-design/2026/opgaven/question-8.png" alt="Close-up of question 8 from the 2026 vwo English exam" /></a>
+                    </figure>
 
-                <p>And then there's the points. In the old design, the number of points for each question was shown before the question number, so you could easily look at a page and immediately get a sense of how the points were distributed across questions. In the new design, the points are in parentheses after the question. Scanning a page to plan your time is now noticeably harder.</p>
-                <p>What frustrates me most is the irony of it all. The <span lang="nl">CvTE</span> redesigned these exams specifically for accessibility reasons, and in doing so introduced contrast failures, invisible emphasis, and a more cluttered layout. The old design wasn't exciting, but it was legible. That used to be enough.</p>
+                    <p>And then there's the points. In the old design, the number of points for each question was shown before the question number, so you could easily look at a page and immediately get a sense of how the points were distributed across questions. In the new design, the points are in parentheses after the question. Scanning a page to plan your time is now noticeably harder.</p>
+                    <p>What frustrates me most is the irony of it all. The <span lang="nl">CvTE</span> redesigned these exams specifically for accessibility reasons, and in doing so introduced contrast failures, invisible emphasis, and a more cluttered layout. The old design wasn't exciting, but it was legible. That used to be enough.</p>
+                </div>
             </article>
         </main>
+
         <footer class="footer">
             <p class="footer__reply">
                 <a href="https://contact.gijs6.nl">Reply to this post</a>
@@ -136,12 +164,12 @@
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
             <p class="footer__line">
-                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/c23d7ead07c869188a82b8d15346e49b485e7c86"><code>c23d7ea</code></a
-                >, deployed on <time datetime="2026-08-11T11:41:24.040500+02:00">11 August 2026 at 11:41:24 CEST</time>
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/4dfb0a8326f156f11543bbc1f4a1b846d503e089"><code>4dfb0a8</code></a
+                >, deployed on <time datetime="2026-08-15T16:47:44.733+02:00">15 August 2026 at 16:47:44 CEST</time>
             </p>
 
             <p class="footer__line">
-                <a href="https://github.com/Gijs6/gijs6.nl/blob/c23d7ead07c869188a82b8d15346e49b485e7c86/site/blog/exam-design.md">View this page's source <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Gijs6/gijs6.nl/blob/4dfb0a8326f156f11543bbc1f4a1b846d503e089/site/blog/exam-design.md">View this page's source <span aria-hidden="true">↗</span></a>
             </p>
         </footer>
     </body>

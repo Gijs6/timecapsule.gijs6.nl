@@ -28,9 +28,27 @@
         <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
         <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
         <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": ["WebSite", "SoftwareSourceCode"], "@id": "https://gijs6.nl/#website", "url": "https://gijs6.nl/", "name": "Gijs6", "description": "A big mess of fun pages, interesting projects, my own thoughts and opinions and more.", "inLanguage": "en-GB", "author": { "@id": "https://gijs6.nl/#person" }, "license": "https://unlicense.org/", "hasPart": { "@id": "https://gijs6.nl/blog/#blog" }, "codeRepository": ["https://github.com/Gijs6/gijs6.nl", "https://gitlab.com/ggijs/gijs6.nl", "https://codeberg.org/gijs6/gijs6.nl", "https://git.dupunkto.org/sites/gijs6.nl"], "programmingLanguage": "Python" },
+                    { "@type": "Blog", "@id": "https://gijs6.nl/blog/#blog", "name": "Gijs6 - blog", "url": "https://gijs6.nl/blog/", "inLanguage": "en-GB", "isPartOf": { "@id": "https://gijs6.nl/#website" }, "author": { "@id": "https://gijs6.nl/#person" } },
+                    { "@type": "Person", "@id": "https://gijs6.nl/#person", "name": "Gijs6", "givenName": "Gijs", "familyName": "ten Berg", "alternateName": ["Gijs", "Gijs ten Berg", "gijsz", "ggijs", "ggijs109"], "url": "https://gijs6.nl/", "image": "https://cdn.gijs6.nl/images/me.jpg", "email": "me@gijs6.nl", "sameAs": ["https://github.com/Gijs6", "https://gitlab.com/ggijs", "https://codeberg.org/Gijs6", "https://contact.gijs6.nl"], "worksFor": { "@id": "https://gijs6.nl/#qdentity" }, "alumniOf": { "@id": "https://gijs6.nl/#school" }, "memberOf": { "@id": "https://gijs6.nl/#dupunkto" } },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#qdentity", "name": "Qdentity", "url": "https://qdentity.com" },
+                    { "@type": "HighSchool", "@id": "https://gijs6.nl/#school", "name": "Lyceum Schravenlant", "url": "https://www.lyceumschravenlant.nl/" },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#dupunkto", "name": "{du}punkto", "url": "https://dupunkto.org/" }
+                ]
+            }
+        </script>
+
+        <script type="application/ld+json">
+            { "@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://gijs6.nl/blog/ai-made-education-worse", "headline": "Education was bad; AI made it worse", "url": "https://gijs6.nl/blog/ai-made-education-worse", "author": { "@id": "https://gijs6.nl/#person" }, "publisher": { "@id": "https://gijs6.nl/#person" }, "isPartOf": { "@id": "https://gijs6.nl/blog/#blog" }, "wordCount": 355, "license": "https://unlicense.org/", "datePublished": "2025-05-13T14:18:36+02:00" }
+        </script>
     </head>
 
-    <body>
+    <body class="body">
         <header class="sidebar">
             <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
             <nav aria-label="Site">
@@ -56,21 +74,31 @@
                 </ul>
             </nav>
         </header>
+
         <main class="page">
-            <article class="page__article">
+            <article class="page__article h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/ai-made-education-worse">
+                <meta itemprop="url" content="https://gijs6.nl/blog/ai-made-education-worse" />
+                <meta itemprop="wordCount" content="355" />
+                <meta itemprop="license" content="https://unlicense.org/" />
                 <hgroup class="page__intro">
-                    <h1 class="page__title">Education was bad; AI made it worse</h1>
-                    <p class="page__subtitle"><time datetime="2025-05-13T14:18:36+02:00">2025-05-13</time> · 2 min read · 355 words</p>
+                    <h1 class="page__title p-name" itemprop="headline">Education was bad; AI made it worse</h1>
+                    <p class="page__subtitle">
+                        <a hidden class="p-author h-card u-url p-name" href="/versions/v4/index.html" itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person"><span itemprop="name">Gijs6</span></a
+                        ><a href="/versions/v4/blog/ai-made-education-worse"><time class="dt-published" itemprop="datePublished" datetime="2025-05-13T14:18:36+02:00">2025-05-13</time></a> · 2 min read · 355 words
+                    </p>
                 </hgroup>
-                <p>AI can be an awesome tool for writing. I use it myself more often than I like to admit, and it is used a lot in my school.</p>
-                <p>And that's a problem. School <em>should</em> be about teaching people important knowledge and skills, and maybe even more importantly, it should get people excited about learning. But if students just use AI to do their assignments, school clearly fails at that. And I completely understand that schools need to do something "against" using AI. But schools can't seem to do this right.</p>
-                <p>My school just takes away our ability to use AI. For writing assignments, we work on a restricted Chromebook or just on paper. And this approach is wrong: it doesn't just block access to AI. It also limits our ability to do research and fully engage with the learning process. Until this year, we could just do research on the Chromebooks, but this is now not possible during writing assignments. This kind of restriction turns education into something even more bureaucratic, tedious, and frustrating, which only pushes students further away from learning and makes them <strong>more</strong> likely to rely on AI.</p>
-                <p>What schools ideally want is that their students don't <em>want</em> to use AI. The experience of learning new things should be engaging and exciting. But that is not the case, and it wasn't the case before AI.</p>
-                <p>And the students aren't the problem: the endless obsession with assignments, tests, and just accomplishing results is. These assignments, like the project from civics and the writing assignment from <abbr lang="nl" title="natuur, leven en technologie">NLT</abbr>, don't let students think about the subject. They just let the students answer some predefined questions, only to get some grade or result.</p>
-                <p>And AI has removed all room to be curious (there wasn't much room before anyway). My school thinks that if you allow people to be curious, you allow them to use AI.</p>
-                <p>The endless amount of boring, tedious, and repetitive assignments makes people forget that school can be fun. So for almost everyone, learning is not an interesting experience: it's a chore, so it's no wonder they would rather let AI do it.</p>
+                <div class="e-content" itemprop="articleBody">
+                    <p>AI can be an awesome tool for writing. I use it myself more often than I like to admit, and it is used a lot in my school.</p>
+                    <p>And that's a problem. School <em>should</em> be about teaching people important knowledge and skills, and maybe even more importantly, it should get people excited about learning. But if students just use AI to do their assignments, school clearly fails at that. And I completely understand that schools need to do something "against" using AI. But schools can't seem to do this right.</p>
+                    <p>My school just takes away our ability to use AI. For writing assignments, we work on a restricted Chromebook or just on paper. And this approach is wrong: it doesn't just block access to AI. It also limits our ability to do research and fully engage with the learning process. Until this year, we could just do research on the Chromebooks, but this is now not possible during writing assignments. This kind of restriction turns education into something even more bureaucratic, tedious, and frustrating, which only pushes students further away from learning and makes them <strong>more</strong> likely to rely on AI.</p>
+                    <p>What schools ideally want is that their students don't <em>want</em> to use AI. The experience of learning new things should be engaging and exciting. But that is not the case, and it wasn't the case before AI.</p>
+                    <p>And the students aren't the problem: the endless obsession with assignments, tests, and just accomplishing results is. These assignments, like the project from civics and the writing assignment from <abbr lang="nl" title="natuur, leven en technologie">NLT</abbr>, don't let students think about the subject. They just let the students answer some predefined questions, only to get some grade or result.</p>
+                    <p>And AI has removed all room to be curious (there wasn't much room before anyway). My school thinks that if you allow people to be curious, you allow them to use AI.</p>
+                    <p>The endless amount of boring, tedious, and repetitive assignments makes people forget that school can be fun. So for almost everyone, learning is not an interesting experience: it's a chore, so it's no wonder they would rather let AI do it.</p>
+                </div>
             </article>
         </main>
+
         <footer class="footer">
             <p class="footer__reply">
                 <a href="https://contact.gijs6.nl">Reply to this post</a>
@@ -79,12 +107,12 @@
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
             <p class="footer__line">
-                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/c23d7ead07c869188a82b8d15346e49b485e7c86"><code>c23d7ea</code></a
-                >, deployed on <time datetime="2026-08-11T11:41:24.040500+02:00">11 August 2026 at 11:41:24 CEST</time>
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/4dfb0a8326f156f11543bbc1f4a1b846d503e089"><code>4dfb0a8</code></a
+                >, deployed on <time datetime="2026-08-15T16:47:44.733+02:00">15 August 2026 at 16:47:44 CEST</time>
             </p>
 
             <p class="footer__line">
-                <a href="https://github.com/Gijs6/gijs6.nl/blob/c23d7ead07c869188a82b8d15346e49b485e7c86/site/blog/ai-made-education-worse.md">View this page's source <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Gijs6/gijs6.nl/blob/4dfb0a8326f156f11543bbc1f4a1b846d503e089/site/blog/ai-made-education-worse.md">View this page's source <span aria-hidden="true">↗</span></a>
             </p>
         </footer>
     </body>

@@ -28,9 +28,23 @@
         <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
         <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
         <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": ["WebSite", "SoftwareSourceCode"], "@id": "https://gijs6.nl/#website", "url": "https://gijs6.nl/", "name": "Gijs6", "description": "A big mess of fun pages, interesting projects, my own thoughts and opinions and more.", "inLanguage": "en-GB", "author": { "@id": "https://gijs6.nl/#person" }, "license": "https://unlicense.org/", "hasPart": { "@id": "https://gijs6.nl/blog/#blog" }, "codeRepository": ["https://github.com/Gijs6/gijs6.nl", "https://gitlab.com/ggijs/gijs6.nl", "https://codeberg.org/gijs6/gijs6.nl", "https://git.dupunkto.org/sites/gijs6.nl"], "programmingLanguage": "Python" },
+                    { "@type": "Blog", "@id": "https://gijs6.nl/blog/#blog", "name": "Gijs6 - blog", "url": "https://gijs6.nl/blog/", "inLanguage": "en-GB", "isPartOf": { "@id": "https://gijs6.nl/#website" }, "author": { "@id": "https://gijs6.nl/#person" } },
+                    { "@type": "Person", "@id": "https://gijs6.nl/#person", "name": "Gijs6", "givenName": "Gijs", "familyName": "ten Berg", "alternateName": ["Gijs", "Gijs ten Berg", "gijsz", "ggijs", "ggijs109"], "url": "https://gijs6.nl/", "image": "https://cdn.gijs6.nl/images/me.jpg", "email": "me@gijs6.nl", "sameAs": ["https://github.com/Gijs6", "https://gitlab.com/ggijs", "https://codeberg.org/Gijs6", "https://contact.gijs6.nl"], "worksFor": { "@id": "https://gijs6.nl/#qdentity" }, "alumniOf": { "@id": "https://gijs6.nl/#school" }, "memberOf": { "@id": "https://gijs6.nl/#dupunkto" } },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#qdentity", "name": "Qdentity", "url": "https://qdentity.com" },
+                    { "@type": "HighSchool", "@id": "https://gijs6.nl/#school", "name": "Lyceum Schravenlant", "url": "https://www.lyceumschravenlant.nl/" },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#dupunkto", "name": "{du}punkto", "url": "https://dupunkto.org/" }
+                ]
+            }
+        </script>
     </head>
 
-    <body>
+    <body class="body">
         <header class="sidebar">
             <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
             <nav aria-label="Site">
@@ -56,200 +70,246 @@
                 </ul>
             </nav>
         </header>
+
         <main class="page">
             <hgroup class="page__intro">
                 <h1 class="page__title">Projects</h1>
                 <p class="page__subtitle">Some of the things I've worked on</p>
             </hgroup>
-            <ul class="project-list">
-                <li class="project-list__item">
-                    <h2 class="project-list__title">Stapler</h2>
-                    <p class="project-list__description">A simple static site generator built with Python and Jinja.</p>
+            <ul class="project-list" itemscope itemtype="https://schema.org/ItemList">
+                <li class="project-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+                    <h2 class="project-list__title" itemprop="name">Stapler</h2>
+                    <p class="project-list__description" itemprop="description">A simple static site generator built with Python and Jinja.</p>
+                    <meta itemprop="programmingLanguage" content="Python" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <ul class="project-list__links">
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://github.com/Gijs6/stapler">GitHub <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://github.com/Gijs6/stapler">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://codeberg.org/gijs6/stapler">Codeberg <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://codeberg.org/gijs6/stapler">Codeberg <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gitlab.com/ggijs/stapler">GitLab <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://gitlab.com/ggijs/stapler">GitLab <span aria-hidden="true">↗</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="project-list__item">
-                    <h2 class="project-list__title">Outflow</h2>
-                    <p class="project-list__description">A simple and clean weather webapp.</p>
+                <li class="project-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+                    <h2 class="project-list__title" itemprop="name">Outflow</h2>
+                    <p class="project-list__description" itemprop="description">A simple and clean weather webapp.</p>
+                    <meta itemprop="programmingLanguage" content="Python" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <ul class="project-list__links">
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://outflow.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="url" href="https://outflow.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://github.com/Gijs6/outflow">GitHub <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://github.com/Gijs6/outflow">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://codeberg.org/gijs6/outflow">Codeberg <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://codeberg.org/gijs6/outflow">Codeberg <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gitlab.com/ggijs/outflow">GitLab <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://gitlab.com/ggijs/outflow">GitLab <span aria-hidden="true">↗</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="project-list__item">
-                    <h2 class="project-list__title">Huebox</h2>
-                    <p class="project-list__description">A simple colour palette manager.</p>
+                <li class="project-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+                    <h2 class="project-list__title" itemprop="name">Huebox</h2>
+                    <p class="project-list__description" itemprop="description">A simple colour palette manager.</p>
+                    <meta itemprop="programmingLanguage" content="Python" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <ul class="project-list__links">
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://huebox.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="url" href="https://huebox.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://github.com/Gijs6/huebox">GitHub <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://github.com/Gijs6/huebox">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://codeberg.org/gijs6/huebox">Codeberg <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://codeberg.org/gijs6/huebox">Codeberg <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gitlab.com/ggijs/huebox">GitLab <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://gitlab.com/ggijs/huebox">GitLab <span aria-hidden="true">↗</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="project-list__item">
-                    <h2 class="project-list__title">Gemeentle</h2>
-                    <p class="project-list__description">A daily Dutch municipality guessing game. Turns out the Netherlands has a lot of municipalities you've never heard of.</p>
+                <li class="project-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+                    <h2 class="project-list__title" itemprop="name">Gemeentle</h2>
+                    <p class="project-list__description" itemprop="description">A daily Dutch municipality guessing game. Turns out the Netherlands has a lot of municipalities you've never heard of.</p>
+                    <meta itemprop="programmingLanguage" content="Python" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <ul class="project-list__links">
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gemeentle.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="url" href="https://gemeentle.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://github.com/Gijs6/gemeentle">GitHub <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://github.com/Gijs6/gemeentle">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://codeberg.org/gijs6/gemeentle">Codeberg <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://codeberg.org/gijs6/gemeentle">Codeberg <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gitlab.com/ggijs/gemeentle">GitLab <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://gitlab.com/ggijs/gemeentle">GitLab <span aria-hidden="true">↗</span></a>
                         </li>
                     </ul>
                 </li>
 
-                <li class="project-list__item">
-                    <h2 class="project-list__title">school.gijs6.nl</h2>
-                    <p class="project-list__description">The place where I store all my school summaries.</p>
+                <li class="project-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+                    <h2 class="project-list__title" itemprop="name">school.gijs6.nl</h2>
+                    <p class="project-list__description" itemprop="description">The place where I store all my school summaries.</p>
+                    <meta itemprop="programmingLanguage" content="Python" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <ul class="project-list__links">
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://school.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="url" href="https://school.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://github.com/Gijs6/school.gijs6.nl">GitHub <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://github.com/Gijs6/school.gijs6.nl">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://codeberg.org/gijs6/school.gijs6.nl">Codeberg <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://codeberg.org/gijs6/school.gijs6.nl">Codeberg <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gitlab.com/ggijs/school.gijs6.nl">GitLab <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://gitlab.com/ggijs/school.gijs6.nl">GitLab <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://git.dupunkto.org/sites/school.gijs6.nl">{du}punkto <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://git.dupunkto.org/sites/school.gijs6.nl">{du}punkto <span aria-hidden="true">↗</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="project-list__item">
-                    <h2 class="project-list__title">gijs6.nl</h2>
-                    <p class="project-list__description">This very site. I hope you like it. Please like it.</p>
+                <li class="project-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/SoftwareSourceCode https://schema.org/WebSite" itemid="https://gijs6.nl/#website">
+                    <h2 class="project-list__title" itemprop="name">gijs6.nl</h2>
+                    <p class="project-list__description" itemprop="description">This very site. I hope you like it. Please like it.</p>
+                    <meta itemprop="programmingLanguage" content="Python" />
+                    <meta itemprop="inLanguage" content="en-GB" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <ul class="project-list__links">
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="url" href="https://gijs6.nl/">Visit <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://github.com/Gijs6/gijs6.nl">GitHub <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://github.com/Gijs6/gijs6.nl">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://codeberg.org/gijs6/gijs6.nl">Codeberg <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://codeberg.org/gijs6/gijs6.nl">Codeberg <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gitlab.com/ggijs/gijs6.nl">GitLab <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://gitlab.com/ggijs/gijs6.nl">GitLab <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://git.dupunkto.org/sites/gijs6.nl">{du}punkto <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://git.dupunkto.org/sites/gijs6.nl">{du}punkto <span aria-hidden="true">↗</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="project-list__item">
-                    <h2 class="project-list__title">Meliag</h2>
-                    <p class="project-list__description">A train info webapp for Dutch train stations (hopefully works better than the actual trains).</p>
+                <li class="project-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+                    <h2 class="project-list__title" itemprop="name">Meliag</h2>
+                    <p class="project-list__description" itemprop="description">A train info webapp for Dutch train stations (hopefully works better than the actual trains).</p>
+                    <meta itemprop="programmingLanguage" content="Python" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <ul class="project-list__links">
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://meliag.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="url" href="https://meliag.gijs6.nl">Visit <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://github.com/Gijs6/meliag">GitHub <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://github.com/Gijs6/meliag">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://codeberg.org/gijs6/meliag">Codeberg <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://codeberg.org/gijs6/meliag">Codeberg <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gitlab.com/ggijs/meliag">GitLab <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://gitlab.com/ggijs/meliag">GitLab <span aria-hidden="true">↗</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="project-list__item">
-                    <h2 class="project-list__title">Watchtower</h2>
-                    <p class="project-list__description">A web app to monitor sites for changes.</p>
+                <li class="project-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+                    <h2 class="project-list__title" itemprop="name">Watchtower</h2>
+                    <p class="project-list__description" itemprop="description">A web app to monitor sites for changes.</p>
+                    <meta itemprop="programmingLanguage" content="Python" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <ul class="project-list__links">
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://github.com/Gijs6/watchtower">GitHub <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://github.com/Gijs6/watchtower">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://codeberg.org/gijs6/watchtower">Codeberg <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://codeberg.org/gijs6/watchtower">Codeberg <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gitlab.com/ggijs/watchtower">GitLab <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://gitlab.com/ggijs/watchtower">GitLab <span aria-hidden="true">↗</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="project-list__item">
-                    <h2 class="project-list__title">Shelf</h2>
-                    <p class="project-list__description">A simple notes and todo app.</p>
+                <li class="project-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+                    <h2 class="project-list__title" itemprop="name">Shelf</h2>
+                    <p class="project-list__description" itemprop="description">A simple notes and todo app.</p>
+                    <meta itemprop="programmingLanguage" content="Python" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <ul class="project-list__links">
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://github.com/Gijs6/shelf">GitHub <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://github.com/Gijs6/shelf">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://codeberg.org/gijs6/shelf">Codeberg <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://codeberg.org/gijs6/shelf">Codeberg <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://gitlab.com/ggijs/shelf">GitLab <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://gitlab.com/ggijs/shelf">GitLab <span aria-hidden="true">↗</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class="project-list__item">
-                    <h2 class="project-list__title">Mesh</h2>
-                    <p class="project-list__description">A distributed uptime monitor for the {du}punkto network, made together with the rest of {du}punkto.</p>
+                <li class="project-list__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/SoftwareSourceCode">
+                    <h2 class="project-list__title" itemprop="name">Mesh</h2>
+                    <p class="project-list__description" itemprop="description">A distributed uptime monitor for the {du}punkto network, made together with the rest of {du}punkto.</p>
+                    <meta itemprop="programmingLanguage" content="Elixir" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
+                    <span itemprop="contributor" itemscope itemtype="https://schema.org/Organization" itemid="https://gijs6.nl/#dupunkto">
+                        <meta itemprop="name" content="{du}punkto" />
+                    </span>
                     <ul class="project-list__links">
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://git.dupunkto.org/~dupunkto/mesh">{du}punkto <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://git.dupunkto.org/~dupunkto/mesh">{du}punkto <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://github.com/dupunkto/mesh">GitHub <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://github.com/dupunkto/mesh">GitHub <span aria-hidden="true">↗</span></a>
                         </li>
                         <li class="project-list__link-item">
-                            <a class="project-list__link" href="https://codeberg.org/dupunkto/mesh">Codeberg <span aria-hidden="true">↗</span></a>
+                            <a class="project-list__link" itemprop="codeRepository" href="https://codeberg.org/dupunkto/mesh">Codeberg <span aria-hidden="true">↗</span></a>
                         </li>
                     </ul>
                 </li>
             </ul>
             <p>You can find all my projects on my <a href="https://github.com/Gijs6">GitHub profile</a>, <a href="https://gitlab.com/ggijs">GitLab profile</a>, <a href="https://codeberg.org/Gijs6">Codeberg profile</a>, or in the <a href="https://git.dupunkto.org">{du}punkto repos</a>.</p>
         </main>
+
         <footer class="footer">
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
             <p class="footer__line">
-                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/c23d7ead07c869188a82b8d15346e49b485e7c86"><code>c23d7ea</code></a
-                >, deployed on <time datetime="2026-08-11T11:41:24.040500+02:00">11 August 2026 at 11:41:24 CEST</time>
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/4dfb0a8326f156f11543bbc1f4a1b846d503e089"><code>4dfb0a8</code></a
+                >, deployed on <time datetime="2026-08-15T16:47:44.733+02:00">15 August 2026 at 16:47:44 CEST</time>
             </p>
 
             <p class="footer__line">
-                <a href="https://github.com/Gijs6/gijs6.nl/blob/c23d7ead07c869188a82b8d15346e49b485e7c86/site/projects.html">View this page's source <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Gijs6/gijs6.nl/blob/4dfb0a8326f156f11543bbc1f4a1b846d503e089/site/projects.html">View this page's source <span aria-hidden="true">↗</span></a>
             </p>
         </footer>
     </body>

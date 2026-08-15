@@ -28,9 +28,27 @@
         <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
         <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
         <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": ["WebSite", "SoftwareSourceCode"], "@id": "https://gijs6.nl/#website", "url": "https://gijs6.nl/", "name": "Gijs6", "description": "A big mess of fun pages, interesting projects, my own thoughts and opinions and more.", "inLanguage": "en-GB", "author": { "@id": "https://gijs6.nl/#person" }, "license": "https://unlicense.org/", "hasPart": { "@id": "https://gijs6.nl/blog/#blog" }, "codeRepository": ["https://github.com/Gijs6/gijs6.nl", "https://gitlab.com/ggijs/gijs6.nl", "https://codeberg.org/gijs6/gijs6.nl", "https://git.dupunkto.org/sites/gijs6.nl"], "programmingLanguage": "Python" },
+                    { "@type": "Blog", "@id": "https://gijs6.nl/blog/#blog", "name": "Gijs6 - blog", "url": "https://gijs6.nl/blog/", "inLanguage": "en-GB", "isPartOf": { "@id": "https://gijs6.nl/#website" }, "author": { "@id": "https://gijs6.nl/#person" } },
+                    { "@type": "Person", "@id": "https://gijs6.nl/#person", "name": "Gijs6", "givenName": "Gijs", "familyName": "ten Berg", "alternateName": ["Gijs", "Gijs ten Berg", "gijsz", "ggijs", "ggijs109"], "url": "https://gijs6.nl/", "image": "https://cdn.gijs6.nl/images/me.jpg", "email": "me@gijs6.nl", "sameAs": ["https://github.com/Gijs6", "https://gitlab.com/ggijs", "https://codeberg.org/Gijs6", "https://contact.gijs6.nl"], "worksFor": { "@id": "https://gijs6.nl/#qdentity" }, "alumniOf": { "@id": "https://gijs6.nl/#school" }, "memberOf": { "@id": "https://gijs6.nl/#dupunkto" } },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#qdentity", "name": "Qdentity", "url": "https://qdentity.com" },
+                    { "@type": "HighSchool", "@id": "https://gijs6.nl/#school", "name": "Lyceum Schravenlant", "url": "https://www.lyceumschravenlant.nl/" },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#dupunkto", "name": "{du}punkto", "url": "https://dupunkto.org/" }
+                ]
+            }
+        </script>
+
+        <script type="application/ld+json">
+            { "@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://gijs6.nl/blog/introduction", "headline": "Introduction", "url": "https://gijs6.nl/blog/introduction", "author": { "@id": "https://gijs6.nl/#person" }, "publisher": { "@id": "https://gijs6.nl/#person" }, "isPartOf": { "@id": "https://gijs6.nl/blog/#blog" }, "wordCount": 217, "license": "https://unlicense.org/", "datePublished": "2025-04-06T22:26:01+02:00" }
+        </script>
     </head>
 
-    <body>
+    <body class="body">
         <header class="sidebar">
             <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
             <nav aria-label="Site">
@@ -56,28 +74,38 @@
                 </ul>
             </nav>
         </header>
+
         <main class="page">
-            <article class="page__article">
+            <article class="page__article h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/introduction">
+                <meta itemprop="url" content="https://gijs6.nl/blog/introduction" />
+                <meta itemprop="wordCount" content="217" />
+                <meta itemprop="license" content="https://unlicense.org/" />
                 <hgroup class="page__intro">
-                    <h1 class="page__title">Introduction</h1>
-                    <p class="page__subtitle"><time datetime="2025-04-06T22:26:01+02:00">2025-04-06</time> · 1 min read · 217 words</p>
+                    <h1 class="page__title p-name" itemprop="headline">Introduction</h1>
+                    <p class="page__subtitle">
+                        <a hidden class="p-author h-card u-url p-name" href="/versions/v4/index.html" itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person"><span itemprop="name">Gijs6</span></a
+                        ><a href="/versions/v4/blog/introduction"><time class="dt-published" itemprop="datePublished" datetime="2025-04-06T22:26:01+02:00">2025-04-06</time></a> · 1 min read · 217 words
+                    </p>
                 </hgroup>
-                <p>Hello there! Welcome to this "blog" :D</p>
-                <p>
-                    But that word "blog" doesn't tell you much about what you can expect to find on this "frequently updated website"[1]. "blog" is a word without that much actual meaning to it. Is a blog a place to talk about your latest projects? Is a blog a place to reflect on what you have achieved (<i>like an <span lang="nl">NLT-logboek</span></i
-                    >)? Is a blog a collection of stories from a road trip through Western Senegal? Is a blog a place to rant about politics? Is a blog just an old place where people wrote things before Twitter existed? Is a blog a place to showcase your work and impress others? Should a blog be made out of lengthy essays with fancy references, or should it be made out of short messages about anything that is on someone's mind?
-                </p>
-                <p>I think a blog can be all of those, and it definitely shouldn't be a precisely defined thing, <strong>and that is amazing</strong>.</p>
-                <p>And I do not know the purpose of this blog. I just wanted to write some things, and I wanted a little place on the internet to store and show them, so here I am.</p>
-                <p>This is probably the worst welcome post in existence.</p>
-                <h2>References</h2>
-                <ol>
-                    <li>
-                        <a href="https://doi.org/10.1093/OED/3789439763"><em>Blog</em> in the Oxford English Dictionary</a>
-                    </li>
-                </ol>
+                <div class="e-content" itemprop="articleBody">
+                    <p>Hello there! Welcome to this "blog" :D</p>
+                    <p>
+                        But that word "blog" doesn't tell you much about what you can expect to find on this "frequently updated website"[1]. "blog" is a word without that much actual meaning to it. Is a blog a place to talk about your latest projects? Is a blog a place to reflect on what you have achieved (<i>like an <span lang="nl">NLT-logboek</span></i
+                        >)? Is a blog a collection of stories from a road trip through Western Senegal? Is a blog a place to rant about politics? Is a blog just an old place where people wrote things before Twitter existed? Is a blog a place to showcase your work and impress others? Should a blog be made out of lengthy essays with fancy references, or should it be made out of short messages about anything that is on someone's mind?
+                    </p>
+                    <p>I think a blog can be all of those, and it definitely shouldn't be a precisely defined thing, <strong>and that is amazing</strong>.</p>
+                    <p>And I do not know the purpose of this blog. I just wanted to write some things, and I wanted a little place on the internet to store and show them, so here I am.</p>
+                    <p>This is probably the worst welcome post in existence.</p>
+                    <h2>References</h2>
+                    <ol>
+                        <li>
+                            <a href="https://doi.org/10.1093/OED/3789439763"><em>Blog</em> in the Oxford English Dictionary</a>
+                        </li>
+                    </ol>
+                </div>
             </article>
         </main>
+
         <footer class="footer">
             <p class="footer__reply">
                 <a href="https://contact.gijs6.nl">Reply to this post</a>
@@ -86,12 +114,12 @@
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
             <p class="footer__line">
-                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/c23d7ead07c869188a82b8d15346e49b485e7c86"><code>c23d7ea</code></a
-                >, deployed on <time datetime="2026-08-11T11:41:24.040500+02:00">11 August 2026 at 11:41:24 CEST</time>
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/4dfb0a8326f156f11543bbc1f4a1b846d503e089"><code>4dfb0a8</code></a
+                >, deployed on <time datetime="2026-08-15T16:47:44.733+02:00">15 August 2026 at 16:47:44 CEST</time>
             </p>
 
             <p class="footer__line">
-                <a href="https://github.com/Gijs6/gijs6.nl/blob/c23d7ead07c869188a82b8d15346e49b485e7c86/site/blog/introduction.md">View this page's source <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Gijs6/gijs6.nl/blob/4dfb0a8326f156f11543bbc1f4a1b846d503e089/site/blog/introduction.md">View this page's source <span aria-hidden="true">↗</span></a>
             </p>
         </footer>
     </body>

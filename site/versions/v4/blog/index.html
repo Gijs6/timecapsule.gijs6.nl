@@ -28,9 +28,23 @@
         <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
         <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
         <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": ["WebSite", "SoftwareSourceCode"], "@id": "https://gijs6.nl/#website", "url": "https://gijs6.nl/", "name": "Gijs6", "description": "A big mess of fun pages, interesting projects, my own thoughts and opinions and more.", "inLanguage": "en-GB", "author": { "@id": "https://gijs6.nl/#person" }, "license": "https://unlicense.org/", "hasPart": { "@id": "https://gijs6.nl/blog/#blog" }, "codeRepository": ["https://github.com/Gijs6/gijs6.nl", "https://gitlab.com/ggijs/gijs6.nl", "https://codeberg.org/gijs6/gijs6.nl", "https://git.dupunkto.org/sites/gijs6.nl"], "programmingLanguage": "Python" },
+                    { "@type": "Blog", "@id": "https://gijs6.nl/blog/#blog", "name": "Gijs6 - blog", "url": "https://gijs6.nl/blog/", "inLanguage": "en-GB", "isPartOf": { "@id": "https://gijs6.nl/#website" }, "author": { "@id": "https://gijs6.nl/#person" } },
+                    { "@type": "Person", "@id": "https://gijs6.nl/#person", "name": "Gijs6", "givenName": "Gijs", "familyName": "ten Berg", "alternateName": ["Gijs", "Gijs ten Berg", "gijsz", "ggijs", "ggijs109"], "url": "https://gijs6.nl/", "image": "https://cdn.gijs6.nl/images/me.jpg", "email": "me@gijs6.nl", "sameAs": ["https://github.com/Gijs6", "https://gitlab.com/ggijs", "https://codeberg.org/Gijs6", "https://contact.gijs6.nl"], "worksFor": { "@id": "https://gijs6.nl/#qdentity" }, "alumniOf": { "@id": "https://gijs6.nl/#school" }, "memberOf": { "@id": "https://gijs6.nl/#dupunkto" } },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#qdentity", "name": "Qdentity", "url": "https://qdentity.com" },
+                    { "@type": "HighSchool", "@id": "https://gijs6.nl/#school", "name": "Lyceum Schravenlant", "url": "https://www.lyceumschravenlant.nl/" },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#dupunkto", "name": "{du}punkto", "url": "https://dupunkto.org/" }
+                ]
+            }
+        </script>
     </head>
 
-    <body>
+    <body class="body">
         <header class="sidebar">
             <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
             <nav aria-label="Site">
@@ -56,6 +70,7 @@
                 </ul>
             </nav>
         </header>
+
         <main class="page">
             <hgroup class="page__intro">
                 <h1 class="page__title">Blog</h1>
@@ -74,95 +89,151 @@
                     </li>
                 </ul>
             </nav>
-            <ol class="post-list">
-                <li class="post-list__item">
+            <ol class="post-list h-feed" itemscope itemtype="https://schema.org/Blog" itemid="https://gijs6.nl/blog/#blog">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/inheritance">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/inheritance" />
+                    <meta itemprop="wordCount" content="314" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/inheritance">Why do we even do inheritance?</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/inheritance"><span itemprop="headline">Why do we even do inheritance?</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2026-08-06T20:37:34+02:00">2026-08-06</time> · 2 min read · 314 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2026-08-06T20:37:34+02:00">2026-08-06</time> · 2 min read · 314 words</p>
                 </li>
 
-                <li class="post-list__item">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/banknote-redesign">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/banknote-redesign" />
+                    <meta itemprop="wordCount" content="1546" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/banknote-redesign">Euro banknotes are getting a redesign and I have opinions</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/banknote-redesign"><span itemprop="headline">Euro banknotes are getting a redesign and I have opinions</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2026-07-25T23:59:52+02:00">2026-07-25</time> · 8 min read · 1546 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2026-07-25T23:59:52+02:00">2026-07-25</time> · 8 min read · 1546 words</p>
                 </li>
 
-                <li class="post-list__item">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/phone-bans">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/phone-bans" />
+                    <meta itemprop="wordCount" content="647" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/phone-bans">On school phone bans</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/phone-bans"><span itemprop="headline">On school phone bans</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2026-06-16T16:27:29+02:00">2026-06-16</time> · 3 min read · 647 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2026-06-16T16:27:29+02:00">2026-06-16</time> · 3 min read · 647 words</p>
                 </li>
 
-                <li class="post-list__item">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/dear-boomers">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/dear-boomers" />
+                    <meta itemprop="wordCount" content="316" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/dear-boomers">Dear boomers</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/dear-boomers"><span itemprop="headline">Dear boomers</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2026-05-30T22:10:17+02:00">2026-05-30</time> · 2 min read · 316 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2026-05-30T22:10:17+02:00">2026-05-30</time> · 2 min read · 316 words</p>
                 </li>
 
-                <li class="post-list__item">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/new-exam-design">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/new-exam-design" />
+                    <meta itemprop="wordCount" content="489" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/new-exam-design">My proposal for the Dutch national exam design</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/new-exam-design"><span itemprop="headline">My proposal for the Dutch national exam design</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2026-05-24T19:04:27+02:00">2026-05-24</time> · 2 min read · 489 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2026-05-24T19:04:27+02:00">2026-05-24</time> · 2 min read · 489 words</p>
                 </li>
 
-                <li class="post-list__item">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/exam-design">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/exam-design" />
+                    <meta itemprop="wordCount" content="641" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/exam-design">The new Dutch exam design is worse</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/exam-design"><span itemprop="headline">The new Dutch exam design is worse</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2026-05-24T00:39:42+02:00">2026-05-24</time> · 3 min read · 641 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2026-05-24T00:39:42+02:00">2026-05-24</time> · 3 min read · 641 words</p>
                 </li>
 
-                <li class="post-list__item">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/internalized-compliance">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/internalized-compliance" />
+                    <meta itemprop="wordCount" content="192" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/internalized-compliance">Internalised compliance</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/internalized-compliance"><span itemprop="headline">Internalised compliance</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2026-05-22T15:03:57+02:00">2026-05-22</time> · 1 min read · 192 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2026-05-22T15:03:57+02:00">2026-05-22</time> · 1 min read · 192 words</p>
                 </li>
 
-                <li class="post-list__item">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/what-is-art">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/what-is-art" />
+                    <meta itemprop="wordCount" content="723" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/what-is-art">What is art?</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/what-is-art"><span itemprop="headline">What is art?</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2025-08-25T22:17:10+02:00">2025-08-25</time> · 4 min read · 723 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2025-08-25T22:17:10+02:00">2025-08-25</time> · 4 min read · 723 words</p>
                 </li>
 
-                <li class="post-list__item">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/ai-made-education-worse">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/ai-made-education-worse" />
+                    <meta itemprop="wordCount" content="355" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/ai-made-education-worse">Education was bad; AI made it worse</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/ai-made-education-worse"><span itemprop="headline">Education was bad; AI made it worse</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2025-05-13T14:18:36+02:00">2025-05-13</time> · 2 min read · 355 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2025-05-13T14:18:36+02:00">2025-05-13</time> · 2 min read · 355 words</p>
                 </li>
 
-                <li class="post-list__item">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/ruining-an-election-system">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/ruining-an-election-system" />
+                    <meta itemprop="wordCount" content="468" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/ruining-an-election-system">The Dutch Government is ruining its election system</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/ruining-an-election-system"><span itemprop="headline">The Dutch Government is ruining its election system</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2025-04-08T22:03:31+02:00">2025-04-08</time> · 2 min read · 468 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2025-04-08T22:03:31+02:00">2025-04-08</time> · 2 min read · 468 words</p>
                 </li>
 
-                <li class="post-list__item">
+                <li class="post-list__item h-entry" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/introduction">
+                    <meta itemprop="url" content="https://gijs6.nl/blog/introduction" />
+                    <meta itemprop="wordCount" content="217" />
+                    <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person">
+                        <meta itemprop="name" content="Gijs6" />
+                    </span>
                     <h2 class="post-list__title">
-                        <a href="/versions/v4/blog/introduction">Introduction</a>
+                        <a class="p-name u-url" href="/versions/v4/blog/introduction"><span itemprop="headline">Introduction</span></a>
                     </h2>
-                    <p class="post-list__meta"><time datetime="2025-04-06T22:26:01+02:00">2025-04-06</time> · 1 min read · 217 words</p>
+                    <p class="post-list__meta"><time class="dt-published" itemprop="datePublished" datetime="2025-04-06T22:26:01+02:00">2025-04-06</time> · 1 min read · 217 words</p>
                 </li>
             </ol>
         </main>
+
         <footer class="footer">
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
             <p class="footer__line">
-                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/c23d7ead07c869188a82b8d15346e49b485e7c86"><code>c23d7ea</code></a
-                >, deployed on <time datetime="2026-08-11T11:41:24.040500+02:00">11 August 2026 at 11:41:24 CEST</time>
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/4dfb0a8326f156f11543bbc1f4a1b846d503e089"><code>4dfb0a8</code></a
+                >, deployed on <time datetime="2026-08-15T16:47:44.733+02:00">15 August 2026 at 16:47:44 CEST</time>
             </p>
 
             <p class="footer__line">
-                <a href="https://github.com/Gijs6/gijs6.nl/blob/c23d7ead07c869188a82b8d15346e49b485e7c86/site/templates/blog_index.html">View this page's source <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Gijs6/gijs6.nl/blob/4dfb0a8326f156f11543bbc1f4a1b846d503e089/site/templates/blog_index.html">View this page's source <span aria-hidden="true">↗</span></a>
             </p>
         </footer>
     </body>

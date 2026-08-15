@@ -28,49 +28,28 @@
         <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
         <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
         <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": ["WebSite", "SoftwareSourceCode"], "@id": "https://gijs6.nl/#website", "url": "https://gijs6.nl/", "name": "Gijs6", "description": "A big mess of fun pages, interesting projects, my own thoughts and opinions and more.", "inLanguage": "en-GB", "author": { "@id": "https://gijs6.nl/#person" }, "license": "https://unlicense.org/", "hasPart": { "@id": "https://gijs6.nl/blog/#blog" }, "codeRepository": ["https://github.com/Gijs6/gijs6.nl", "https://gitlab.com/ggijs/gijs6.nl", "https://codeberg.org/gijs6/gijs6.nl", "https://git.dupunkto.org/sites/gijs6.nl"], "programmingLanguage": "Python" },
+                    { "@type": "Blog", "@id": "https://gijs6.nl/blog/#blog", "name": "Gijs6 - blog", "url": "https://gijs6.nl/blog/", "inLanguage": "en-GB", "isPartOf": { "@id": "https://gijs6.nl/#website" }, "author": { "@id": "https://gijs6.nl/#person" } },
+                    { "@type": "Person", "@id": "https://gijs6.nl/#person", "name": "Gijs6", "givenName": "Gijs", "familyName": "ten Berg", "alternateName": ["Gijs", "Gijs ten Berg", "gijsz", "ggijs", "ggijs109"], "url": "https://gijs6.nl/", "image": "https://cdn.gijs6.nl/images/me.jpg", "email": "me@gijs6.nl", "sameAs": ["https://github.com/Gijs6", "https://gitlab.com/ggijs", "https://codeberg.org/Gijs6", "https://contact.gijs6.nl"], "worksFor": { "@id": "https://gijs6.nl/#qdentity" }, "alumniOf": { "@id": "https://gijs6.nl/#school" }, "memberOf": { "@id": "https://gijs6.nl/#dupunkto" } },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#qdentity", "name": "Qdentity", "url": "https://qdentity.com" },
+                    { "@type": "HighSchool", "@id": "https://gijs6.nl/#school", "name": "Lyceum Schravenlant", "url": "https://www.lyceumschravenlant.nl/" },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#dupunkto", "name": "{du}punkto", "url": "https://dupunkto.org/" }
+                ]
+            }
+        </script>
     </head>
 
-    <body>
-        <header class="sidebar">
-            <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
-            <nav aria-label="Site">
-                <ul class="sidebar__nav">
-                    <li>
-                        <a class="sidebar__nav-link" href="/versions/v4/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="sidebar__nav-link" href="/versions/v4/blog/">Blog</a>
-                    </li>
-                    <li>
-                        <a class="sidebar__nav-link" href="/versions/v4/projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="sidebar__nav-link" href="/versions/v4/bookmarks">Bookmarks</a>
-                    </li>
-                    <li>
-                        <a class="sidebar__nav-link" href="/versions/v4/colophon">Colophon</a>
-                    </li>
-                    <li>
-                        <a class="sidebar__nav-link" href="https://contact.gijs6.nl">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <body class="body body--bare">
         <main class="page">
-            <h1>404</h1>
+            <a class="page__brand" href="/versions/v4/index.html"><span class="page__brand-first">G</span>ijs<span class="page__brand-last">6</span></a>
+
+            <h1 class="page__error-heading"><span class="page__error-heading-digit">4</span><span class="page__error-heading-digit">0</span><span class="page__error-heading-digit">4</span></h1>
             <p>It looks like you have broken the internet. That's too bad, I quite liked it. I really hope you made backups.</p>
         </main>
-        <footer class="footer">
-            <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
-            <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
-            <p class="footer__line">
-                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/c23d7ead07c869188a82b8d15346e49b485e7c86"><code>c23d7ea</code></a
-                >, deployed on <time datetime="2026-08-11T11:41:24.040500+02:00">11 August 2026 at 11:41:24 CEST</time>
-            </p>
-
-            <p class="footer__line">
-                <a href="https://github.com/Gijs6/gijs6.nl/blob/c23d7ead07c869188a82b8d15346e49b485e7c86/site/404.html">View this page's source <span aria-hidden="true">↗</span></a>
-            </p>
-        </footer>
     </body>
 </html>

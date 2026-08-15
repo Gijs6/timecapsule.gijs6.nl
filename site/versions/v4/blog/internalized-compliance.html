@@ -28,9 +28,27 @@
         <link rel="alternate" type="application/rss+xml" href="/versions/v4/blog/rss.xml" title="Blog - RSS" />
         <link rel="alternate" type="application/atom+xml" href="/versions/v4/blog/atom.xml" title="Blog - Atom" />
         <link rel="alternate" type="application/feed+json" href="/versions/v4/blog/feed.json" title="Blog - JSON" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    { "@type": ["WebSite", "SoftwareSourceCode"], "@id": "https://gijs6.nl/#website", "url": "https://gijs6.nl/", "name": "Gijs6", "description": "A big mess of fun pages, interesting projects, my own thoughts and opinions and more.", "inLanguage": "en-GB", "author": { "@id": "https://gijs6.nl/#person" }, "license": "https://unlicense.org/", "hasPart": { "@id": "https://gijs6.nl/blog/#blog" }, "codeRepository": ["https://github.com/Gijs6/gijs6.nl", "https://gitlab.com/ggijs/gijs6.nl", "https://codeberg.org/gijs6/gijs6.nl", "https://git.dupunkto.org/sites/gijs6.nl"], "programmingLanguage": "Python" },
+                    { "@type": "Blog", "@id": "https://gijs6.nl/blog/#blog", "name": "Gijs6 - blog", "url": "https://gijs6.nl/blog/", "inLanguage": "en-GB", "isPartOf": { "@id": "https://gijs6.nl/#website" }, "author": { "@id": "https://gijs6.nl/#person" } },
+                    { "@type": "Person", "@id": "https://gijs6.nl/#person", "name": "Gijs6", "givenName": "Gijs", "familyName": "ten Berg", "alternateName": ["Gijs", "Gijs ten Berg", "gijsz", "ggijs", "ggijs109"], "url": "https://gijs6.nl/", "image": "https://cdn.gijs6.nl/images/me.jpg", "email": "me@gijs6.nl", "sameAs": ["https://github.com/Gijs6", "https://gitlab.com/ggijs", "https://codeberg.org/Gijs6", "https://contact.gijs6.nl"], "worksFor": { "@id": "https://gijs6.nl/#qdentity" }, "alumniOf": { "@id": "https://gijs6.nl/#school" }, "memberOf": { "@id": "https://gijs6.nl/#dupunkto" } },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#qdentity", "name": "Qdentity", "url": "https://qdentity.com" },
+                    { "@type": "HighSchool", "@id": "https://gijs6.nl/#school", "name": "Lyceum Schravenlant", "url": "https://www.lyceumschravenlant.nl/" },
+                    { "@type": "Organization", "@id": "https://gijs6.nl/#dupunkto", "name": "{du}punkto", "url": "https://dupunkto.org/" }
+                ]
+            }
+        </script>
+
+        <script type="application/ld+json">
+            { "@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://gijs6.nl/blog/internalized-compliance", "headline": "Internalised compliance", "url": "https://gijs6.nl/blog/internalized-compliance", "author": { "@id": "https://gijs6.nl/#person" }, "publisher": { "@id": "https://gijs6.nl/#person" }, "isPartOf": { "@id": "https://gijs6.nl/blog/#blog" }, "wordCount": 192, "license": "https://unlicense.org/", "datePublished": "2026-05-22T15:03:57+02:00" }
+        </script>
     </head>
 
-    <body>
+    <body class="body">
         <header class="sidebar">
             <a class="sidebar__logo" href="/versions/v4/index.html"><span class="sidebar__logo-first">G</span>ijs<span class="sidebar__logo-last">6</span></a>
             <nav aria-label="Site">
@@ -56,19 +74,29 @@
                 </ul>
             </nav>
         </header>
+
         <main class="page">
-            <article class="page__article">
+            <article class="page__article h-entry" itemscope itemtype="https://schema.org/BlogPosting" itemid="https://gijs6.nl/blog/internalized-compliance">
+                <meta itemprop="url" content="https://gijs6.nl/blog/internalized-compliance" />
+                <meta itemprop="wordCount" content="192" />
+                <meta itemprop="license" content="https://unlicense.org/" />
                 <hgroup class="page__intro">
-                    <h1 class="page__title">Internalised compliance</h1>
-                    <p class="page__subtitle"><time datetime="2026-05-22T15:03:57+02:00">2026-05-22</time> · 1 min read · 192 words</p>
+                    <h1 class="page__title p-name" itemprop="headline">Internalised compliance</h1>
+                    <p class="page__subtitle">
+                        <a hidden class="p-author h-card u-url p-name" href="/versions/v4/index.html" itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://gijs6.nl/#person"><span itemprop="name">Gijs6</span></a
+                        ><a href="/versions/v4/blog/internalized-compliance"><time class="dt-published" itemprop="datePublished" datetime="2026-05-22T15:03:57+02:00">2026-05-22</time></a> · 1 min read · 192 words
+                    </p>
                 </hgroup>
-                <p>As a student, you get so used to the idea that things just happen to you. Decisions get made somewhere above your head, and your role is basically just to read the email (and sigh a little) and move on. And I pretty much stopped considering that there could be another option.</p>
-                <p>So being on a committee with teachers has been really weird in a good way. I keep having these moments where someone proposes something and my first instinct is still just "okay, guess that's decided then", but then someone else actually questions it. Or I question it. And instead of getting shut down immediately, there's an actual discussion. Even the big bosses listen. And things change.</p>
-                <p>It's strange realising that I don't have to just passively absorb every decision that comes down from above. We can push back a little. We can say, "No, we'd rather handle it this way instead."</p>
-                <p>I didn't realise how deeply I internalised the idea that students are mostly there to comply until I was suddenly in a position where my opinion was expected rather than merely tolerated.</p>
-                <p>We should definitely listen to students more.</p>
+                <div class="e-content" itemprop="articleBody">
+                    <p>As a student, you get so used to the idea that things just happen to you. Decisions get made somewhere above your head, and your role is basically just to read the email (and sigh a little) and move on. And I pretty much stopped considering that there could be another option.</p>
+                    <p>So being on a committee with teachers has been really weird in a good way. I keep having these moments where someone proposes something and my first instinct is still just "okay, guess that's decided then", but then someone else actually questions it. Or I question it. And instead of getting shut down immediately, there's an actual discussion. Even the big bosses listen. And things change.</p>
+                    <p>It's strange realising that I don't have to just passively absorb every decision that comes down from above. We can push back a little. We can say, "No, we'd rather handle it this way instead."</p>
+                    <p>I didn't realise how deeply I internalised the idea that students are mostly there to comply until I was suddenly in a position where my opinion was expected rather than merely tolerated.</p>
+                    <p>We should definitely listen to students more.</p>
+                </div>
             </article>
         </main>
+
         <footer class="footer">
             <p class="footer__reply">
                 <a href="https://contact.gijs6.nl">Reply to this post</a>
@@ -77,12 +105,12 @@
             <address class="footer__line">Made by <a href="https://contact.gijs6.nl">Gijs ten Berg</a></address>
             <p class="footer__line"><a href="https://unlicense.org/">No rights reserved</a>: copy it, change it, do something with it, make something cool :)</p>
             <p class="footer__line">
-                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/c23d7ead07c869188a82b8d15346e49b485e7c86"><code>c23d7ea</code></a
-                >, deployed on <time datetime="2026-08-11T11:41:24.040500+02:00">11 August 2026 at 11:41:24 CEST</time>
+                Built from commit <a href="https://github.com/Gijs6/gijs6.nl/commit/4dfb0a8326f156f11543bbc1f4a1b846d503e089"><code>4dfb0a8</code></a
+                >, deployed on <time datetime="2026-08-15T16:47:44.733+02:00">15 August 2026 at 16:47:44 CEST</time>
             </p>
 
             <p class="footer__line">
-                <a href="https://github.com/Gijs6/gijs6.nl/blob/c23d7ead07c869188a82b8d15346e49b485e7c86/site/blog/internalized-compliance.md">View this page's source <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/Gijs6/gijs6.nl/blob/4dfb0a8326f156f11543bbc1f4a1b846d503e089/site/blog/internalized-compliance.md">View this page's source <span aria-hidden="true">↗</span></a>
             </p>
         </footer>
     </body>
