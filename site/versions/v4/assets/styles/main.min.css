@@ -18,12 +18,12 @@ html {
     scrollbar-gutter: stable;
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 body {
     min-height: 100vh;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 img {
     vertical-align: middle;
@@ -1100,7 +1100,7 @@ textarea:not([rows]) {
     font-size: var(--font-size-md);
 }
 .body > .page > .project-list > .project-list__item > .project-list__description {
-    margin-block: 0 var(--spacing-sm);
+    margin-block: 0 var(--spacing-xs);
     color: var(--color-card-fg-muted);
 }
 .body > .page > .project-list > .project-list__item > .project-list__links {
