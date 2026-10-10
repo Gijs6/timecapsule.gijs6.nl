@@ -60,8 +60,7 @@ h4,
 h5,
 h6,
 p {
-    overflow-wrap: break-word;
-    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 h1,
 h2,
@@ -623,7 +622,7 @@ textarea:not([rows]) {
 .body > .page h1 {
     font-size: var(--font-size-3xl);
     margin-block: 0 var(--spacing-lg);
-    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 @media (max-width: 750px) {
     .body > .page h1 {
@@ -929,7 +928,6 @@ textarea:not([rows]) {
     border: 1px solid var(--color-card-border);
     border-radius: var(--radius-md);
     break-inside: avoid;
-    page-break-inside: avoid;
     margin-bottom: var(--spacing-md);
 }
 .body > .page > .bookmarks > .bookmarks__group:last-child {
@@ -1001,7 +999,7 @@ textarea:not([rows]) {
 .body > .page > .page__feeds > .page__feeds-list > li:not(:last-child):after {
     content: " ·"/"";
 }
-.body > .page > .post-list {
+.body > .page > .h-feed > .post-list {
     gap: var(--spacing-md);
     flex-direction: column;
     margin-top: 0;
@@ -1009,25 +1007,25 @@ textarea:not([rows]) {
     list-style: none;
     display: flex;
 }
-.body > .page > .post-list:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > .h-feed > .post-list:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .post-list:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > .h-feed > .post-list:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .post-list:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > .h-feed > .post-list:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .post-list:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > .h-feed > .post-list:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .post-list:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > .h-feed > .post-list:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .post-list:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > .h-feed > .post-list:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .post-list > .post-list__item {
+.body > .page > .h-feed > .post-list > .post-list__item {
     padding: var(--spacing-md);
     border: 1px solid var(--color-card-border);
     border-radius: var(--radius-md);
@@ -1039,128 +1037,216 @@ textarea:not([rows]) {
     margin-bottom: 0;
     display: flex;
 }
-.body > .page > .post-list > .post-list__item > [itemprop="author"] {
-    display: contents;
-}
-.body > .page > .post-list > .post-list__item > .post-list__meta {
+.body > .page > .h-feed > .post-list > .post-list__item > .post-list__meta {
     color: var(--color-card-fg-muted);
     font-size: var(--font-size-xs);
     margin-top: 0;
     margin-bottom: 0;
 }
 @media (max-width: 750px) {
-    .body > .page > .post-list > .post-list__item > .post-list__meta {
+    .body > .page > .h-feed > .post-list > .post-list__item > .post-list__meta {
         flex-basis: 100%;
     }
 }
-.body > .page > .post-list > .post-list__item > .post-list__title {
+.body > .page > .h-feed > .post-list > .post-list__item > .post-list__title {
     font-family: var(--font-heading);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-md);
     margin-top: 0;
     margin-bottom: 0;
 }
-.body > .page > .project-list {
+[data-post="exam-design"] figure {
+    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin: 0;
+    display: grid;
+}
+[data-post="exam-design"] figure a {
+    width: 100%;
+    max-width: 340px;
+}
+[data-post="exam-design"] figure:has(a:only-child) a {
+    max-width: 100%;
+}
+[data-post="exam-design"] figure figcaption {
+    grid-column: 1/-1;
+    font-style: italic;
+}
+[data-post="new-exam-design"] figure {
+    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin: 0;
+    display: grid;
+}
+[data-post="new-exam-design"] figure a {
+    width: 100%;
+    max-width: 340px;
+}
+[data-post="new-exam-design"] figure:has(a:only-child) a {
+    max-width: 100%;
+}
+[data-post="new-exam-design"] figure figcaption {
+    grid-column: 1/-1;
+    font-style: italic;
+}
+[data-post="banknote-redesign"] .banknotes {
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    margin: 0 0 var(--spacing-lg);
+    flex-wrap: wrap;
+    display: flex;
+}
+[data-post="banknote-redesign"] .banknotes > .banknotes__figure {
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    flex-direction: column;
+    display: flex;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+[data-post="banknote-redesign"] .banknotes > .banknotes__figure > a > .banknotes__image {
+    --note-size: 145px;
+    width: auto;
+    height: auto;
+    max-height: var(--note-size);
+    object-fit: contain;
+    display: block;
+}
+[data-post="banknote-redesign"] .banknotes > .banknotes__figure > a > .banknotes__image--vertical {
+    max-width: var(--note-size);
+    max-height: none;
+}
+[data-post="banknote-redesign"] .series {
+    float: right;
+    gap: var(--spacing-xs) var(--spacing-sm);
+    margin: var(--spacing-sm) 0 var(--spacing-sm) var(--spacing-sm);
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto auto;
+    grid-auto-flow: column;
+    display: grid;
+}
+[data-post="banknote-redesign"] .series > .series__figure {
+    display: contents;
+}
+[data-post="banknote-redesign"] .series > .series__figure > .series__image {
+    --series-max-width: 200px;
+    width: 100%;
+    height: 100%;
+    max-width: var(--series-max-width);
+    object-fit: contain;
+    background: #fff;
+    justify-self: center;
+}
+@media (max-width: 1050px) {
+    [data-post="banknote-redesign"] .series {
+        float: none;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: var(--spacing-sm) 0;
+    }
+}
+.body > .page > section > .project-list {
     margin-block: 0 var(--flow-gap);
     gap: var(--spacing-md);
     flex-direction: column;
     list-style: none;
     display: flex;
 }
-.body > .page > .project-list:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > section > .project-list:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .project-list:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > section > .project-list:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .project-list:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > section > .project-list:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .project-list:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > section > .project-list:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .project-list:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > section > .project-list:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .project-list:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > section > .project-list:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .project-list > .project-list__item {
+.body > .page > section > .project-list > .project-list__item {
     padding: var(--spacing-md);
     border: 1px solid var(--color-card-border);
     border-radius: var(--radius-md);
     margin-top: 0;
     margin-bottom: 0;
 }
-.body > .page > .project-list > .project-list__item::marker {
+.body > .page > section > .project-list > .project-list__item::marker {
     content: none;
 }
-.body > .page > .project-list > .project-list__item > .project-list__title {
+.body > .page > section > .project-list > .project-list__item > .project-list__title {
     margin-block: 0 var(--spacing-xs);
     font-size: var(--font-size-md);
 }
-.body > .page > .project-list > .project-list__item > .project-list__description {
+.body > .page > section > .project-list > .project-list__item > .project-list__description {
     margin-block: 0 var(--spacing-xs);
     color: var(--color-card-fg-muted);
 }
-.body > .page > .project-list > .project-list__item > .project-list__links {
+.body > .page > section > .project-list > .project-list__item > .project-list__links {
     gap: var(--spacing-xs) var(--spacing-md);
     flex-wrap: wrap;
     margin: 0;
     list-style: none;
     display: flex;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item {
+.body > .page > section > .project-list > .project-list__item > .project-list__links > .project-list__link-item {
     margin-top: 0;
     margin-bottom: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links > .project-list__link-item:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links > .project-list__link-item:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links > .project-list__link-item:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))) {
     padding-left: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links > .project-list__link-item:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links > .project-list__link-item:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
+.body > .page > section > .project-list > .project-list__item > .project-list__links > .project-list__link-item:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)) {
     padding-right: 0;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item::marker {
+.body > .page > section > .project-list > .project-list__item > .project-list__links > .project-list__link-item::marker {
     content: none;
 }
-.body > .page > .project-list > .project-list__item > .project-list__links > .project-list__link-item > .project-list__link {
+.body > .page > section > .project-list > .project-list__item > .project-list__links > .project-list__link-item > .project-list__link {
     font-size: var(--font-size-xs);
 }
 html > .body.body--bare > .page > .page__error-heading {
-    --404-spacing: 0.4em;
+    --error-spacing: 0.4em;
     align-items: flex-start;
     gap: var(--spacing-sm);
-    height: calc(var(--line-height-heading) * 1em + var(--404-spacing) * 2);
+    height: calc(var(--line-height-heading) * 1em + var(--error-spacing) * 2);
     font-size: max(6rem, min(30vw, 16rem));
     display: inline-flex;
     position: relative;
@@ -1173,10 +1259,10 @@ html > .body.body--bare > .page > .page__error-heading > .page__error-heading-di
 }
 html > .body.body--bare > .page > .page__error-heading > .page__error-heading-digit:nth-child(2) {
     color: var(--color-body-fg-muted);
-    margin-top: calc(var(--404-spacing) * 1);
+    margin-top: calc(var(--error-spacing) * 1);
 }
 html > .body.body--bare > .page > .page__error-heading > .page__error-heading-digit:nth-child(3) {
-    margin-top: calc(var(--404-spacing) * 2);
+    margin-top: calc(var(--error-spacing) * 2);
     rotate: 20deg;
 }
 html > .body.body--bare > .page > .page__brand {

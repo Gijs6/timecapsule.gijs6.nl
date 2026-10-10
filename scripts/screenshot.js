@@ -18,12 +18,26 @@ const fullPage = "fullPage" in flags;
 console.log(`Taking screenshot of: ${url}`);
 console.log(`  Output: ${outputFile}, viewport: ${width}x${height}${fullPage ? ", full page" : ""}${delay ? `, delay ${delay}ms` : ""}\n`);
 
-const browser = await puppeteer.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"] });
+const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"]
+});
+
 const page = await browser.newPage();
+
 await page.setViewport({ width, height });
+
+// Force dark mode preference
+await page.emulateMediaFeatures([
+    { name: "prefers-color-scheme", value: "dark" }
+]);
+
 await page.goto(url, { waitUntil: "networkidle2", timeout: 30000 });
+
 if (delay > 0) await new Promise((r) => setTimeout(r, delay));
+
 await page.screenshot({ path: outputFile, fullPage });
+
 await browser.close();
 
 console.log(`  [ok] Saved: ${outputFile}`);
