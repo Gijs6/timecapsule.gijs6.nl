@@ -12,5 +12,9 @@
   },
   "devDependencies": {
     "lightningcss-cli": "^1.29.3"
+  },
+  "allowScripts": {
+    "lightningcss-cli@1.33.0": true,
+    "puppeteer@25.14.0": true
   }
 }
