@@ -489,7 +489,7 @@ textarea:not([rows]) {
     position: relative;
 }
 .body > .sidebar > nav > .sidebar__nav > li > .sidebar__nav-link.sidebar__nav-link--active:before {
-    content: "→ "/"";
+    content: "→ " / "";
     right: calc(100% + var(--spacing-2xs));
     position: absolute;
 }
@@ -681,7 +681,7 @@ textarea:not([rows]) {
     list-style: none;
 }
 .body > .page ul > li::marker {
-    content: "→ "/"";
+    content: "→ " / "";
     color: var(--color-card-accent);
     font-weight: var(--font-weight-extrabold);
 }
@@ -997,7 +997,7 @@ textarea:not([rows]) {
     content: none;
 }
 .body > .page > .page__feeds > .page__feeds-list > li:not(:last-child):after {
-    content: " ·"/"";
+    content: " ·" / "";
 }
 .body > .page > .h-feed > .post-list {
     gap: var(--spacing-md);
