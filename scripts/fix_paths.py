@@ -42,6 +42,12 @@ def fix_html_paths(file_path, version_name):
         content,
     )
 
+    content = re.sub(
+        r'(<link rel="canonical" href=")https?://(?:www\.)?gijs6\.nl/',
+        rf"\1https://timecapsule.gijs6.nl{base_path}/",
+        content,
+    )
+
     content = re.sub(r'href="/"(\s|>)', rf'href="{base_path}/index.html"\1', content)
     content = re.sub(
         r'href="/(?!versions/)([^"?]+)"', rf'href="{base_path}/\1"', content
